@@ -7,11 +7,15 @@ public:
         vector<int> ans;
         
         // O(mn)
-        for (int i = 0; i<arrays.size(); ++i) {
+        for (int i = 0; i < n-1; ++i) {
             for (int j = 0; j<arrays[i].size(); ++j) {
                 counter[arrays[i][j]]++;
-                if (i == n-1 && counter[arrays[i][j]] == n) ans.push_back(arrays[i][j]);
             }
+        }
+        
+        for (int i = 0; i<arrays[n-1].size(); ++i) {
+            counter[arrays[n-1][i]]++;
+            if (counter[arrays[n-1][i]] == n) ans.push_back(arrays[n-1][i]);
         }
         
         return ans;
