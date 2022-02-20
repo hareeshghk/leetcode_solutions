@@ -15,6 +15,25 @@ public:
                 }
             }
         }
+        // print subsequence in rev order;
+        // int i = m;
+        // int j = n;
+        // for (int k = 0; k < lcs[m][n]; k++) {
+        //     if (text1[i-1] == text2[j-1]) {
+        //         cout << text1[i-1];
+        //         i = i-1;
+        //         j = j-1;
+        //     } else {
+        //         if (lcs[i][j] == lcs[i][j-1]) {
+        //             cout << text2[j-1];
+        //             j = j-1;
+        //         } else {
+        //             cout << text1[i-1];
+        //             i = i - 1;
+        //         }
+        //     }
+        // }
+        cout << endl;
         return lcs[m][n];
     }
 };
