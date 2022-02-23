@@ -4,22 +4,37 @@ public:
         int m = matrix.size();
         int n = matrix[0].size();
         
-        vector<vector<int>> dp(m, vector<int>(n, 0));
+        vector<int> dp(n, 0);
         
         int maxarea = 0;
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
-                if (matrix[i][j] == '1') {
-                    dp[i][j] = ((j==0)?0:dp[i][j-1]) + 1;
-                
-                    int width = dp[i][j];
-                
-                    for (int k = i; k >= 0; k--) {
-                        width = min(width, dp[k][j]);
-                        maxarea = max(maxarea, width * (i - k + 1));
-                    }
-                }
+                dp[j] = ((matrix[i][j] == '1')?(dp[j] + 1):0);
             }
+            maxarea = max(maxarea, findmaxrectareainhistogram(dp));
+        }
+        return maxarea;
+    }
+private:
+    int findmaxrectareainhistogram(vector <int> &arr) {
+        int n = arr.size();
+        
+        stack<int> st;
+        
+        int maxarea = 0;
+        for (int i = 0; i < n; ++i) {
+            while (!st.empty() && arr[i] < arr[st.top()]) {
+                int curtop = st.top();
+                st.pop();
+                maxarea = max(maxarea, (arr[curtop] * ((st.empty())?(i):(i - st.top() - 1))));
+            }
+            st.push(i);
+        }
+        
+        while (!st.empty()) {
+            int curtop = st.top();
+            st.pop();
+            maxarea = max(maxarea, arr[curtop] * (st.empty()?n:(n-1-st.top())));
         }
         return maxarea;
     }
