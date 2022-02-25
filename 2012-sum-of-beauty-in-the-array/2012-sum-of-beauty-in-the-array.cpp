@@ -12,10 +12,6 @@ public:
             rightminarr[nums_len-1-i] = min(nums[nums_len-1-i], rightminarr[nums_len-i]);
         }
         
-        // for (int i = 0; i < nums_len; ++i) {
-        //     cout << leftminarr[i] << " ";
-        // }
-        
         int ans = 0;
         for (int i = 1; i < nums_len-1; ++i) {
             if (leftmaxarr[i-1] < nums[i] && nums[i] < rightminarr[i+1]) {
