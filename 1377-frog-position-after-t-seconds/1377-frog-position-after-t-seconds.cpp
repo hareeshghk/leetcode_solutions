@@ -8,45 +8,35 @@ public:
             graph[edge[1]].push_back(edge[0]);
         }
         
-        //visited array.
-        vector<bool> visited(n+1, false);
-        
-        typedef pair<int,double> cell;
+        typedef struct cell {
+            int first;
+            double second;
+            int parent;
+        } cell;
+        graph[1].push_back(1);
         queue<cell> qu;
-        qu.push(cell(1, 1.0));
+        qu.push(cell{1, 1.0, 1});
         
-        while(!qu.empty() && t--) {
+        for (int j = 0; j < t && !qu.empty(); j++) {
             int cursize = qu.size();
             for (int i = 0; i < cursize; i++) {
                 cell curtop = qu.front();
                 qu.pop();
-                // cout << curtop.first << " " <<curtop.second << endl;
-                if (visited[curtop.first]) {
-                    qu.push(curtop);
-                    continue;
-                }
                 
-                visited[curtop.first] = true;
-                int valid_neighbours = 0;
-                for (auto neighbour : graph[curtop.first]) {
-                    if (!visited[neighbour]) {
-                        valid_neighbours++;
-                    }
-                }
-                
-                if (valid_neighbours == 0) {
+                if (graph[curtop.first].size() == 1) {
                     qu.push(curtop);
                     continue;
                 }
                 
                 for (auto neighbour : graph[curtop.first]) {
-                    if (!visited[neighbour]) {
-                        qu.push(cell(neighbour, curtop.second * (1.0/valid_neighbours)));
+                    if (neighbour != curtop.parent) {
+                        qu.push(cell{neighbour, curtop.second *(1.0/(graph[curtop.first].size()-1)), curtop.first});
                     }
                 }
             }
         }
         
+        // after level look at queue for answer.
         while (!qu.empty()) {
             cell curtop = qu.front();
             qu.pop();
