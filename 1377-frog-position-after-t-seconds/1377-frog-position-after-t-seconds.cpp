@@ -21,6 +21,10 @@ public:
                 cell curtop = qu.front();
                 qu.pop();
                 // cout << curtop.first << " " <<curtop.second << endl;
+                if (visited[curtop.first]) {
+                    qu.push(curtop);
+                    continue;
+                }
                 
                 visited[curtop.first] = true;
                 int valid_neighbours = 0;
