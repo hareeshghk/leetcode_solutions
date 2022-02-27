@@ -32,10 +32,10 @@ public:
                 high = max(high, curroot.second);
                 
                 if(curroot.first->left != nullptr) {
-                    bfs_q.push(cell(curroot.first->left, (2*curroot.second-low)));
+                    bfs_q.push(cell(curroot.first->left, (2*(curroot.second)-low)));
                 }
                 if(curroot.first->right != nullptr) {
-                    bfs_q.push(cell(curroot.first->right, (2*curroot.second)+1-low));
+                    bfs_q.push(cell(curroot.first->right, (2*curroot.second+1-low)));
                 }
             }
             maxwidth = max(maxwidth, high-low+1);
