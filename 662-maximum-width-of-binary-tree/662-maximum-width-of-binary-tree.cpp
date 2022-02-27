@@ -23,13 +23,12 @@ public:
         
         while (!bfs_q.empty()) {
             int cursize = bfs_q.size();
-            long long int low = INT_MAX;
-            long long int high = INT_MIN;
+            long long int low = bfs_q.front().second;
+            long long int high;
+            cell curroot;
             for (int i = 0; i < cursize; ++i) {
-                auto curroot = bfs_q.front();
+                curroot = bfs_q.front();
                 bfs_q.pop();
-                low = min(low, curroot.second);
-                high = max(high, curroot.second);
                 
                 if(curroot.first->left != nullptr) {
                     bfs_q.push(cell(curroot.first->left, (2*(curroot.second-low))));
@@ -38,6 +37,7 @@ public:
                     bfs_q.push(cell(curroot.first->right, (2*(curroot.second-low)+1)));
                 }
             }
+            high = curroot.second;
             maxwidth = max(maxwidth, high-low+1);
         }
         return maxwidth;
