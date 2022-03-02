@@ -9,39 +9,25 @@
  */
 class Solution {
 public:
-    vector<TreeNode*> chosenpath1;
-    vector<TreeNode*> chosenpath2;
-    vector<TreeNode*> candidates;
+    TreeNode* ans;
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        bool found = dfs(root, p);
-        chosenpath2 = chosenpath1;
-        chosenpath1.clear();
-        candidates.clear();
-        found = dfs(root, q);
-        int i = 0;
-        while (i < chosenpath1.size() && i < chosenpath2.size()) {
-            if (chosenpath1[i] != chosenpath2[i]) return chosenpath1[i-1];
-            i++;
-        }
-        if (i == chosenpath1.size()) return chosenpath1[i-1];
-        else if(i == chosenpath2.size()) return chosenpath2[i-1];
-        return nullptr;
+        dfs(root, p, q);
+        return ans;
     }
     
-    bool dfs(TreeNode *root, TreeNode* p) {
+    bool dfs(TreeNode *root, TreeNode* p, TreeNode* q) {
         if (root == nullptr) return false;
-        if (root == p) {
-            candidates.push_back(root);
-            chosenpath1 = candidates;
-            return true;
+        
+        int left = dfs(root->left, p, q)?1:0;
+        
+        int right = dfs(root->right, p, q)?1:0;
+        
+        int mid = (root == p || root == q)?1:0;
+        
+        if (left+right+mid >= 2) {
+            ans = root;
         }
-        candidates.push_back(root);
-        bool f;
-        f = dfs(root->left, p);
-        if (f) return f;
-        f = dfs(root->right, p);
-        if (f) return f;
-        candidates.pop_back();
-        return false;
+        
+        return (left+mid+right) > 0;
     }
 };
