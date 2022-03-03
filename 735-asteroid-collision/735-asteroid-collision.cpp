@@ -2,39 +2,34 @@ class Solution {
 public:
     vector<int> asteroidCollision(vector<int>& asteroids) {
         int n = asteroids.size();
-        vector<bool> destroyed(n, false);
+        deque<int> st;
         
+        bool currentbroken;
         for (int i = 0; i < n; ++i) {
-            if (asteroids[i] < 0) {
-                int j = i-1;
-                while (j >= 0) {
-                    if (destroyed[j]) {
-                        j--;
-                        continue;
-                    }
-                    
-                    if (asteroids[j] < 0) {
-                        j--; continue;
-                    }
-                    if (asteroids[j] < abs(asteroids[i])) {
-                        destroyed[j] = true;
-                    } else if (asteroids[j] == abs(asteroids[i])) {
-                        destroyed[j] = true;
-                        destroyed[i] = true;
+            if (!st.empty() && asteroids[st.back()] > 0 && asteroids[i] < 0) {
+                currentbroken = false;
+                while (!st.empty() && asteroids[st.back()] > 0) {
+                    if (asteroids[st.back()] < abs(asteroids[i])) {
+                        st.pop_back();
+                    } else if (asteroids[st.back()] == abs(asteroids[i])) {
+                        st.pop_back();
+                        currentbroken = true;
                         break;
                     } else {
+                        currentbroken = true;
                         break;
                     }
-                    j--;
                 }
-                if (j >= 0) destroyed[i] = true;
+                if (!currentbroken) st.push_back(i);
+            } else {
+                st.push_back(i);
             }
         }
         
         vector<int> result;
-        
-        for (int i = 0; i < n; i++) {
-            if (!destroyed[i]) result.push_back(asteroids[i]);
+        while (!st.empty()) {
+            result.push_back(asteroids[st.front()]);
+            st.pop_front();
         }
         return result;
     }
