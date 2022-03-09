@@ -1,31 +1,30 @@
+#include <semaphore.h>
 class Foo {
-    mutex firstlock, secondlock;
+    sem_t firstdone, seconddone;
 public:
     Foo() {
-        firstlock.lock();
-        secondlock.lock();
+        sem_init(&firstdone, 0, 0);
+        sem_init(&seconddone, 0, 0);
     }
 
     void first(function<void()> printFirst) {
         
         // printFirst() outputs "first". Do not change or remove this line.
         printFirst();
-        firstlock.unlock();
+        sem_post(&firstdone);
     }
 
     void second(function<void()> printSecond) {
-        firstlock.lock();
+        sem_wait(&firstdone);
         
         // printSecond() outputs "second". Do not change or remove this line.
         printSecond();
-        firstlock.unlock();
-        secondlock.unlock();
+        sem_post(&seconddone);
     }
 
     void third(function<void()> printThird) {
-        secondlock.lock();
+        sem_wait(&seconddone);
         // printThird() outputs "third". Do not change or remove this line.
         printThird();
-        secondlock.unlock();
     }
 };
