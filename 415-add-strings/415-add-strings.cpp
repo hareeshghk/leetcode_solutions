@@ -6,37 +6,25 @@ public:
         
         string ans;
         
-        int sum, carry = 0;
-        while(num1idx >=0 && num2idx>=0) {
-            sum = (num1[num1idx]-'0') + (num2[num2idx]-'0') + carry;
+        int sum, carry = 0, x, y;
+        while(num1idx >=0 || num2idx>=0) {
+            x = num1idx>=0?(num1[num1idx]-'0'):0;
+            y = num2idx>=0?(num2[num2idx]-'0'):0;
+            sum =  x+ y+ carry;
             carry = sum/10;
             sum = sum%10;
+            
             ans += (char) (sum+'0');
             num1idx--;
-            num2idx--;
-        }
-        
-        while (num1idx >=0) {
-            sum = (num1[num1idx]-'0') + carry;
-            carry = sum/10;
-            sum = sum%10;
-            ans += (char) (sum+'0');
-            num1idx--;
-        }
-        
-        while (num2idx >=0) {
-            sum = (num2[num2idx]-'0') + carry;
-            carry = sum/10;
-            sum = sum%10;
-            ans += (char) (sum+'0');
             num2idx--;
         }
         
         if (carry != 0) {
-            ans += (char)(carry+'0');
+            ans += (char) (carry+'0');
         }
         
         reverse(ans.begin(), ans.end());
         return ans;
+        
     }
 };
