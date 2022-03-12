@@ -13,45 +13,43 @@ public:
     }
 };
 
-typedef long long int lli;
-
 class medians {
-    mypriority_queue<lli> maxheap;
-    mypriority_queue<lli, vector<lli>, greater<lli>> minheap;
+    multiset<int, greater<int>> maxheap;
+    multiset<int> minheap;
 public:
     void insert(int val) {
-        if (maxheap.empty() || val <= maxheap.top()) {
-            maxheap.push(val);
+        if (maxheap.empty() || val <= *(maxheap.begin())) {
+            maxheap.insert(val);
         } else {
-            minheap.push(val);
+            minheap.insert(val);
         }
         rebalanceheaps();
     }
     
     void erase(int val) {
-        if (val <= maxheap.top()) {
-            maxheap.remove(val);
+        if (val <= *(maxheap.begin())) {
+            maxheap.erase(find(maxheap.begin(), maxheap.end(), val));
         } else {
-            minheap.remove(val);
+            minheap.erase(find(minheap.begin(), minheap.end(), val));
         }
         rebalanceheaps();
     }
     
     double getmedian() {
         if (maxheap.size() > minheap.size()) {
-            return maxheap.top();
+            return *maxheap.begin();
         } else {
-            return (maxheap.top() + minheap.top())*0.5;
+            return ((double)*(maxheap.begin()) + (double)*(minheap.begin()))*0.5;
         }
     }
     
     void rebalanceheaps() {
         if (maxheap.size() > minheap.size()+1) {
-            minheap.push(maxheap.top());
-            maxheap.pop();
+            minheap.insert(*(maxheap.begin()));
+            maxheap.erase(maxheap.begin());
         } else if (maxheap.size() < minheap.size()) {
-            maxheap.push(minheap.top());
-            minheap.pop();
+            maxheap.insert(*(minheap.begin()));
+            minheap.erase(minheap.begin());
         }
     }
 };
