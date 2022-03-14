@@ -13,14 +13,11 @@ public:
     void reorderList(ListNode* head) {
         if (head == nullptr || head->next == nullptr) return;
         // cut at middle with slow fast pointers.
-        ListNode *slow=head, *fast=head, *prev;
-        do {
-            prev = slow;
+        ListNode *slow=head, *fast=head;
+        while(fast != nullptr && fast->next != nullptr) {
             slow = slow->next;
             fast = fast->next->next;
-        } while(fast != nullptr && fast->next != nullptr);
-        // cut the first part.
-        // prev->next = nullptr;
+        }
         
         // reverse second half
         ListNode* secondhead = reverse(slow);
@@ -28,7 +25,7 @@ public:
         // merge both
         ListNode *firsthead = head;
         
-        while (firsthead != nullptr && secondhead != nullptr && firsthead != secondhead) {
+        while (secondhead->next != nullptr) {
             ListNode *temp = firsthead->next;
             firsthead->next = secondhead;
             ListNode *temp2 = secondhead->next;
@@ -36,7 +33,6 @@ public:
             firsthead = temp;
             secondhead = temp2;   
         }
-        firsthead->next = nullptr;
     }
     
     ListNode *reverse(ListNode *head) {
