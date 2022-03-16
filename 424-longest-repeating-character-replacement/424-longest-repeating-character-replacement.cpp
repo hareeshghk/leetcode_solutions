@@ -3,11 +3,13 @@ public:
     int characterReplacement(string s, int k) {
         vector<int> freq_map(26, 0);
         int maxlen = 0;
+        int maxfreq;
         int ws = 0;
         for (int we = 0; we < s.length(); ++we) {
             freq_map[s[we]-'A']++;
+            maxfreq = max(maxfreq, freq_map[s[we]-'A']);
             
-            while (we-ws+1 - maxfreq(freq_map) > k) {
+            if (we-ws+1 - maxfreq > k) {
                 freq_map[s[ws]-'A']--;
                 ws++;
             }
