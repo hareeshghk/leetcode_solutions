@@ -11,20 +11,19 @@
  */
 class Solution {
 public:
-    int count, ans;
     int kthSmallest(TreeNode* root, int k) {
-        count  = 0;
-        ans = -1;
-        traverse(root, k);
-        return ans;
-    }
-    
-    void traverse(TreeNode *root, int k) {
-        if (root == nullptr) return;
+        stack<TreeNode*> st;
         
-        traverse(root->left, k);
-        count++;
-        if (count == k) ans =root->val;
-        traverse(root->right, k);
+        do {
+            while (root != nullptr) {
+                st.push(root);
+                root = root->left;
+            }
+            root = st.top();
+            st.pop();
+            if (--k == 0) return root->val;
+            root = root->right;
+        } while (root != nullptr || !st.empty());
+        return -1;
     }
 };
