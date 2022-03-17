@@ -4,18 +4,8 @@ public:
         int n = s.length();
         
         int diff1 = 0, diff2 = 0;
-        if (n%2 == 0) {
-            for (int i = 0; i < n; i++) {
-                if ((s[i] =='1') ^ (i&1)) {
-                    diff1++;
-                } else {
-                    diff2++;
-                }
-            }
-            return min(diff1, diff2);
-        }
         
-        s = s+s;
+        if (n&1) s = s+s;
         
         int ws = 0;
         int result = INT_MAX;
