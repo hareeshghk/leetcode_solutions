@@ -12,22 +12,23 @@ public:
 class Solution {
 public:
     Node* flatten(Node* head) {
-        Node *current = head;
-        while (current != nullptr) {
-            if(current->child == nullptr) {
-                current = current->next;
-            } else {
-                auto temp = current->next;
-                auto child = current->child;
-                current->next = child;
-                child->prev = current;
-                auto tail = flattenandreturntail(current->next);
-                tail->next = temp;
-                if (temp != nullptr) temp->prev = tail;
-                current->child = nullptr;
-                current = temp;
-            }
-        }
+        // Node *current = head;
+        flattenandreturntail(head);
+        // while (current != nullptr) {
+        //     if(current->child == nullptr) {
+        //         current = current->next;
+        //     } else {
+        //         auto temp = current->next;
+        //         auto child = current->child;
+        //         current->next = child;
+        //         child->prev = current;
+        //         auto tail = flattenandreturntail(current->next);
+        //         tail->next = temp;
+        //         if (temp != nullptr) temp->prev = tail;
+        //         current->child = nullptr;
+        //         current = temp;
+        //     }
+        // }
         return head;
     }
     
