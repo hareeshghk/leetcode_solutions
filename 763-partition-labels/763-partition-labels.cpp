@@ -1,25 +1,29 @@
 class Solution {
 public:
     vector<int> partitionLabels(string s) {
-        vector<int> mapper(26, -1);
-        int s_len = s.length();
-        for (int i = 0; i < s_len; ++i) {
-            if (mapper[s[i]-'a'] == -1)
-                mapper[s[i]-'a'] = i;
+        vector<int> freq(26, 0);
+        unordered_set<char> seen;
+        
+        for (auto ch : s) {
+            freq[ch-'a']++;
         }
         
-        int left = s_len-1;
-        int right = s_len-1;
+        int n = s.length();
+        int start = 0;
+        int zeroedcount = 0;
         vector<int> result;
-        for (int i = s_len-1; i >=0; --i) {
-            left = min(left, mapper[s[i]-'a']);
-            if (left == i) {
-                result.push_back(right-left+1);
-                right = left - 1;
+        for (int i = 0; i < n; i++) {
+            seen.insert(s[i]);
+            freq[s[i]-'a']--;
+            if (freq[s[i]-'a'] == 0) {
+                zeroedcount++;
+            }
+            if (zeroedcount == seen.size()) {
+                result.push_back(i-start+1);
+                start = i+1;
             }
         }
         
-        reverse(result.begin(), result.end());
         return result;
     }
 };
