@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isRobotBounded(string instructions) {
-        // directions is 4 use 0,1,2,3
         int dx = 0, dy = 1;
         int x = 0, y = 0;
         for (auto ch : instructions) {
