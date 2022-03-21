@@ -2,23 +2,24 @@ class Solution {
 public:
     bool isRobotBounded(string instructions) {
         // directions is 4 use 0,1,2,3
-        int direction = 0;
-        unordered_map<int, pair<int,int>> dirs {{0, make_pair(0,1)},{1, make_pair(1,0)},{2, make_pair(0,-1)},{3, make_pair(-1,0)}};
-        int x=0,y=0;
+        int dx = 0, dy = 1;
+        int x = 0, y = 0;
         for (auto ch : instructions) {
             if (ch == 'G') {
-                x += dirs[direction].first;
-                y += dirs[direction].second;
+                x += dx;
+                y += dy;
             } else if (ch == 'L') {
-                direction = (direction-1+4)%4;
+                swap(dx,dy);
+                dx = -dx;
             } else {
-                direction = (direction + 1)%4;
+                swap(dx,dy);
+                dy = -dy;
             }
         }
         
         if (x == 0 && y== 0) return true;
         
-        if (direction == 0) return false;
+        if (dx == 0 && dy == 1) return false;
         return true;
     }
 };
