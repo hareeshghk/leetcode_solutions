@@ -29,9 +29,8 @@ class Solution {
 public:
     bool validTree(int n, vector<vector<int>>& edges) {
         // connected graph and no cycles is called tree.
-        // from edged use disjoin union to find cycle
-        // for no cylces we need n-1 edjes.
-        
+        // from edges use disjoiny union to find cycle
+        // for no cylces we need n-1 edges.
         int e = edges.size();
         
         if (e != n-1) return false;
