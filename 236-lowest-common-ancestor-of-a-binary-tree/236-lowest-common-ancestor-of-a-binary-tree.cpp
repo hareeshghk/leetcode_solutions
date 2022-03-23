@@ -24,7 +24,7 @@ public:
         
         int mid = (root == p || root == q)?1:0;
         
-        if (left+right+mid >= 2) {
+        if (left+right+mid == 2) {
             ans = root;
         }
         
