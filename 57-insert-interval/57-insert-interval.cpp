@@ -2,17 +2,30 @@ class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
         int n = intervals.size();
-        if (n == 0 || intervals[n-1][1] < newInterval[0]) {
+        if (n==0) {
             intervals.push_back(newInterval);
             return intervals;
-        } else if(intervals[0][0] > newInterval[1]) {
+        }
+        
+        vector<vector<int>> result;
+        // find position for new interval.
+        // newinterval at start
+        if (newInterval[1] < intervals[0][0]) {
             intervals.insert(intervals.begin(), newInterval);
             return intervals;
         }
         
-        int l = 0, r = intervals.size()-1;
-        while(l < r) {
-            int mid = l +(r-l)/2;
+        // newinterval at end
+        if (newInterval[0] > intervals[n-1][1]) {
+            intervals.push_back(newInterval);
+            return intervals;
+        }
+        
+        // find position for new interval through binary search
+        int l = 0, r = n-1, mid;
+        
+        while (l<r) {
+            mid = (l+r)/2;
             if (intervals[mid][1] < newInterval[0]) {
                 l = mid+1;
             } else {
@@ -20,26 +33,23 @@ public:
             }
         }
         
-        vector<vector<int>> result;
-        int idx = 0;
-        for (idx =0; idx < l; idx++) {
-            result.push_back(intervals[idx]);
+        for (int i = 0; i < l; i++) {
+            result.push_back(intervals[i]);
         }
         
         int start = newInterval[0];
         int end = newInterval[1];
-        while (idx < n && !(intervals[idx][0] > end)) {
-            start = min(start, intervals[idx][0]);
-            end = max(end, intervals[idx][1]);
-            idx++;
+        while (l < n && end >= intervals[l][0]) {
+            start = min(start, intervals[l][0]);
+            end = max(end, intervals[l][1]);
+            l++;
         }
+        
         result.push_back({start, end});
         
-        while (idx < n) {
-            result.push_back(intervals[idx]);
-            idx++;
+        for (int i = l; i < n; i++) {
+            result.push_back(intervals[i]);
         }
-        
         return result;
     }
 };
