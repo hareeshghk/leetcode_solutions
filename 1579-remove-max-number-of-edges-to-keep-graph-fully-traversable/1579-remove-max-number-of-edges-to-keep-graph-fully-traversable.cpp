@@ -34,18 +34,21 @@ public:
 class Solution {
 public:
     int maxNumEdgesToRemove(int n, vector<vector<int>>& edges) {
-        sort(edges.begin(), edges.end(), [](vector<int>&e1, vector<int>&e2) {return e1[0]>e2[0];});
+        // sort(edges.begin(), edges.end(), [](vector<int>&e1, vector<int>&e2) {return e1[0]>e2[0];});
         
         DSU alice(n), bob(n);
         
         int ans = 0;
-        for (auto edge : edges) {
-            if (edge[0] == 1) {
-                if(!alice.unionfind(edge[1], edge[2])) ans++;
-            } else if (edge[0] == 2) {
-                if(!bob.unionfind(edge[1], edge[2])) ans++;
-            } else {
-                if ((!alice.unionfind(edge[1], edge[2])) || (!bob.unionfind(edge[1], edge[2]))) ans++;
+        for (int i = 3; i>=1;i--) {
+            for (auto edge : edges) {
+                if (edge[0] != i) continue;
+                if (edge[0] == 1) {
+                    if(!alice.unionfind(edge[1], edge[2])) ans++;
+                } else if (edge[0] == 2) {
+                    if(!bob.unionfind(edge[1], edge[2])) ans++;
+                } else {
+                    if ((!alice.unionfind(edge[1], edge[2])) || (!bob.unionfind(edge[1], edge[2]))) ans++;
+                }
             }
         }
         
