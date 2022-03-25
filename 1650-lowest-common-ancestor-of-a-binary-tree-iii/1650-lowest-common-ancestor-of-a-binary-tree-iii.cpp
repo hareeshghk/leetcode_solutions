@@ -12,15 +12,33 @@ public:
 class Solution {
 public:
     Node* lowestCommonAncestor(Node* p, Node * q) {
-        unordered_set<Node*> visitednodes;
+        Node *p_c, *q_c;
+        p_c = p;
+        q_c = q;
         
-        while (p!=nullptr) {
-            visitednodes.insert(p);
+        int p_len=0,q_len=0;
+        
+        while (p_c!=nullptr) {
+            ++p_len;
+            p_c = p_c->parent;
+        }
+        
+        while (q_c!=nullptr) {
+            ++q_len;
+            q_c = q_c->parent;
+        }
+        
+        if (p_len < q_len) {
+            swap(p,q);
+        }
+        
+        for (int i = 0; i < abs(p_len-q_len); ++i) {
             p = p->parent;
         }
         
-        while (q!=nullptr) {
-            if (visitednodes.find(q) != visitednodes.end()) return q;
+        while (p != nullptr || q!=nullptr) {
+            if(p==q) return p;
+            p = p->parent;
             q = q->parent;
         }
         return nullptr;
