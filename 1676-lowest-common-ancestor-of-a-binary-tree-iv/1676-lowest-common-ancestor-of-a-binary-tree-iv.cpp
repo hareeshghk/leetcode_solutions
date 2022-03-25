@@ -14,25 +14,24 @@ public:
     TreeNode* result;
     TreeNode* lowestCommonAncestor(TreeNode* root, vector<TreeNode*> &nodes) {
         result = nullptr;
-        findNodes(root, nodes);
+        unordered_set<TreeNode*> nodesmap;
+        for (auto node : nodes) {
+            nodesmap.insert(node);
+        }
+        findNodes(root, nodesmap);
         return result;
     }
     
-    int findNodes(TreeNode* root, vector<TreeNode*> &nodes) {
+    int findNodes(TreeNode* root, const unordered_set<TreeNode*> &nodesmap) {
         if (root == nullptr) return 0;
         
         int curval = 0;
-        for (auto node : nodes) {
-            if (node == root) {
-                curval++;
-                break;
-            }
-        }
+        if (nodesmap.count(root) != 0) ++curval;
         
-        int leftval = findNodes(root->left, nodes);
-        int rightval = findNodes(root->right, nodes);
+        int leftval = findNodes(root->left, nodesmap);
+        int rightval = findNodes(root->right, nodesmap);
         
-        if (curval + leftval+rightval == nodes.size()) {
+        if (curval + leftval+rightval == nodesmap.size()) {
             if (curval == 0) {
                 if (leftval != 0 && rightval !=0) result = root;
             } else if (curval != 0) {
