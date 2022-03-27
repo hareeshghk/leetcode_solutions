@@ -2,27 +2,45 @@ class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
         int n = heights.size();
-        int ans = 0;
-        stack<int> st;
-        for (int i = 0; i < n; ++i) {
-            if (st.empty() || heights[st.top()] <= heights[i]) {
-                st.push(i);
-            } else {
-                while (!st.empty() && heights[st.top()] > heights[i]) {
-                    int curtop = st.top();
-                    st.pop();
-                    ans = max(ans, heights[curtop] * (st.empty()? (i):(i - st.top() - 1)));
-                }
-                st.push(i);
+        stack<int> nearsmalltoright, nearsmalltoleft;
+        vector<int> nstr(n), nstl(n);
+        nstr[n-1] = -1;
+        for (int i =n-1; i >=0; i--) {
+            while (!nearsmalltoright.empty() && heights[nearsmalltoright.top()] >= heights[i]) {
+                nearsmalltoright.pop();
             }
+            if (nearsmalltoright.empty()) {
+                nstr[i] = -1;
+            } else {
+                nstr[i] = nearsmalltoright.top();
+            }
+            nearsmalltoright.push(i);
         }
         
-        while (!st.empty()) {
-            auto curtop = st.top();
-            st.pop();
-            ans = max(ans, heights[curtop] * (n - (st.empty()?0:(st.top()+1))));
-        }
+        // for (int i = 0; i < n; i++) {
+        //     cout << nstr[i] << " ";
+        // }
+        // cout << endl;
         
-        return ans;
+        int maxarea = 0;
+        for (int i = 0; i < n; i++) {
+            while (!nearsmalltoleft.empty() && heights[nearsmalltoleft.top()] >= heights[i]) {
+                nearsmalltoleft.pop();
+            }
+            if (nearsmalltoleft.empty()) {
+                nstl[i] = -1;
+            } else {
+                nstl[i] = nearsmalltoleft.top();
+            }
+            nearsmalltoleft.push(i);
+            
+            int area = heights[i] * (1 + (nstl[i]==-1?i:i-nstl[i]-1)+(nstr[i]==-1?n-i-1:nstr[i]-i-1));
+            maxarea = max(maxarea, area);
+        }
+        // for (int i = 0; i < n; i++) {
+        //     cout << nstl[i] << " ";
+        // }
+        cout << endl;
+        return maxarea;
     }
 };
