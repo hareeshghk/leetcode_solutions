@@ -2,21 +2,24 @@ class Solution {
 public:
     int change(int amount, vector<int>& coins) {
         int n = coins.size();
-        dp.resize(amount+1, vector<int>(n+1, -1));
-        return numways(coins, amount, n-1);
-    }
-    vector<vector<int>> dp;
-    int numways(vector<int> &coins, int amount, int idx) {
-        if (amount == 0) return 1;
-        if (amount<0) return 0;
-        if (idx < 0) {
-            if (amount == 0) return 1;
-            else return 0;
+        vector<vector<int>> dp(n, vector<int>(amount+1, 0));
+        for (int i = 0; i <=amount; ++i) {
+            if (i%coins[0] == 0) dp[0][i] = 1;
+            // cout << dp[0][i] << " ";
         }
-        if (dp[amount][idx] != -1) return dp[amount][idx];
-        int a = numways(coins, amount-coins[idx], idx);
-        int b = numways(coins, amount, idx-1);
-        dp[amount][idx] = a+b;
-        return a+b;
+        // cout << endl;
+        
+        // first column
+        for (int i = 0; i < n; i++) {
+            dp[i][0] = 1;
+        }
+        
+        for (int i = 1; i < n; i++) {
+            for (int j =0;j<=amount; j++) {
+                if (j>=coins[i]) dp[i][j] = dp[i][j-coins[i]]+dp[i-1][j];
+                else dp[i][j] = dp[i-1][j];
+            }
+        }
+        return dp[n-1][amount];
     }
 };
