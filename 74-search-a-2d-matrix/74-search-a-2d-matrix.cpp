@@ -4,14 +4,16 @@ public:
         int m = matrix.size();
         int n = matrix[0].size();
         
-        int i = 0, j = n-1;
-        auto valid = [m,n](int i, int j) {return (i>=0 && i < m && j>=0 && j <n);};
-        while (valid(i,j)) {
-            if (target==matrix[i][j]) return true;
-            if (target < matrix[i][j]) {
-                j--;
+        int left =0,right =m*n-1, x,y;
+        while (left <= right) {
+            int mid = (left+right)/2;
+            x = mid/n;
+            y = mid%n;
+            if (matrix[x][y] == target) return true;
+            if (target < matrix[x][y]) {
+                right = mid-1;
             } else {
-                i++;
+                left = mid+1;
             }
         }
         return false;
