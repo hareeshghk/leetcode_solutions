@@ -28,9 +28,11 @@ public:
                 turnGreen();
                 green_acquired_road = 1;
                 crossCar();
-                cv.notify_all();
             }
             --roadA_cars_blocked;
+            if (roadA_cars_blocked == 0) {
+                cv.notify_all();
+            }
         }
         else {
             ++roadB_cars_blocked;
@@ -41,9 +43,11 @@ public:
                 turnGreen();
                 green_acquired_road = 2;
                 crossCar();
-                cv.notify_all();
             }
             --roadB_cars_blocked;
+            if (roadB_cars_blocked == 0) {
+                cv.notify_all();
+            }
         }
     }
 };
