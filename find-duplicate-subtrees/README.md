@@ -1,3 +1,4 @@
+[Discussion Post (created on 16/3/2022 at 18:42)](https://leetcode.com/problems/find-duplicate-subtrees/discuss/1953227/C%2B%2B-one-pass-with-set-and-map)  
 <h2>  Find Duplicate Subtrees</h2><hr><div><p>Given the <code>root</code>&nbsp;of a binary tree, return all <strong>duplicate subtrees</strong>.</p>
 
 <p>For each kind of duplicate subtrees, you only need to return the root node of any <b>one</b> of them.</p>
