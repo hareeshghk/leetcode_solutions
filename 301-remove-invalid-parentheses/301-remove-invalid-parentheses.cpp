@@ -20,12 +20,12 @@ public:
         misplacedOpen = opened-closed;
         
         // cout << misplacedOpen << " " << misplacedClose << endl;
-        
-        backtrack(s, 0, misplacedOpen, misplacedClose, 0, 0, "");
+        string cur = "";
+        backtrack(s, 0, misplacedOpen, misplacedClose, 0, 0, cur);
         return result;
     }
     
-    void backtrack(string &s, int idx, int mo, int mc, int o, int c, string cur) {
+    void backtrack(string &s, int idx, int mo, int mc, int o, int c, string &cur) {
         if (o < c) return;
         
         if (idx == s.length()) {
@@ -38,15 +38,20 @@ public:
             return;
         }
         
-        if (s[idx] == '(') {
-            backtrack(s, idx+1, mo, mc, o+1, c, cur+s[idx]);
-            if (mo > 0) backtrack(s, idx+1, mo-1, mc, o, c, cur);
-        } else if (s[idx] == ')') {
-            backtrack(s, idx+1, mo, mc, o, c+1, cur+s[idx]);
-            if (mc > 0) backtrack(s, idx+1, mo, mc-1, o, c, cur);
-        } else {
-            backtrack(s, idx+1, mo, mc, o, c, cur+s[idx]);
+        if ((s[idx] == '(' && mo > 0)||(s[idx] ==')' && mc >0)) {
+            backtrack(s, idx+1, mo - (s[idx]=='('?1:0), mc - (s[idx]==')'?1:0), o, c, cur);
         }
+        
+        cur += s[idx];
+            
+        if (s[idx] == '(') {
+            backtrack(s, idx+1, mo, mc, o+1, c, cur);
+        } else if (s[idx] == ')') {
+            backtrack(s, idx+1, mo, mc, o, c+1, cur);
+        } else {
+            backtrack(s, idx+1, mo, mc, o, c, cur);
+        }
+        cur.pop_back();
     }
     
     bool IsValid(string &s, int idx, int o, int c) {
