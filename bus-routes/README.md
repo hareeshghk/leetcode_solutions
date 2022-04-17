@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/3/2022 at 22:23)](https://leetcode.com/problems/bus-routes/discuss/1957931/C%2B%2B-BFS-solution)  
 <h2>  Bus Routes</h2><hr><div><p>You are given an array <code>routes</code> representing bus routes where <code>routes[i]</code> is a bus route that the <code>i<sup>th</sup></code> bus repeats forever.</p>
 
 <ul>
