@@ -1,34 +1,31 @@
 class BoundedBlockingQueue {
-    condition_variable cvpush,cvpop;
-    mutex m;
+    mutex mtx;
+    condition_variable cv;
     queue<int> q;
-    int current_size, capacity;;
+    int capacity;
 public:
     BoundedBlockingQueue(int capacity) {
         this->capacity = capacity;
-        current_size = 0;
     }
     
     void enqueue(int element) {
-        unique_lock<mutex> ul(m);
-        cvpush.wait(ul, [this](){return current_size < capacity;});
-        ++current_size;
+        unique_lock<mutex> ul(mtx);
+        cv.wait(ul, [this](){return q.size() < capacity;});
         q.push(element);
-        cvpop.notify_one();
+        cv.notify_one();
     }
     
     int dequeue() {
-        unique_lock<mutex> ul(m);
-        cvpop.wait(ul, [this](){return current_size!=0;});
-        --current_size;
+        unique_lock<mutex> ul(mtx);
+        cv.wait(ul, [this](){return q.size() > 0;});
         int val = q.front();
         q.pop();
-        cvpush.notify_one();
+        cv.notify_one();
         return val;
     }
     
     int size() {
-        lock_guard<mutex> lg(m);
-        return current_size;
+        unique_lock<mutex> ul(mtx);
+        return q.size();
     }
 };
