@@ -25,7 +25,7 @@ public:
     }
     
     int size() {
-        unique_lock<mutex> ul(mtx);
+        lock_guard<mutex> ul(mtx);
         return q.size();
     }
 };
