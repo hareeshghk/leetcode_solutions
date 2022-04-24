@@ -21,6 +21,8 @@ public:
         auto &val_pair = timeTaken[key];
         val_pair.first += t-src.second;
         val_pair.second++;
+        
+        checkins.erase(id);
     }
     
     double getAverageTime(string startStation, string endStation) {
