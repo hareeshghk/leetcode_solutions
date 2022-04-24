@@ -13,17 +13,14 @@ public:
     void checkOut(int id, string stationName, int t) {
         auto src = checkins[id];
         
-        if (timeTaken.find(src.first + ","+stationName) == timeTaken.end()) {
-            timeTaken[src.first + ","+stationName] = make_pair(0,0);
+        string key = src.first + ","+stationName;
+        if (timeTaken.find(key) == timeTaken.end()) {
+            timeTaken[key] = make_pair(0,0);
         }
-        timeTaken[src.first + ","+stationName].first += t-src.second;
-        timeTaken[src.first + ","+stationName].second++;
         
-        // if (timeTaken.find(stationName + ","+src.first) == timeTaken.end()) {
-        //     timeTaken[stationName + ","+src.first] = make_pair(0,0);
-        // }
-        // timeTaken[stationName + ","+src.first].first += t-src.second;
-        // timeTaken[stationName + ","+src.first].second++;
+        auto &val_pair = timeTaken[key];
+        val_pair.first += t-src.second;
+        val_pair.second++;
     }
     
     double getAverageTime(string startStation, string endStation) {
