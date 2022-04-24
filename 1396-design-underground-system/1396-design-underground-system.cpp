@@ -26,7 +26,7 @@ public:
     }
     
     double getAverageTime(string startStation, string endStation) {
-        auto val = timeTaken[startStation+","+endStation];
+        auto &val = timeTaken[startStation+","+endStation];
         
         return (val.first*1.0)/val.second;
     }
