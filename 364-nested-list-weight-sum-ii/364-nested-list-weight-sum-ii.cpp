@@ -29,31 +29,26 @@
  */
 class Solution {
 public:
-    int elementsSum;
-    int maxDepth;
-    int depthSum;
+    int maxdepth, totalSum, productWithDepthSum;
     int depthSumInverse(vector<NestedInteger>& nestedList) {
-        elementsSum = 0;
-        maxDepth = 0;
-        depthSum = 0;
-        for (auto item : nestedList) {
-            depth(item, 1);
-        }
-        return (elementsSum *(maxDepth+1)) - depthSum;
+        // initialization
+        maxdepth = 1;
+        totalSum = 0;
+        productWithDepthSum = 0;
+        
+        RecurseSolve(nestedList, 1);
+        return (((maxdepth+1)*totalSum) - productWithDepthSum);
     }
     
-    void depth(const NestedInteger &item, int d) {
-        if (item.isInteger()) {
-            int val = item.getInteger();
-            depthSum += val * d;
-            maxDepth = max(maxDepth, d);
-            elementsSum += val;
-            return;
-        }
-        
-        auto nestedList = item.getList();
-        for (auto it : nestedList) {
-            depth(it, d+1);
+    void RecurseSolve(vector<NestedInteger>& nestedList, int depth) {
+        maxdepth = max(maxdepth, depth);
+        for (auto obj : nestedList) {
+            if (obj.isInteger()) {
+                totalSum += obj.getInteger();
+                productWithDepthSum += obj.getInteger()*depth;
+            } else {
+                RecurseSolve(obj.getList(), depth+1);
+            }
         }
     }
 };
