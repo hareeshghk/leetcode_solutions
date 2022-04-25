@@ -31,6 +31,7 @@ public:
         if (root->val != minval) {
             result = min(result, root->val);
             found = true;
+            return;
         }
         
         dfs(root->left);
