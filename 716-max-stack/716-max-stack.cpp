@@ -1,52 +1,96 @@
+class Node {
+public:
+    shared_ptr<Node> prev;
+    shared_ptr<Node> next;
+    int val;
+    Node(int v) {
+        val = v;
+        prev = nullptr;
+        next = nullptr;
+    }
+};
+
 class MaxStack {
-    stack<int> st, maxelements;
+    map<int, vector<shared_ptr<Node>>> maxelements;
+    shared_ptr<Node> head,tail;
 public:
     MaxStack() {
-        
+        head = make_shared<Node>(-1);
+        tail = make_shared<Node>(-1);
+        head->next = tail;
+        tail->prev = head; 
     }
     
     void push(int x) {
-        st.push(x);
-        if (maxelements.empty() || maxelements.top() <= x) {
-            maxelements.push(x);
+        addNode(x);
+        if (maxelements.count(x) == 0) {
+            maxelements[x] = vector<shared_ptr<Node>>{};
         }
+        maxelements[x].push_back(this->getTopPointer());
     }
     
     int pop() {
-        int val = st.top();
-        st.pop();
-        
-        if(!maxelements.empty() && maxelements.top() == val) {
-            maxelements.pop();
+        int data = this->removeTopVal();
+        maxelements[data].pop_back();
+        if (maxelements[data].size() == 0) {
+            maxelements.erase(data);
         }
-        return val;
+        return data;
     }
     
     int top() {
-        return st.top();
+        return getTopVal();
     }
     
     int peekMax() {
-        return maxelements.top();
+        auto &lastVal = *(maxelements.rbegin());
+        return lastVal.first;
     }
     
     int popMax() {
-        stack<int> temp;
-        int val = maxelements.top();
-        maxelements.pop();
+        auto &lastVal = *(maxelements.rbegin());
         
-        while (st.top() != val) {
-            temp.push(st.top());
-            st.pop();
+        auto node = lastVal.second[lastVal.second.size()-1];
+        lastVal.second.pop_back();
+        
+        int result = lastVal.first;
+        // cout << result << endl;
+        if (lastVal.second.size() == 0) {
+            maxelements.erase(lastVal.first);
         }
         
-        st.pop();
+        removeNode(node);
         
-        while (!temp.empty()) {
-            this->push(temp.top());
-            temp.pop();
-        }
-        return val;
+
+        return result;
+    }
+    
+    void addNode(int val) {
+        auto newNode = make_shared<Node>(val);
+        
+        newNode->next = head->next;
+        head->next->prev = newNode;
+        head->next = newNode;
+        newNode->prev = head;
+    }
+    
+    int getTopVal() {
+        return head->next->val;
+    }
+    
+    int removeTopVal() {
+        int data = head->next->val;
+        removeNode(head->next);
+        return data;
+    }
+    
+    void removeNode(shared_ptr<Node> node) {
+        node->prev->next = node->next;
+        node->next->prev = node->prev;
+    }
+    
+    shared_ptr<Node> getTopPointer() {
+        return head->next;
     }
 };
 
