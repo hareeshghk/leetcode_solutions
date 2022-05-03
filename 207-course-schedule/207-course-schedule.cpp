@@ -1,36 +1,30 @@
 class Solution {
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        vector<vector<int>> graph(numCourses, vector<int>{});
         vector<int> inOrder(numCourses, 0);
-        
+        vector<vector<int>> graph(numCourses, vector<int>());
         for (auto p : prerequisites) {
-            graph[p[1]].push_back(p[0]);
-            inOrder[p[0]]++;
+            inOrder[p[1]]++;
+            graph[p[0]].push_back(p[1]);
         }
         
-        queue<int> sources;
+        queue<int> q;
         
-        for (int i = 0; i < numCourses; ++i) {
-            if (inOrder[i]==0)
-            sources.push(i);
+        for (int i = 0; i < inOrder.size(); ++i) {
+            if(inOrder[i] == 0) q.push(i);
         }
         
-        int counter = 0;
-        while (!sources.empty()) {
-            auto root = sources.front();
-            sources.pop();
-            counter++;
-            
-            for (auto nei : graph[root]) {
+        int nodeCount = 0;
+        while (!q.empty()) {
+            auto curNode = q.front();
+            q.pop();
+            ++nodeCount;
+            for (auto nei : graph[curNode]) {
                 inOrder[nei]--;
-                if (inOrder[nei] == 0) {
-                    sources.push(nei);
-                }
+                if (inOrder[nei] == 0)  q.push(nei);
             }
         }
         
-        return counter == numCourses;
+        return (nodeCount == numCourses);
     }
-    
 };
