@@ -2,7 +2,16 @@
       bool knows(int a, int b); */
 
 class Solution {
+    map<pair<int,int>, bool> myknows_map;
 public:
+    bool myknow(int i, int j) {
+        auto p = pair<int,int>(i, j);
+        if (myknows_map.find(p) == myknows_map.end()) {
+            myknows_map[p] = knows(i, j);
+        }
+        return myknows_map[p];
+    }
+    
     int findCelebrity(int n) {
         int candidate = 0;
         
