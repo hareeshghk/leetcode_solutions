@@ -16,31 +16,25 @@ public:
         
         if (root->left == nullptr && root->right == nullptr) return root;
         
-        TreeNode* prevRoot = nullptr, *ans = nullptr;
+        TreeNode* prevRoot = nullptr;
+        TreeNode* leftchild, *rightchild, *tl, *tr;
         
-        queue<TreeNode*> q;
-        q.push(root);
-        q.push(nullptr);
+        leftchild = root;
+        rightchild = nullptr;
         
         
-        while (!q.empty()) {
-            auto leftchild = q.front();
-            q.pop();
-            auto rightchild = q.front();
-            q.pop();
-            
-            if (leftchild->left != nullptr) {
-                q.push(leftchild->left);
-                q.push(leftchild->right);
-            } else {
-                ans = leftchild;
-            }
+        while (leftchild != nullptr) {
+            tl = leftchild->left;
+            tr = leftchild->right;
             
             leftchild->right = prevRoot;
             leftchild->left = rightchild;
             prevRoot = leftchild;
+            
+            leftchild = tl;
+            rightchild = tr;
         }
         
-        return ans;
+        return prevRoot;
     }
 };
