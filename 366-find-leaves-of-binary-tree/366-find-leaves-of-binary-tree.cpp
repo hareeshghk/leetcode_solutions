@@ -11,22 +11,23 @@
  */
 class Solution {
 public:
-    vector<vector<int>> ans;
+    vector<vector<int>> result;
     vector<vector<int>> findLeaves(TreeNode* root) {
-        findHeight(root);
-        return ans;
+        if (root == nullptr) return result;
+        GetHeight(root);
+        return result;
     }
-    int findHeight(TreeNode *root) {
-        if (root == nullptr) {
-            return 0;
-        }
-        int h1 = findHeight(root->left);
-        int h2 = findHeight(root->right);
-        int root_height = max(h1,h2);
-        if(ans.size() <= root_height) {
-            ans.push_back({});
-        }
-        ans[root_height].push_back(root->val);
-        return root_height+1;
+    
+    int GetHeight(TreeNode * root) {
+        if (root == nullptr) return 0;
+        
+        int h1 = GetHeight(root->left);
+        int h2 = GetHeight(root->right);
+        
+        int cur_height = max(h1,h2);
+        if (cur_height == result.size()) result.push_back(vector<int>());
+        result[cur_height].push_back(root->val);
+        
+        return cur_height+1;
     }
 };
