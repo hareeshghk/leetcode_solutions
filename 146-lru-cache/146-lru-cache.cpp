@@ -1,88 +1,84 @@
-class cacheNode {
+class MyListNode {
 public:
-    int key;
-    int value;
-    cacheNode *left;
-    cacheNode *right;
-    cacheNode(int key, int value) {
-        this->key = key;
-        this->value = value;
-        left = nullptr;
-        right = nullptr;
+    MyListNode *prev, *next;
+    int data, key;
+    MyListNode(int k, int val) {
+        data = val;
+        key = k;
+        prev = nullptr;
+        next = nullptr;
+    }
+    
+    void resetPointers() {
+        prev = nullptr;
+        next = nullptr;
     }
 };
 
 class LRUCache {
-    int cap;
-    unordered_map<int /*key*/,cacheNode*> cache_key_map;
-    cacheNode *head, *tail;
+    MyListNode *head, *tail;
+    unordered_map<int, MyListNode*> cache;
+    int capacity;
     int cursize;
 public:
     LRUCache(int capacity) {
-        cap = capacity;
-        head = new cacheNode(-1, -1);
-        tail = new cacheNode(-1, -1);
-        head->right = tail;
-        tail->left = head;
+        this->capacity = capacity;
         cursize = 0;
+        head = new MyListNode(-1,-1);
+        tail = new MyListNode(-1,-1);
+        head->next = tail;
+        tail->prev = head;
     }
     
-    void addToCache(cacheNode *node) {
-        node->right = head->right;
-        head->right->left = node;
-        head->right = node;
-        node->left = head;
+    void addNodeToFront(MyListNode *node) {
+        node->resetPointers();
+        auto temp = head->next;
+        head->next = node;
+        node->prev = head;
+        node->next = temp;
+        temp->prev = node;
     }
     
-    void removeFromCache(cacheNode *node) {
-        auto prevNode = node->left;
-        auto nextNode = node->right;
-        
-        prevNode->right = nextNode;
-        nextNode->left = prevNode;
+    int removeNodeFromLast() {
+        auto temp = tail->prev;
+        temp->prev->next = tail;
+        tail->prev = temp->prev;
+        temp->resetPointers();
+        return temp->key;
     }
     
-    cacheNode* removeLastofCache() {
-        if (cursize == 0) {
-            cout << "cache is empty" << endl;
-            return nullptr;
-        }
-        
-        auto curNode = tail->left;
-        
-        curNode->left->right = tail;
-        tail->left = curNode->left;
-        return curNode;
+    void removeNode(MyListNode *node) {
+        node->prev->next = node->next;
+        node->next->prev = node->prev;
+        node->resetPointers();
     }
     
     int get(int key) {
-        if (cache_key_map.find(key) == cache_key_map.end()) return -1;
+        if (cache.find(key) == cache.end()) return -1;
         
-        auto temp = cache_key_map[key];
-        removeFromCache(temp);
-        addToCache(temp);
-        return temp->value;
+        auto node = cache[key];
+        
+        removeNode(node);
+        addNodeToFront(node);
+        return node->data;
     }
     
     void put(int key, int value) {
-        if (cache_key_map.find(key) != cache_key_map.end()) {
-            auto temp = cache_key_map[key];
-            removeFromCache(temp);
-            temp->value = value;
-            addToCache(temp);
+        if (cache.find(key) == cache.end()) {
+            auto node = new MyListNode(key, value);
+            cache[key] = node;
+            
+            addNodeToFront(node);
+            ++cursize;
+            if (cursize > capacity) {
+                cache.erase(removeNodeFromLast());
+                --cursize;
+            }
         } else {
-            auto temp = new cacheNode(key, value);
-            addToCache(temp);
-            cache_key_map[key] = temp;
-            cursize++;
-        }
-        
-        if (cursize > cap) {
-            auto removedNode = removeLastofCache();
-            if (removedNode == nullptr) return;
-            cache_key_map.erase(removedNode->key);
-            delete removedNode;
-            cursize--;
+            auto node = cache[key];
+            removeNode(node);
+            node->data = value;
+            addNodeToFront(node);
         }
     }
 };
