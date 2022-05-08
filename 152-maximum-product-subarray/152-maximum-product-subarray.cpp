@@ -1,19 +1,23 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        int result = INT_MIN;
-        int product = 1;
-        for (int i  = 0; i < nums.size(); ++i) {
-            product *= nums[i];
-            result = max(result, product);
-            if (product == 0) product = 1;
-        }
+        int n = nums.size();
         
-        product = 1;
-        for (int i  = nums.size()-1; i >=0; --i) {
-            product *= nums[i];
-            result = max(result, product);
-            if (product == 0) product = 1;
+        if (n == 0) return 0;
+        
+        int minsofar = nums[0];
+        int maxsofar = nums[0];
+        int tempmax;
+        
+        int result = nums[0];
+        for (int i = 1; i < n; ++i) {
+            tempmax = max(maxsofar*nums[i], max(nums[i], minsofar*nums[i]));
+            minsofar = min(minsofar*nums[i], min(nums[i], maxsofar*nums[i]));
+            maxsofar = tempmax;
+            
+            if (maxsofar > result) {
+                result = maxsofar;
+            }
         }
         return result;
     }
