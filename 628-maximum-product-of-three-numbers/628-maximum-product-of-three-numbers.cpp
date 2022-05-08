@@ -5,8 +5,6 @@ public:
         
         if (n==3) return nums[0]*nums[1]*nums[2];
         
-        sort(nums.begin(), nums.end());
-        
         int min1=INT_MAX, min2=INT_MAX;
         int max1 = INT_MIN, max2 = INT_MIN, max3 = INT_MIN;
         
