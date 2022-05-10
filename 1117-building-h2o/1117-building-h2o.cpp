@@ -16,7 +16,8 @@ public:
         ++h_count;
         
         if (h_count == 2 && o_count == 1) {
-            reset();
+            h_count = 0;
+            o_count = 0;
             cv.notify_all();
         }
     }
@@ -28,13 +29,10 @@ public:
         releaseOxygen();
         ++o_count;
         if (h_count == 2 && o_count == 1) {
-            reset();
+            h_count = 0;
+            o_count = 0;
             cv.notify_all();
         }
     }
     
-    inline void reset() {
-        h_count = 0;
-        o_count = 0;
-    }
 };
