@@ -1,29 +1,33 @@
-#include <semaphore.h>
 class Foo {
-    sem_t firstdone, seconddone;
+    bool firstdone, seconddone;
+    mutex mtx;
+    condition_variable cv;
 public:
     Foo() {
-        sem_init(&firstdone, 0, 0);
-        sem_init(&seconddone, 0, 0);
+        firstdone = false;
+        seconddone = false;
     }
 
     void first(function<void()> printFirst) {
         
         // printFirst() outputs "first". Do not change or remove this line.
         printFirst();
-        sem_post(&firstdone);
+        firstdone = true;
+        cv.notify_all();
     }
 
     void second(function<void()> printSecond) {
-        sem_wait(&firstdone);
-        
+        unique_lock<mutex> ul(mtx);
+        cv.wait(ul, [this](){return firstdone;});
         // printSecond() outputs "second". Do not change or remove this line.
         printSecond();
-        sem_post(&seconddone);
+        seconddone = true;
+        cv.notify_all();
     }
 
     void third(function<void()> printThird) {
-        sem_wait(&seconddone);
+        unique_lock<mutex> ul(mtx);
+        cv.wait(ul, [this](){return seconddone;});
         // printThird() outputs "third". Do not change or remove this line.
         printThird();
     }
