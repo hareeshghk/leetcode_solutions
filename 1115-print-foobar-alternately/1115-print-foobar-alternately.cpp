@@ -1,32 +1,37 @@
-#include <semaphore.h>
+
 class FooBar {
 private:
     int n;
-    sem_t foodone, bardone;
+    bool footurn;
+    mutex mtx;
+    condition_variable cv;
 public:
     FooBar(int n) {
         this->n = n;
-        sem_init(&foodone, 0, 0);
-        sem_init(&bardone, 0, 1);
+        footurn = true;
     }
 
     void foo(function<void()> printFoo) {
         
         for (int i = 0; i < n; i++) {
-            sem_wait(&bardone);
+            unique_lock<mutex> ul(mtx);
+            cv.wait(ul, [this]{return footurn;});
         	// printFoo() outputs "foo". Do not change or remove this line.
         	printFoo();
-            sem_post(&foodone);
+            footurn = false;
+            cv.notify_one();
         }
     }
 
     void bar(function<void()> printBar) {
         
         for (int i = 0; i < n; i++) {
-            sem_wait(&foodone);
+            unique_lock<mutex> ul(mtx);
+            cv.wait(ul, [this]{return !footurn;});
         	// printBar() outputs "bar". Do not change or remove this line.
         	printBar();
-            sem_post(&bardone);
+            footurn = true;
+            cv.notify_one();
         }
     }
 };
