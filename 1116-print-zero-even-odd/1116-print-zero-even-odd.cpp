@@ -1,43 +1,48 @@
-#include <semaphore.h>
 class ZeroEvenOdd {
 private:
     int n;
-    sem_t zdone, odone, edone;
-
+    mutex mt;
+    int turn; // 0 for 0, -1 for odd, 1 for even
+    condition_variable cv;
 public:
     ZeroEvenOdd(int n) {
         this->n = n;
-        sem_init(&zdone, 0, 1);
-        sem_init(&odone, 0, 0);
-        sem_init(&edone, 0, 0);
+        turn = 0;
     }
 
     // printNumber(x) outputs "x", where x is an integer.
     void zero(function<void(int)> printNumber) {
-        for (int i =1; i <= n;i++) {
-            sem_wait(&zdone);
+        for (int i = 1; i <= n; ++i) {
+            unique_lock<mutex> ul(mt);
+            cv.wait(ul, [this]{return turn==0;});
             printNumber(0);
-            if (i&1) {
-                sem_post(&odone);
+            if (i%2 == 1) {
+                turn = -1;
             } else {
-                sem_post(&edone);
+                turn = 1;
             }
+            cv.notify_all();
         }
     }
 
     void even(function<void(int)> printNumber) {
         for (int i = 2; i <= n; i+=2) {
-            sem_wait(&edone);
+            unique_lock<mutex> ul(mt);
+            cv.wait(ul, [this]{return turn==1;});
             printNumber(i);
-            sem_post(&zdone);
+            turn = 0;
+            cv.notify_all();
         }
+        
     }
 
     void odd(function<void(int)> printNumber) {
         for (int i = 1; i <= n; i+=2) {
-            sem_wait(&odone);
+            unique_lock<mutex> ul(mt);
+            cv.wait(ul, [this]{return turn==-1;});
             printNumber(i);
-            sem_post(&zdone);
+            turn = 0;
+            cv.notify_all();
         }
     }
 };
