@@ -1,84 +1,99 @@
 class FizzBuzz {
 private:
     int n;
-    condition_variable cv1,cv2,cv3,cv4;
+    int curnumber;
     mutex m;
-    int current_number;
+    condition_variable cv1,cv2,cv3,cv4;
 public:
     FizzBuzz(int n) {
         this->n = n;
-        current_number = 1;
+        curnumber = 1;
     }
 
     // printFizz() outputs "fizz".
     void fizz(function<void()> printFizz) {
-        while (true) {
+        while (curnumber <= n) {
             unique_lock<mutex> ul(m);
-            cv1.wait(ul, [this](){return (current_number > n || (current_number%3==0 && current_number%5!=0));});
-            if (current_number > n) return;
+            cv4.wait(ul, [this](){return ((curnumber%3==0 && curnumber%5 != 0) || curnumber > n);});
+            if (curnumber > n) break;
             printFizz();
-            ++current_number;
-            CallNext(current_number);
+            ++curnumber;
+            if (curnumber > n) {
+                // cout << curnumber << endl;
+                Notifyall();
+                break;
+            }
+            FreeaCV();
         }
     }
 
     // printBuzz() outputs "buzz".
     void buzz(function<void()> printBuzz) {
-        while (true) {
+        while (curnumber <= n) {
             unique_lock<mutex> ul(m);
-            cv2.wait(ul, [this](){return (current_number > n || (current_number%3!=0 && current_number%5==0));});
-            if (current_number > n) return;
+            cv3.wait(ul, [this](){return ((curnumber%3!=0 && curnumber%5 == 0) || curnumber > n);});
+            if (curnumber > n) break;
             printBuzz();
-            ++current_number;
-            CallNext(current_number);
+            ++curnumber;
+            if (curnumber > n) {
+                // cout << curnumber << endl;
+                Notifyall();
+                break;
+            }
+            FreeaCV();
         }
     }
 
     // printFizzBuzz() outputs "fizzbuzz".
 	void fizzbuzz(function<void()> printFizzBuzz) {
-        while (true) {
+        while (curnumber <= n) {
             unique_lock<mutex> ul(m);
-            cv3.wait(ul, [this](){return (current_number > n || (current_number%3==0 && current_number%5==0));});
-            if (current_number > n) return;
+            cv2.wait(ul, [this](){return ((curnumber%3==0 && curnumber%5 == 0) || curnumber > n);});
+            if (curnumber > n) break;
             printFizzBuzz();
-            ++current_number;
-            CallNext(current_number);
+            ++curnumber;
+            if (curnumber > n) {
+                // cout << curnumber << endl;
+                Notifyall();
+                break;
+            }
+            FreeaCV();
         }
     }
 
     // printNumber(x) outputs "x", where x is an integer.
     void number(function<void(int)> printNumber) {
-        while (true) {
+        while (curnumber <= n) {
             unique_lock<mutex> ul(m);
-            cv4.wait(ul, [this](){return (current_number > n || (current_number%3!=0 && current_number%5!=0));});
-            if (current_number > n) return;
-            printNumber(current_number);
-            ++current_number;
-            CallNext(current_number);
+            cv1.wait(ul, [this](){return ((curnumber%3!=0 && curnumber%5 != 0) || curnumber > n);});
+            if (curnumber > n) break;
+            printNumber(curnumber);
+            ++curnumber;
+            if (curnumber > n) {
+                // cout << curnumber << endl;
+                Notifyall();
+                break;
+            }
+            FreeaCV();
         }
     }
     
-    void CallNext(int num) {
-        if (num > n) {
-            cv1.notify_all();cv2.notify_all();cv3.notify_all();cv4.notify_all();
-            return;
-        }
-        
-        if(num%3!=0 && num%5 !=0) {
-            cv4.notify_one();
-            return;
-        }
-        if (num%3!=0 && num%5 ==0) {
+    void Notifyall() {
+        cv1.notify_all();
+        cv2.notify_all();
+        cv3.notify_all();
+        cv4.notify_all();
+    }
+    
+    inline void FreeaCV() {
+        if (curnumber%3==0 && curnumber%5 == 0) {
             cv2.notify_one();
-            return;
-        }
-        if (num%3==0 && num%5 !=0) {
-            cv1.notify_one();
-            return;
-        }
-        if (num%3==0 && num%5 ==0) {
+        } else if (curnumber%3==0 && curnumber%5 != 0) {
+            cv4.notify_one();
+        } else if (curnumber%3!=0 && curnumber%5 == 0) {
             cv3.notify_one();
-            return;
+        } else {
+            cv1.notify_one();
         }
     }
 };
