@@ -1,22 +1,63 @@
 class Solution {
 public:
     string intToRoman(int num) {
-        int pos = 0;
-        string ans;
-
-        unordered_map<int, unordered_map<int, string>> mp;
-        mp[0] = unordered_map<int, string>{{1, "I"}, {2,"II"}, {3, "III"},{4 ,"IV"},{5,"V"}, {6,"VI"},{7,"VII"},{8,"VIII"},{9,"IX"}};
-        mp[1] = unordered_map<int, string>{{1,"X"}, {2,"XX"}, {3,"XXX"},{4 ,"XL"},{5,"L"}, {6,"LX"},{7,"LXX"},{8,"LXXX"},{9,"XC"}};
-        mp[2] = unordered_map<int, string>{{1, "C"}, {2,"CC"}, {3,"CCC"},{4,"CD"},{5,"D"}, {6,"DC"},{7,"DCC"},{8,"DCCC"},{9,"CM"}};
-        mp[3] = unordered_map<int, string>{{1,"M"}, {2,"MM"}, {3,"MMM"}};
-        while (num != 0) {
-            int val = num % 10;
-            string cur = mp[pos][val];
-            ans = cur + ans;
-            num /= 10;
-            ++pos;
-        }
+        string ans = "";
+        
+        ans += thousands(num);
+        num = num%1000;
+        ans += hundreds(num);
+        num = num%100;
+        ans += tens(num);
+        num = num%10;
+        ans += ones(num);
+        
         return ans;
     }
     
+    string thousands(int n) {
+        n = n/1000;
+        
+        string s(n, 'M');
+        return s;
+    }
+    
+    string hundreds(int n) {
+        n = n/100;
+        
+        if (n==4) {
+            return "CD";
+        } else if (n==9) {
+            return "CM";
+        } else if (n>=5) {
+            return "D"+string(n-5, 'C');
+        } else {
+            return string(n, 'C');
+        }
+    }
+    
+    string tens(int n) {
+        n = n/10;
+        
+        if (n==4) {
+            return "XL";
+        } else if (n==9) {
+            return "XC";
+        } else if (n>=5) {
+            return "L"+string(n-5, 'X');
+        } else {
+            return string(n, 'X');
+        }
+    }
+    
+    string ones(int n) {
+        if (n==4) {
+            return "IV";
+        } else if (n==9) {
+            return "IX";
+        } else if (n>=5) {
+            return "V"+string(n-5, 'I');
+        } else {
+            return string(n, 'I');
+        }
+    }
 };
