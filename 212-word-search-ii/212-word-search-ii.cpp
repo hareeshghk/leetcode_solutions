@@ -73,12 +73,4 @@ public:
         board[x][y] = letter;
         return;
     }
-    
-    bool NoNext(vector<vector<char>> &board, int x, int y) {
-        if (x+1 < m && board[x+1][y] != '#') return false;
-        if (x-1 >= 0 && board[x-1][y] != '#') return false;
-        if (y+1 < n && board[x][y+1] != '#') return false;
-        if (y-1 >=0 && board[x][y-1] != '#') return false;
-        return true;
-    }
 };
