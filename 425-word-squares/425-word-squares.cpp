@@ -51,7 +51,10 @@ public:
     Trie *trie;
     vector<vector<string>> result;
     vector<int> current;
-    vector<vector<string>> wordSquares(vector<string>& words) {
+    vector<string> words;
+    vector<vector<string>> wordSquares(vector<string>& wos) {
+        
+        this->words = wos;
         int n = words.size();
         
         int word_len = words[0].length();
@@ -64,14 +67,14 @@ public:
         
         for (int i = 0; i < n; ++i) {
             current.push_back(i);
-            backtrack(words, 1, word_len);
+            backtrack(1, word_len);
             current.pop_back();
         }
         
         return result;
     }
     
-    void backtrack(const vector<string> &words, int cur_num_words, int target_num_words) {
+    void backtrack(int cur_num_words, int target_num_words) {
         if (cur_num_words == target_num_words) {
             vector<string> curresult;
             for (auto idx : current) {
@@ -81,16 +84,16 @@ public:
             return;
         }
         
-        string prefix = GetNextPrefix(words, cur_num_words);
+        string prefix = GetNextPrefix(cur_num_words);
         
         for (auto child : trie->ListWordIds(prefix)) {
             current.push_back(child);
-            backtrack(words, cur_num_words+1, target_num_words);
+            backtrack(cur_num_words+1, target_num_words);
             current.pop_back();
         }
     }
     
-    string GetNextPrefix(const vector<string> &words, int num_words) {
+    string GetNextPrefix( int num_words) {
         string prefix = "";
         
         for (int i = 0; i < num_words; ++i) {
