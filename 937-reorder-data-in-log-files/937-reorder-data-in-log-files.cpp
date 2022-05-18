@@ -55,22 +55,6 @@ public:
     vector<string> reorderLogFiles(vector<string>& logs) {
         temp.resize(logs.size());
         mergesort(logs, 0, logs.size()-1);
-//         sort(logs.begin(), logs.end(), [](string &a, string &b) {
-//             auto x = a.substr(a.find(' ', 0)+1);
-//             auto y = b.substr(b.find(' ', 0)+1);
-            
-//             auto is_x_digit = isdigit(x[0]);
-//             auto is_y_digit = isdigit(y[0]);
-//             if (!is_x_digit && !is_y_digit) {
-//                 if (x==y) return a < b;
-//                 else return x<y;
-//                 // return x < y || (x==y && a<b);
-//             } else if (is_x_digit) {
-//                 return false;
-//             } else {
-//                 return true;
-//             }
-//         });
         return logs;
     }
 };
