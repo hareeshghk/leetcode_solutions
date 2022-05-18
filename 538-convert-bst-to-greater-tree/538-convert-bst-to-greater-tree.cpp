@@ -16,29 +16,16 @@ public:
         if (root == nullptr) return root;
         biggersum = 0;
         
-        traverse(root);
-        // int rightSum = GetSum(root->right, 0);
-        // root->val += rightSum;
-        // GetSum(root->left, root->val);
+        reverseinorder(root);
         return root;
     }
     
-    void traverse(TreeNode *root) {
+    void reverseinorder(TreeNode *root) {
         if (root == nullptr) return;
         
-        traverse(root->right);
+        reverseinorder(root->right);
         biggersum += root->val;
         root->val = biggersum;
-        traverse(root->left);
+        reverseinorder(root->left);
     }
-    
-//     int GetSum(TreeNode *root, int prevSum) {
-//         if (root == nullptr) return 0;
-        
-//         int rightSum = GetSum(root->right, prevSum);
-//         int leftSum = GetSum(root->left, root->val+rightSum+prevSum);
-//         int result = root->val + leftSum + rightSum;
-//         root->val += rightSum + prevSum;
-//         return result;
-//     }
 };
