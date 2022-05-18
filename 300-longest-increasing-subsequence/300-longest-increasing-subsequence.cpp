@@ -2,9 +2,6 @@ class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
-        // vector<int> maxlen(n, 1);
-        // maxlen[0] = 1;
-        // int result = 1;
         vector<int> seq;
         seq.push_back(nums[0]);
         for (int i = 1; i < n; i++) {
@@ -16,12 +13,6 @@ public:
                 int j = search(seq, num);
                 seq[j] = num;
             }
-            // for (int j =i-1;j>=0;j--) {
-            //     if (nums[j] < nums[i]) {
-            //         maxlen[i] = max(maxlen[i], maxlen[j]+1);
-            //     }
-            // }
-            // result = max(result, maxlen[i]);
         }
         return seq.size();
     }
