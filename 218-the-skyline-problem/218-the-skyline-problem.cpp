@@ -47,8 +47,6 @@ public:
         for (int i = 0; i < inputPoints.size(); ++i) {
             auto node = inputPoints[i];
             
-            // cout << node.x << " " << node.h << " " << node.is_start << endl;
-            
             if (node.is_start) {
                 counter[node.h]++;
             } else {
