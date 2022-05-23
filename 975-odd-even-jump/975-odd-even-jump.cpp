@@ -15,21 +15,17 @@ public:
         for (int i = n-2; i >=0; --i) {
             if (pos.find(arr[i]) != pos.end()) {
                 dp[i][0] = dp[pos[arr[i]]][1];
-                // cout << i << " greater "<< pos[arr[i]] << endl;
                 dp[i][1] = dp[pos[arr[i]]][0];
-                // cout << i << " lower "<< pos[arr[i]] << endl;
             } else {
                 auto mingreater = pos.upper_bound(arr[i]);
                 auto maxlower = pos.lower_bound(arr[i]);
             
                 if (mingreater != pos.end()) {
                     dp[i][0] = dp[mingreater->second][1];
-                    // cout << i << " greater "<< maxlower->second << endl;
                 }
             
                 if (maxlower != pos.begin()) {
                     dp[i][1] = dp[(--maxlower)->second][0];
-                    // cout << i << " lower " << maxlower->second << endl;
                 }
             }
             
