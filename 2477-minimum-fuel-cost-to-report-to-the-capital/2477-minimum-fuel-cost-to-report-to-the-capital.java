@@ -1,6 +1,7 @@
 class Solution {
-    long answer;
-    int numSeatsInaCar;
+    long answer, numSeatsInaCar;
+    HashMap<Integer, ArrayList<Integer>> graph;
+        
     public long minimumFuelCost(int[][] roads, int seats) {
         // Given there are n-1 roads.
         int n = roads.length + 1;
@@ -8,7 +9,7 @@ class Solution {
         if (n == 1) return 0;
         
         // Structure to store the graph (parent -> list of childs)
-        HashMap<Integer, ArrayList<Integer>> graph = new HashMap<>();
+        graph = new HashMap<>();
         
         
         for (int[] road : roads) {
@@ -23,12 +24,13 @@ class Solution {
         numSeatsInaCar = seats;
         
         
-        numNodes(0, -1, graph);
+        numNodes(0, -1);
         
         return answer;
     }
     
-    private long numNodes(int root, int parent, HashMap<Integer, ArrayList<Integer>> graph) {
+    // Returns number of nodes present in subtree with the current root.
+    private long numNodes(int root, int parent) {
         if (parent != -1 && graph.get(root).size() == 1) {
             return 1;
         }
@@ -37,7 +39,7 @@ class Solution {
         
         for (int child : graph.get(root)) {
             if (child == parent) continue;
-            currentNodes = numNodes(child, root, graph);
+            currentNodes = numNodes(child, root);
             answer += currentNodes/numSeatsInaCar;
             if (currentNodes % numSeatsInaCar != 0) answer++;
             totalNodes += currentNodes;
