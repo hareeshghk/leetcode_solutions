@@ -23,20 +23,17 @@ class Solution {
         return right;
     }
     
-    boolean isPossibleToFit(int[] w, int days, int capacity) {
-        int i = 0, c = capacity;
-        
-        while (i < w.length) {
-            if (days == 0) return false;
+    boolean isPossibleToFit(int[] weights, int days, int capacity) {
+        int current = 0, daysCount = 1;
+        for (int weight : weights) {
+            current += weight;
             
-            if (c-w[i] >=0) {
-                c-=w[i];
-                i++;
-            } else {
-                c = capacity;
-                days--;
+            if (current > capacity) {
+                current = weight;
+                daysCount++;
             }
         }
-        return true;
+        
+        return daysCount <= days;
     }
 }
