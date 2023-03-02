@@ -20,21 +20,4 @@ class Solution {
         }
         return ans_idx;
     }
-    
-    private StringBuilder GetConvertedCount(int n) {
-        if (n==1) {
-            return null;
-        }
-        
-        StringBuilder s = new StringBuilder();
-        
-        while (n!=0) {
-            s.append(n%10);
-            n/=10;
-        }
-        
-        s.reverse();
-        
-        return s;
-    }
 }
