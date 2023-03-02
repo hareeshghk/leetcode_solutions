@@ -9,9 +9,12 @@ class Solution {
             }
             
             chars[ans_idx++] = chars[i];
-            StringBuilder convertedCount = GetConvertedCount(j-i); 
-            for (int k = 0; convertedCount != null && k < convertedCount.length(); ++k) {
-                chars[ans_idx++] = convertedCount.charAt(k);
+            
+            // j-i is the number of repeating chars[i]
+            if (j-i > 1) {
+                for (char c : Integer.toString(j-i).toCharArray()) {
+                    chars[ans_idx++] = c;
+                }
             }
             i = j;
         }
