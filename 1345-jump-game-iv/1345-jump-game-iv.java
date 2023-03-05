@@ -37,7 +37,7 @@ class Solution {
                 }
                 
                 for (int pos : finder.get(arr[index])) {
-                    if (!visited[pos]) {
+                    if (pos != index) {
                         visited[pos] = true;
                         current.add(pos);
                     }
