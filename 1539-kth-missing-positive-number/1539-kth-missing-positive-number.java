@@ -1,23 +1,24 @@
 class Solution {
     public int findKthPositive(int[] arr, int k) {
-        int expected = 1;
-        int missed = 0;
+        int left = 0, right = arr.length-1;
         
-        for (int i = 0; i < arr.length; ++i) {
-            if (arr[i] != expected) {
-                missed += arr[i]-expected;
+        int mid;
+        
+        while (left <= right) {
+            mid = left + (right-left)/2;
+            
+            if (arr[mid]-(mid+1) >= k) {
+                right = mid-1;
+            } else {
+                left = mid+1;
             }
-            
-            if (missed >= k) {
-                int prevmissed = missed - (arr[i]-expected);
-                int prevValue = (i-1 >= 0)?arr[i-1]:0;
-                
-                return prevValue + (k-prevmissed);
-            }
-            
-            expected = arr[i] + 1;
-            
         }
-        return k+arr.length;
+        
+        // This mean missing element is at start only like array started with 5 and we want 4th missing number.
+        if (right == -1) {
+            return k;
+        }
+        
+        return arr[right]+(k-(arr[right]-(right+1)));
     }
 }
