@@ -1,12 +1,6 @@
 class Solution {
     public long minimumTime(int[] time, int totalTrips) {
-        long minTime = Integer.MAX_VALUE;
-        
-        int n = time.length;
-        
-        for (int i = 0; i < n; ++i) {
-            minTime = Math.min(minTime, time[i]);
-        }
+        long minTime = Arrays.stream(time).min().getAsInt();
         
         long left = 1;
         long right = minTime * totalTrips;
