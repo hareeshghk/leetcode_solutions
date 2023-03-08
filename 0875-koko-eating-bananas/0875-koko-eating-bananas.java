@@ -1,35 +1,44 @@
-// We have h hours
-// we want to complete eating all bananas with k rate.
-// [3,6,7,11] and we have a k then time taken is ceil(3/k) + ceil(6/k)+ceil(7/k)+ceil(11/k) <= h
-// minimum k which follows above condition. and k can be from 1 to max element in the array.
+// One pile in an hour.
+// p bananas in a pile. Time taken to eat p bananas is ceil(b/k) where k is the rate.
+// step(5.7) = 5, ceil(5.7) = 6
+// 10 banans and rate is 3 => 3 + 3 + 3 + 1 => 4 hours
+// [3,6,7,11] => 11 is maximum value for k and min value is 1.
+// ceil(3/k) + ceil(6/k)+ceil(7/k) + ceil(11/k) <= h
+// binary serach.
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        int maxPile = Integer.MIN_VALUE;
+        int maxValue = Integer.MIN_VALUE;
         
         for (int pile : piles) {
-            maxPile = Math.max(maxPile, pile);
+            maxValue = Math.max(maxValue, pile);
         }
         
-        int left = 1, right = maxPile;
+        int left = 1, right = maxValue;
         
         while (left < right) {
             int mid = left + (right-left)/2;
             
-            if (isPossible(piles, mid, h)) {
+            if (isPossibleToEat(piles, mid, h)) {
                 right = mid;
             } else {
                 left = mid + 1;
             }
         }
+        
         return right;
     }
     
-    boolean isPossible(int[] piles, int mid, int h) {
+    boolean isPossibleToEat(int[] piles, int k, int h) {
         int s = 0;
         
         for (int pile : piles) {
-            s += Math.ceil(pile*(1.0)/mid);
+            s += pile/k;
+            
+            if (pile % k != 0) {
+                s++;
+            }
         }
+        
         return s <= h;
     }
 }
