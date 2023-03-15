@@ -18,7 +18,6 @@ class Solution {
     boolean triggered;
     public boolean isCompleteTree(TreeNode root) {
         maxDepth = getDepth(root);
-        // System.out.println(maxDepth);
         triggered = false;
         return traverse(root, 1);
     }
@@ -30,7 +29,6 @@ class Solution {
     }
     
     boolean traverse(TreeNode root, int currentDepth) {
-        // System.out.println(currentDepth);
         if (root == null) {
             if (currentDepth < maxDepth){
                 return false;
