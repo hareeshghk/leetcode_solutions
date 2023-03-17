@@ -52,27 +52,23 @@ class Trie {
     }
     
     public boolean search(String word) {
-        TrieNode current = root;
-        
-        for (char c: word.toCharArray()) {
-            if (current.getChild(c) == null) return false;
-            
-            current = current.getChild(c);
-        }
-        
-        return current.isLast();
+        TrieNode lastNode = traverseTrieAndGetLastNode(word);
+        return (lastNode == null)?false:lastNode.isLast();
     }
     
     public boolean startsWith(String prefix) {
+        return traverseTrieAndGetLastNode(prefix) != null;
+    }
+    
+    private TrieNode traverseTrieAndGetLastNode(String word) {
         TrieNode current = root;
         
-        for (char c: prefix.toCharArray()) {
-            if (current.getChild(c) == null) return false;
+        for (char c: word.toCharArray()) {
+            if (current.getChild(c) == null) return null;
             
             current = current.getChild(c);
         }
-        
-        return true;
+        return current;
     }
 }
 
