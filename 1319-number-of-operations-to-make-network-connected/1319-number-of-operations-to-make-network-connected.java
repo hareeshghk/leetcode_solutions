@@ -1,16 +1,15 @@
 class DSA {
-    int n, disconnected;
-    int[] parents, extraThreads;
+    int n, disconnected, extraThreads;
+    int[] parents;
     
     public DSA(int num) {
         n = num;
         disconnected = num;
         parents = new int[n];
-        extraThreads = new int[n];
+        extraThreads = 0;
         
         for (int i = 0; i < n; ++i) {
             parents[i] = i;
-            extraThreads[i] = 0;
         }
     }
     
@@ -26,11 +25,10 @@ class DSA {
         int pb = find(b);
         
         if (pa == pb) {
-            extraThreads[pa]++;
+            extraThreads++;
         } else {
             --disconnected;
             parents[pb] = pa;
-            extraThreads[pa] += extraThreads[pb];
         }
     }
     
@@ -39,15 +37,7 @@ class DSA {
     }
     
     public int GetExtraThreads() {
-        int val = 0;
-        
-        for (int i = 0; i < n; ++i) {
-            if (parents[i] == i) {
-                val += extraThreads[i];
-            }
-        }
-        
-        return val;
+        return extraThreads;
     }
 }
 
