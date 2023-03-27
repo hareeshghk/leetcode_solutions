@@ -1,3 +1,4 @@
+[Discussion Post (created on 27/2/2023 at 19:19)](https://leetcode.com/problems/minimum-path-sum/discuss/3347845/JAVA-oror-EASY-SOLUTION)  
 <h2>  Minimum Path Sum</h2><hr><div><p>Given a <code>m x n</code> <code>grid</code> filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.</p>
 
 <p><strong>Note:</strong> You can only move either down or right at any point in time.</p>
