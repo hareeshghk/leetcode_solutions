@@ -18,6 +18,8 @@ class Solution {
         
         cost = Math.min(cost, costs[0] + minCost(days, idx+1, costs));
         
+        // This also can be done by using a binary search to find index for value >= days[idx]+6 in idx+1 to idx+8 range;
+        // I am finding next index whose value is >= days[idx]+7
         int next = idx+1;
         while (next < days.length) {
             if (days[next] >= days[idx]+7) break;
@@ -25,6 +27,8 @@ class Solution {
         }
         cost = Math.min(cost, costs[1]+minCost(days, next, costs));
         
+        // This also can be done by using a binary search to find index for value >= days[idx]+30 in idx+1 to idx+31 range;
+        // I am finding next index whose value is >= days[idx]+7
         while (next < days.length) {
             if (days[next] >= days[idx]+30) break;
             next++;
@@ -32,25 +36,5 @@ class Solution {
         cost = Math.min(cost, costs[2]+minCost(days, next, costs));
         dp[idx] = cost;
         return cost;
-    }
-    
-    private int getNextIndex(int[] days, int low, int high, int value) {
-        int mid;
-        
-        if (high >= days.length) {
-            high = days.length-1;
-        }
-        
-        while (low < high) {
-            mid = low + (high - low)/2;
-            
-            if (days[mid] <= value) {
-                low = mid+1;
-            } else {
-                high = mid;
-            }
-        }
-        
-        return high;
     }
 }
