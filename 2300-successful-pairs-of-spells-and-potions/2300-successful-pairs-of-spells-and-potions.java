@@ -18,10 +18,11 @@ class Solution {
     int getValid(int s, int[] p, long success) {
         int low = 0;
         int high = p.length;
-        
+        int mid;
+        long val;
         while (low < high) {
-            int mid = low + (high-low)/2;
-            long val = s;
+            mid = low + (high-low)/2;
+            val = s;
             val*= p[mid];
             if (val >= success) {
                 high = mid;
