@@ -1,19 +1,17 @@
 class Solution {
     public int partitionString(String s) {
-        boolean[] visited = new boolean[26];
-        
+        int[] visited = new int[26];
+        Arrays.fill(visited, -1);
         int answer = 0;
-        int ws = 0, we = 0;
+        int subStrStart = 0;
         
-        for (we = 0; we < s.length(); ++we) {
-            if (visited[s.charAt(we)-'a'] == true) {
+        for (int we = 0; we < s.length(); ++we) {
+            if (visited[s.charAt(we)-'a'] >= subStrStart) {
                 answer++;
-                while (ws < we) {
-                    visited[s.charAt(ws++)-'a'] = false;
-                }
+                subStrStart = we;
             }
             
-            visited[s.charAt(we)-'a'] = true;
+            visited[s.charAt(we)-'a'] = we;
         }
         answer++;
         
