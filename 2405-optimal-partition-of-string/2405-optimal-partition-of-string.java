@@ -1,16 +1,19 @@
 class Solution {
     public int partitionString(String s) {
-        Set<Character> visited = new HashSet<>();
+        boolean[] visited = new boolean[26];
         
         int answer = 0;
+        int ws = 0, we = 0;
         
-        for (char ch : s.toCharArray()) {
-            if (visited.contains(ch)) {
-                visited.clear();
+        for (we = 0; we < s.length(); ++we) {
+            if (visited[s.charAt(we)-'a'] == true) {
                 answer++;
+                while (ws < we) {
+                    visited[s.charAt(ws++)-'a'] = false;
+                }
             }
             
-            visited.add(ch);
+            visited[s.charAt(we)-'a'] = true;
         }
         answer++;
         
