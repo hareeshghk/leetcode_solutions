@@ -23,13 +23,14 @@ class Solution {
     public Node cloneGraph(Node node) {
         if (node == null) return null;
         
-        Node copyNode;
-        if (copyTreeNodes.getOrDefault(node.val, null) == null) {
-            copyNode = new Node(node.val);
-            copyTreeNodes.put(node.val, copyNode);
-        } else {
-            return copyTreeNodes.get(node.val);
+        Node copyNode = copyTreeNodes.getOrDefault(node.val, null);
+        
+        if (copyNode != null) {
+            return copyNode;
         }
+        
+        copyNode = new Node(node.val);
+        copyTreeNodes.put(node.val, copyNode);
         
         for (Node neighbor : node.neighbors) {
             copyNode.neighbors.add(cloneGraph(neighbor));
