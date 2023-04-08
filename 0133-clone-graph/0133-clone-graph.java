@@ -32,7 +32,7 @@ class Solution {
         copyNode = new Node(node.val);
         copyTreeNodes.put(node, copyNode);
         
-        for (Node neighbor : node.neighbors) {
+        for (final Node neighbor : node.neighbors) {
             copyNode.neighbors.add(cloneGraph(neighbor));
         }
         
