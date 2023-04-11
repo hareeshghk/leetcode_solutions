@@ -1,6 +1,6 @@
 class Solution {
     public String removeStars(String s) {
-        Deque<Character> dq = new LinkedList<>();
+        Deque<Character> dq = new ArrayDeque<>();
         
         for (char ch : s.toCharArray()) {
             if (ch == '*') {
