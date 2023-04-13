@@ -1,20 +1,19 @@
 class Solution {
     public boolean validateStackSequences(int[] pushed, int[] popped) {
         int popped_itr = 0;
+        int pushed_itr = 0;
         int n = pushed.length;
-        
-        Stack<Integer> st = new Stack<>();
         
         
         for (int i = 0; i < n; ++i) {
-            st.push(pushed[i]);
+            pushed[pushed_itr++] = pushed[i];
             
-            while (!st.isEmpty() && popped_itr < n && st.peek() == popped[popped_itr]) {
-                st.pop();
+            while (pushed_itr > 0 && pushed[pushed_itr-1] == popped[popped_itr]) {
+                pushed_itr--;
                 popped_itr++;
             }
         }
         
-        return st.isEmpty();
+        return pushed_itr == 0;
     }
 }
