@@ -20,19 +20,11 @@ class Solution {
             }
         }
         
-        // for (List<Integer> pile : piles) {
-        //     for (Integer num : pile) {
-        //         System.out.print(num + " ");
-        //     }
-        //     System.out.println("");
-        // }
-        
         // max(DP(x, k'))
         return MaxSum(piles, 0, k);
     }
     
     int MaxSum(List<List<Integer>> piles, int index, int k) {
-        // System.out.println(index + " " + k);
         if (k == 0) {
             return 0;
         }
