@@ -17,25 +17,28 @@ class Solution {
     public int widthOfBinaryTree(TreeNode root) {
         if (root == null) return 0;
         
-        Deque<Pair<TreeNode, Integer>> bfs_queue = new LinkedList<>();
+        Deque<TreeNode> bfsQueue = new LinkedList<>();
         
-        bfs_queue.addLast(new Pair<>(root, 0));
+        root.val = 0;
+        bfsQueue.addLast(root);
         
         int answer = 1;
         
-        while (!bfs_queue.isEmpty()) {
-            int size = bfs_queue.size();
+        while (!bfsQueue.isEmpty()) {
+            int size = bfsQueue.size();
             
-            answer = Math.max(answer, bfs_queue.getLast().getValue() - bfs_queue.getFirst().getValue() + 1);
+            answer = Math.max(answer, bfsQueue.getLast().val - bfsQueue.getFirst().val + 1);
             while (size-- != 0) {
-                Pair<TreeNode, Integer> cur = bfs_queue.removeFirst();
+                TreeNode cur = bfsQueue.removeFirst();
                 
-                if (cur.getKey().left != null) {
-                    bfs_queue.addLast(new Pair<>(cur.getKey().left, 2* cur.getValue()));
+                if (cur.left != null) {
+                    cur.left.val = 2 * cur.val;
+                    bfsQueue.addLast(cur.left);
                 }
                 
-                if (cur.getKey().right != null) {
-                    bfs_queue.addLast(new Pair<>(cur.getKey().right, 2* cur.getValue() + 1));
+                if (cur.right != null) {
+                    cur.right.val = 2 * cur.val + 1;
+                    bfsQueue.addLast(cur.right);
                 }
             }
         }
