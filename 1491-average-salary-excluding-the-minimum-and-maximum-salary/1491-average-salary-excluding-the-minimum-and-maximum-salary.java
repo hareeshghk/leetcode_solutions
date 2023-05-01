@@ -19,8 +19,6 @@ class Solution {
         totalSum -= minSalary;
         totalSum -= maxSalary;
         
-        double answer = (totalSum*1.0000)/(salary.length-2);
-        
-        return answer;
+        return (totalSum*1.0000)/(salary.length-2);
     }
 }
