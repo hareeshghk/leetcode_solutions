@@ -1,18 +1,10 @@
 class Solution {
     public List<Integer> findSmallestSetOfVertices(int n, List<List<Integer>> edges) {
-        int[] inOrder = new int[n];
-        
+        Set<Integer> inOrder = IntStream.rangeClosed(0, n-1).boxed().collect(Collectors.toSet());
         edges.forEach(edge -> {
-            inOrder[edge.get(1)]++;
+            inOrder.remove(edge.get(1));
         });
         
-        List<Integer> answer = new ArrayList<>();
-        for (int i = 0; i < n; ++i) {
-            if (inOrder[i] == 0) {
-                answer.add(i);
-            }
-        }
-        
-        return answer;
+        return inOrder.stream().collect(Collectors.toList());
     }
 }
