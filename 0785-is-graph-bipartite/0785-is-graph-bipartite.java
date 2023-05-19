@@ -3,8 +3,6 @@ class Solution {
     boolean[] visited;
     public boolean isBipartite(int[][] graph) {
         // graph should be able to get coloured with 2 colours for it to be bipartitie.
-        int c1=1,c2=2;
-        
         int n = graph.length;
         colours = new int[n];
         Arrays.fill(colours, 0);
