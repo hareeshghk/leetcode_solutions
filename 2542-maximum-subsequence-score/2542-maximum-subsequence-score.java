@@ -7,7 +7,7 @@ class Solution {
         for (int i = 0; i < n; ++i) {
             List<Integer> temp = new ArrayList<>();
             temp.add(nums2[i]);
-            temp.add(i);
+            temp.add(nums1[i]);
             nums2WithIndices.add(temp);
         }
         
@@ -23,8 +23,8 @@ class Solution {
         long currentSum = 0;
         long answer = 0;
         for (int i = 0; i < k && n-1-i>=0; ++i) {
-            currentSum += nums1[nums2WithIndices.get(n-1-i).get(1)];
-            minHeap.add(nums1[nums2WithIndices.get(n-1-i).get(1)]);
+            currentSum += nums2WithIndices.get(n-1-i).get(1);
+            minHeap.add(nums2WithIndices.get(n-1-i).get(1));
         }
         
         if (n-k >= 0) {
@@ -33,11 +33,11 @@ class Solution {
         
         for (int i = n-k-1; i >= 0; --i) {
             int currentMin = nums2WithIndices.get(i).get(0);
-            int currentIndex = nums2WithIndices.get(i).get(1);
-            if (nums1[currentIndex] > minHeap.peek()) {
+            int currentNum = nums2WithIndices.get(i).get(1);
+            if (currentNum > minHeap.peek()) {
                 currentSum -= minHeap.poll();
-                minHeap.add(nums1[currentIndex]);
-                currentSum += nums1[currentIndex];
+                minHeap.add(currentNum);
+                currentSum += currentNum;
             }
             
             answer = Math.max(answer, currentSum * currentMin);
