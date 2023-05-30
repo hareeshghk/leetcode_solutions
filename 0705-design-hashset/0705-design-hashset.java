@@ -3,7 +3,7 @@ class MyHashSet {
 
     public MyHashSet() {
         setArray = new boolean[1000001];
-        Arrays.fill(setArray, false);
+        // Arrays.fill(setArray, false);
     }
     
     public void add(int key) {
