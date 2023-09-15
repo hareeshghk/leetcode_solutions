@@ -1,12 +1,15 @@
 class DSU {
     int[] parent;
+    int[] height;
     int n;
     public DSU(int numPoints) {
         n = numPoints;
         parent = new int[n];
+        height = new int[n];
         
         for (int i = 0; i < n; ++i) {
             parent[i] = i;
+            height[i] = 0;
         }
     }
     
@@ -25,7 +28,15 @@ class DSU {
             return false;
         }
         
-        parent[pb] = pa;
+        if (height[pa] == height[pb]) {
+            height[pa]+=1;
+            parent[pb] = pa;
+        } else if (height[pa] < height[pb]) {
+            parent[pa] = pb;
+        } else {
+            parent[pb] = pa;
+        }
+    
         return true;
     }
 }
