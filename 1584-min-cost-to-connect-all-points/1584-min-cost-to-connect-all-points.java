@@ -1,15 +1,12 @@
 class DSU {
     int[] parent;
-    int[] height;
     int n;
     public DSU(int numPoints) {
         n = numPoints;
         parent = new int[n];
-        height = new int[n];
         
         for (int i = 0; i < n; ++i) {
             parent[i] = i;
-            height[i] = 0;
         }
     }
     
@@ -28,14 +25,7 @@ class DSU {
             return false;
         }
         
-        if (height[pa] == height[pb]) {
-            height[pa]+=1;
-            parent[pb] = pa;
-        } else if (height[pa] < height[pb]) {
-            parent[pa] = pb;
-        } else {
-            parent[pb] = pa;
-        }
+        parent[pb] = pa;
     
         return true;
     }
@@ -44,38 +34,29 @@ class DSU {
 class Solution {
     public int minCostConnectPoints(int[][] points) {
         // Capture all distances and points mapped to them
-        Map<Integer, List<Pair<Integer, Integer>>> distanceMap = new TreeMap<>();
+        PriorityQueue<Pair<Integer, int[]>> distanceMinHeap = new PriorityQueue<>((a, b) -> a.getKey() - b.getKey());
         int numPoints = points.length;
         for (int i = 0; i < numPoints; ++i) {
             for (int j = i+1; j < numPoints; ++j) {
                 int distance = getManhattanDistance(points[i], points[j]);
-                
-                if (!distanceMap.containsKey(distance)) {
-                    distanceMap.put(distance, new ArrayList<>());
-                }
-                
-                distanceMap.get(distance).add(new Pair<Integer, Integer>(i, j));
+                distanceMinHeap.add(new Pair<Integer, int[]>(distance, new int[]{i, j}));
             }
         }
         
-        int[] minCost = new int[1];
-        minCost[0] = 0;
+        int minCost = 0;
         DSU dsu = new DSU(numPoints);
         // Go though distances in sorted added and apply kruskals algorithm
-        for (Map.Entry<Integer, List<Pair<Integer, Integer>>> mapEntry : distanceMap.entrySet()) {
-            int distance = mapEntry.getKey();
-            List<Pair<Integer, Integer>> pairs = mapEntry.getValue();
-            
-            pairs.forEach(pair -> {
-               int start = pair.getKey();
-               int end = pair.getValue();
-                if (dsu.unionFind(start, end) == true) {
-                    minCost[0] += distance;
-                }
-            });
+        int numEdgesChosen = 0;
+        while (!distanceMinHeap.isEmpty() && numEdgesChosen < numPoints) {
+            Pair<Integer, int[]> pair = distanceMinHeap.poll();
+            int[] indices = pair.getValue();
+            if (dsu.unionFind(indices[0], indices[1]) == true) {
+                minCost += pair.getKey();
+                ++numEdgesChosen;
+            }
         }
         
-        return minCost[0];
+        return minCost;
     }
     
     private int getManhattanDistance(int[] p1, int[] p2) {
