@@ -4,12 +4,11 @@ class Solution {
         int n = s.length();
         for (int i = 0; i < n;) {
             if (s.charAt(i) != ' ') {
-                int tempCount = 0;
+                count = 0;
                 while (i < n && s.charAt(i) != ' ') {
-                    tempCount++;
+                    count++;
                     ++i;
                 }
-                count = tempCount;
             } else {
                 ++i;
             }
