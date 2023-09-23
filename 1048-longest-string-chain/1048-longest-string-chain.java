@@ -8,7 +8,7 @@ class Solution {
 
         
         // Iterate from left to right and at each word find the maximum length of chain formed by that word and ended at that word. then store that length in an array aganinst words index.
-        Map<String, Integer> seenWords = new HashMap<>();
+        Map<Integer, Map<String, Integer>> seenWords = new HashMap<>();
         
         int answer = 1;
         
@@ -18,19 +18,26 @@ class Solution {
             dp[i] = 1;
             
             String word = words[i];
+            int wordLength = word.length();
+            
+            if (seenWords.get(wordLength-1) != null) {
             
             // Generating strings from word by removing each letter
-            for (int j = 0; j < word.length(); ++j) {
-                String newWord = word.substring(0, j) + word.substring(j+1, word.length());
+            for (int j = 0; j < wordLength; ++j) {
+                String newWord = word.substring(0, j) + word.substring(j+1, wordLength);
                 
-                if (seenWords.containsKey(newWord) == true) {
-                    int previousWordIndex = seenWords.get(newWord);
+                if (seenWords.get(wordLength-1).containsKey(newWord) == true) {
+                    int previousWordIndex = seenWords.get(wordLength-1).get(newWord);
                     
                     dp[i] = Math.max(dp[i], dp[previousWordIndex] + 1);
                 }
             }
+            }
             
-            seenWords.put(word, i);
+            if (seenWords.get(wordLength) == null) {
+                seenWords.put(wordLength, new HashMap<>());
+            }
+            seenWords.get(wordLength).put(word, i);
             answer = Math.max(answer, dp[i]);
         }
         
