@@ -5,7 +5,7 @@ class Solution {
         dp[0][0] = poured;
         
         for (int i = 1; i <= query_row; ++i) {
-            for (int j = 0; j <= i; ++j) {
+            for (int j = 0; j <= Math.min(i, query_glass); ++j) {
                 dp[i][j] = Math.max(0.0, (dp[i-1][j]-1)/2) + Math.max(0.0, (j==0?0:(dp[i-1][j-1]-1)/2));
             }
         }
