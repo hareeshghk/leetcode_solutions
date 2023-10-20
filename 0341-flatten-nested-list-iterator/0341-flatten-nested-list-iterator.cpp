@@ -16,60 +16,74 @@
  * };
  */
 
+class IteratorPair {
+private:
+    vector<NestedInteger>::iterator currentIterator, endIterator;
+public:
+    IteratorPair(vector<NestedInteger> &nestedList) {
+        currentIterator = nestedList.begin();
+        endIterator = nestedList.end();
+    }
+    
+    vector<NestedInteger>::iterator getCurrent() {
+        return currentIterator;
+    }
+    
+    vector<NestedInteger>::iterator getEnd() {
+        return endIterator;
+    }
+    
+    bool isCompleted() {
+        return currentIterator == endIterator;
+    }
+    
+    void increment() {
+        currentIterator++;
+    }
+};
+
 class NestedIterator {
 private:
-    stack<vector<NestedInteger>::iterator> cStack, endStack;
+    stack<IteratorPair*> iteratorStack;
 public:
     NestedIterator(vector<NestedInteger> &nestedList) {
-        cStack.push(nestedList.begin());
-        endStack.push(nestedList.end());
+        iteratorStack.push(new IteratorPair(nestedList));
     }
     
     int next() {
-        while (!cStack.empty()) {
-            vector<NestedInteger>::iterator currentTop = cStack.top();
-            if (currentTop == endStack.top()) {
-                cStack.pop();
-                endStack.pop();
-                if (!cStack.empty()) {
-                    auto curTop = cStack.top();
-                    cStack.pop();
-                    cStack.push(curTop+1);
-                }
+        while (!iteratorStack.empty()) {
+            auto currentTop = iteratorStack.top();
+            if (currentTop->isCompleted()) {
+                iteratorStack.pop();
             } else {
-                if (currentTop->isInteger()) {
-                    cStack.pop();
-                    cStack.push(currentTop+1);
-                    cout << currentTop->getInteger() << endl;
-                    return currentTop->getInteger();
+                if (currentTop->getCurrent()->isInteger()) {
+                    int value = currentTop->getCurrent()->getInteger();
+                    currentTop->increment();
+                    return value;
                 }
                 
-                cStack.push(currentTop->getList().begin());
-                endStack.push(currentTop->getList().end());
+                auto newPair = new IteratorPair(currentTop->getCurrent()->getList());
+                currentTop->increment();
+                iteratorStack.push(newPair);
             }
         }
         return -1;
     }
     
     bool hasNext() {
-        while (!cStack.empty()) {
-            vector<NestedInteger>::iterator currentTop = cStack.top();
-            if (currentTop == endStack.top()) {
-                cStack.pop();
-                endStack.pop();
-                if (!cStack.empty()) {
-                    auto curTop = cStack.top();
-                    cStack.pop();
-                    cStack.push(curTop+1);
-                }
+        while (!iteratorStack.empty()) {
+            auto currentTop = iteratorStack.top();
+            if (currentTop->isCompleted()) {
+                iteratorStack.pop();
             } else {
-                if (currentTop->isInteger()) return true;
-                
-                cStack.push(currentTop->getList().begin());
-                endStack.push(currentTop->getList().end());
+                if (currentTop->getCurrent()->isInteger()) {
+                    return true;
+                }
+                auto newPair = new IteratorPair(currentTop->getCurrent()->getList());
+                currentTop->increment();
+                iteratorStack.push(newPair);
             }
         }
-        
         return false;
     }
 };
