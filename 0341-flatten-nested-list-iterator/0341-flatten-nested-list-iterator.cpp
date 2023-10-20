@@ -44,47 +44,42 @@ public:
 
 class NestedIterator {
 private:
-    stack<IteratorPair*> iteratorStack;
+    stack<shared_ptr<IteratorPair>> iteratorStack;
 public:
     NestedIterator(vector<NestedInteger> &nestedList) {
-        iteratorStack.push(new IteratorPair(nestedList));
+        iteratorStack.push(make_shared<IteratorPair>(nestedList));
     }
     
     int next() {
-        while (!iteratorStack.empty()) {
-            auto currentTop = iteratorStack.top();
-            if (currentTop->isCompleted()) {
-                iteratorStack.pop();
-            } else {
-                if (currentTop->getCurrent()->isInteger()) {
-                    int value = currentTop->getCurrent()->getInteger();
-                    currentTop->increment();
-                    return value;
-                }
-                
-                auto newPair = new IteratorPair(currentTop->getCurrent()->getList());
-                currentTop->increment();
-                iteratorStack.push(newPair);
-            }
-        }
-        return -1;
+        auto nextPair = getNextPair();
+        if (nextPair == nullptr) return -1;
+        int value = nextPair->getCurrent()->getInteger();
+        nextPair->increment();
+        return value;
     }
     
     bool hasNext() {
+        auto nextPair = getNextPair();
+        
+        if (nextPair == nullptr) return false;
+        return true;
+    }
+private:
+    shared_ptr<IteratorPair> getNextPair() {
         while (!iteratorStack.empty()) {
             auto currentTop = iteratorStack.top();
             if (currentTop->isCompleted()) {
                 iteratorStack.pop();
             } else {
                 if (currentTop->getCurrent()->isInteger()) {
-                    return true;
+                    return currentTop;
                 }
-                auto newPair = new IteratorPair(currentTop->getCurrent()->getList());
+                auto newPair = make_shared<IteratorPair>(currentTop->getCurrent()->getList());
                 currentTop->increment();
                 iteratorStack.push(newPair);
             }
         }
-        return false;
+        return nullptr;
     }
 };
 
