@@ -1,37 +1,23 @@
 class Solution {
 public:
     int kthGrammar(int n, int k) {
-        stack<char> st;
-        int depth = n;
-        int kc = k;
-        while (depth != 1) {
-            if (kc & 1) {
-                st.push('f');
-            } else {
-                st.push('s');
-            }
+        int left, right, val;
+        left = 1;
+        right = (1<<n)-1;
+        
+        int depth = 1;
+        val = 0;
+        while (depth <= n) {
+            int mid = (left +  right)/2;
             
-            kc = ((kc/2) + (kc % 2));
-            depth--;
-        }
-        
-        int val = 0;
-        
-        while (!st.empty()) {
-            if (st.top() == 'f') {
-                if (val == 0) {
-                    val = 0;
-                } else {
-                    val = 1;
-                }
+            if (k <= mid) {
+                right = mid;
             } else {
-                if (val == 0) {
-                    val = 1;
-                } else {
-                    val = 0;
-                }
+                left = mid+1;
+                
+                val ^= 1;
             }
-            st.pop();
+            depth++;
         }
         
         return val;
