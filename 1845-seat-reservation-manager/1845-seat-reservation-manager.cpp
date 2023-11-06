@@ -1,18 +1,20 @@
 class SeatManager {
     priority_queue<int, vector<int>, greater<int>> minheap;
+    int marker;
 public:
     SeatManager(int n) {
         minheap = priority_queue<int, vector<int>, greater<int>>();
-        
-        for (int i = 1; i <= n; ++i) {
-            minheap.push(i);
-        }
+        marker = 1;
     }
     
     int reserve() {
-        int room = minheap.top();
-        minheap.pop();
-        return room;
+        if (!minheap.empty()) {
+            int room = minheap.top();
+            minheap.pop();
+            return room;
+        }
+        
+        return marker++;
     }
     
     void unreserve(int seatNumber) {
