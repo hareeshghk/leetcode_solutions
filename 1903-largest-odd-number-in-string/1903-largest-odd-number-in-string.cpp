@@ -10,8 +10,6 @@ public:
             j--;
         }
         
-        if (j==-1) return "";
-        
         return num.substr(0, j+1);
     }
 };
