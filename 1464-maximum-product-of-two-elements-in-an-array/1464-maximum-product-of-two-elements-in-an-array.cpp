@@ -1,20 +1,17 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        auto pq = priority_queue<int, vector<int>, greater<int>>();
-        
-        for (int i = 0; i < nums.size(); ++i) {
-            if (pq.size() < 2) {
-                pq.push(nums[i]);
-            } else if (pq.top() < nums[i]) {
-                pq.pop();
-                pq.push(nums[i]);
+        int biggest = 0;
+        int secondBiggest = 0;
+        for (int num : nums) {
+            if (num > biggest) {
+                secondBiggest = biggest;
+                biggest = num;
+            } else {
+                secondBiggest = max(secondBiggest, num);
             }
         }
         
-        int a = pq.top()-1;
-        pq.pop();
-        int b = pq.top()-1;
-        return a*b;
+        return (biggest - 1) * (secondBiggest - 1);
     }
 };
