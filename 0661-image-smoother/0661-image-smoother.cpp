@@ -24,15 +24,11 @@ public:
             x = i + dir[0];
             y = j + dir[1];
             
-            if (isvalid(x, y)) {
+            if (x>=0 && x < rows && y >=0 && y < cols) {
                 totalsum += img[x][y];
                 numvalues++;
             }
         }
         return totalsum/numvalues;
-    }
-    
-    bool isvalid(int a, int b) {
-        return a>=0 && a < rows && b >=0 && b < cols;
     }
 };
