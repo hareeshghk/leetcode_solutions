@@ -2,7 +2,6 @@ class Solution {
 public:
     bool canMakeSquare(vector<vector<char>>& grid) {
         vector<vector<int>> dirs {{0,0}, {0,1}, {1,0}, {1,1}}; 
-        bool isPossible = false;
         for (auto pos : dirs) {
             int numWhites = 0;
             for (auto dir : dirs) {
@@ -12,10 +11,9 @@ public:
             }
 
             if (numWhites != 2) {
-                isPossible = true;
-                break;
+                return true;
             }
         }
-        return isPossible;
+        return false;
     }
 };
