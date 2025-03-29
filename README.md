@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
@@ -61,12 +62,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 ## Greedy
 |  |
 | ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 | [3264-maximum-points-after-enemy-battles](https://github.com/hareeshghk/leetcode_solutions/tree/master/3264-maximum-points-after-enemy-battles) |
 ## Two Pointers
@@ -105,6 +108,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 ## Binary Tree
 |  |
 | ------- |
@@ -142,4 +146,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/0002-add-two-numbers) |
+## Queue
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+## Monotonic Queue
+|  |
+| ------- |
+| [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 <!---LeetCode Topics End-->
