@@ -2,6 +2,8 @@ class Solution {
     int s;
     vector<int> ts, ws;
 public:
+    // TIME complexity // O(log min(N, M) * (M+N) * log M)
+    // Space O(M)
     int maxTaskAssign(vector<int>& tasks, vector<int>& workers, int pills, int strength) {
         // O(N log N)
         sort(tasks.begin(), tasks.end());
@@ -13,7 +15,7 @@ public:
         int left = 0;
         int right = min(n, m);
         int answer = 0;
-        // O(log N * (M+N) * log M)
+        // O(log min(N, M) * (M+N) * log M)
         while (left <= right) {
             // expected number of tasks to be completed.
             int mid = (left + right)/2;
