@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 ## Sorting
@@ -84,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0637-average-of-levels-in-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 ## Union Find
 |  |
@@ -105,6 +107,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0637-average-of-levels-in-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Design
 |  |
 | ------- |
@@ -119,6 +122,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0637-average-of-levels-in-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Data Stream
 |  |
 | ------- |
@@ -139,6 +143,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0637-average-of-levels-in-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## String
 |  |
 | ------- |
