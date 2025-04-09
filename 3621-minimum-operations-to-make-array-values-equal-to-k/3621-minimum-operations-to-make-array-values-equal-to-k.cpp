@@ -2,16 +2,17 @@ class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
         int minelement = nums[0];
-        unordered_set<int> st;
-
+        vector<bool> exists = vector<bool>(101, false);
+        int distinctCount = 0;
         for (auto num :nums) {
             minelement = min(minelement, num);
-            st.insert(num);
+            if (!exists[num]) {
+                distinctCount++;
+                exists[num] = true;
+            }
         }
 
         if (minelement < k) return -1;
-        int distinctCount = st.size();
-
         if (minelement == k) return distinctCount-1;
         return distinctCount;
     }
