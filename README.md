@@ -57,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0416-partition-equal-subset-sum) |
+| [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
@@ -76,6 +77,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
@@ -84,6 +86,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
+| [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
@@ -172,6 +175,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
+| [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1532-reformat-the-string](https://github.com/hareeshghk/leetcode_solutions/tree/master/1532-reformat-the-string) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
@@ -205,4 +209,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
+## Counting
+|  |
+| ------- |
+| [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 <!---LeetCode Topics End-->
