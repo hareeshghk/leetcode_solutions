@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
 | [0730-count-different-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/0730-count-different-palindromic-subsequences) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/hareeshghk/leetcode_solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3587-maximum-points-tourist-can-earn](https://github.com/hareeshghk/leetcode_solutions/tree/master/3587-maximum-points-tourist-can-earn) |
 ## Graph
@@ -68,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
+| [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2681-put-marbles-in-bags](https://github.com/hareeshghk/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
@@ -106,6 +108,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+| [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 | [2681-put-marbles-in-bags](https://github.com/hareeshghk/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 | [3264-maximum-points-after-enemy-battles](https://github.com/hareeshghk/leetcode_solutions/tree/master/3264-maximum-points-after-enemy-battles) |
@@ -152,6 +155,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+| [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 ## Binary Tree
 |  |
 | ------- |
@@ -233,4 +237,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1119-robot-bounded-in-circle](https://github.com/hareeshghk/leetcode_solutions/tree/master/1119-robot-bounded-in-circle) |
+## Prefix Sum
+|  |
+| ------- |
+| [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 <!---LeetCode Topics End-->
