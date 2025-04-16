@@ -65,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
+| [2626-count-the-number-of-good-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2681-put-marbles-in-bags](https://github.com/hareeshghk/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
@@ -81,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
+| [2626-count-the-number-of-good-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hareeshghk/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
@@ -217,4 +219,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
+## Sliding Window
+|  |
+| ------- |
+| [2626-count-the-number-of-good-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2626-count-the-number-of-good-subarrays) |
 <!---LeetCode Topics End-->
