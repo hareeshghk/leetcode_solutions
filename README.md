@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0119-pascals-triangle-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0119-pascals-triangle-ii) |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0416-partition-equal-subset-sum) |
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
@@ -56,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0119-pascals-triangle-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0119-pascals-triangle-ii) |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0416-partition-equal-subset-sum) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
