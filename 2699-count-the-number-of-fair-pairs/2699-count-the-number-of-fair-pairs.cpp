@@ -7,28 +7,18 @@ public:
         return getNumberOfPairsWithMaxSumLimit(upper, nums) - getNumberOfPairsWithMaxSumLimit(lower-1, nums); 
     }
 private:
-    int getNumElemennts(vector<int> &nums, int left, int right, int val) {
-        int result = left-1;
-        while (left <= right) {
-            int mid = left + (right-left)/2;
-            if (nums[mid] <= val) {
-                result = mid;
-                left = mid+1;
-            } else {
-                right = mid-1;
-            }
-        }
-        return result;
-    }
-
     long long getNumberOfPairsWithMaxSumLimit(int limit, vector<int>& nums) {
         long long answer = 0;
         int n = nums.size();
-        for (int i = 0; i < n; ++i) {
-            // since x+num <= limit
-            int limitOfOtherElement = limit-nums[i];
-            // find number of elements in nums above index i and less than or equal to limitOfOtherElements
-            answer += (getNumElemennts(nums, i+1, n-1, limitOfOtherElement)-i);
+        int left = 0, right = n-1;
+        while (left < right) {
+            // since possibleright + nums[left] <= limit
+            int limitOfOtherElement = limit-nums[left];
+            while (left < right && nums[right] > limitOfOtherElement) {
+                right--;
+            }
+            answer += (right-left);
+            left++;
         }
         return answer;
     }
