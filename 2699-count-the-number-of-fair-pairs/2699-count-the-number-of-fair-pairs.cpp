@@ -28,7 +28,7 @@ private:
             // since x+num <= limit
             int limitOfOtherElement = limit-nums[i];
             // find number of elements in nums above index i and less than or equal to limitOfOtherElements
-            answer += max((getNumElemennts(nums, i+1, n-1, limitOfOtherElement)-i), 0);
+            answer += (getNumElemennts(nums, i+1, n-1, limitOfOtherElement)-i);
         }
         return answer;
     }
