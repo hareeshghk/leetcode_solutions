@@ -10,11 +10,7 @@ public:
         int result = 0;
 
         for (auto& val : nums) {
-            if (val.first + 1 > val.second) {
-                result += (val.first+1);
-            } else {
-                result += ((val.second + val.first) / (val.first+1)) * (val.first+1);
-            }
+            result += ((val.second + val.first) / (val.first+1)) * (val.first+1);
         }
         return result;
     }
