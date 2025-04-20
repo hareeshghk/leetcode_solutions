@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/0002-add-two-numbers) |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
+| [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [1119-robot-bounded-in-circle](https://github.com/hareeshghk/leetcode_solutions/tree/master/1119-robot-bounded-in-circle) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2050-count-good-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2050-count-good-numbers) |
@@ -63,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0119-pascals-triangle-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0119-pascals-triangle-ii) |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0416-partition-equal-subset-sum) |
+| [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1656-count-good-triplets](https://github.com/hareeshghk/leetcode_solutions/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -88,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
+| [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
@@ -112,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
+| [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 | [2681-put-marbles-in-bags](https://github.com/hareeshghk/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
