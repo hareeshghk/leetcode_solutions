@@ -12,7 +12,7 @@ public:
                 prefixCount++;
             }
 
-            int findCount = ((prefixCount-k)+modulo) % modulo;
+            int findCount = (prefixCount-k) % modulo;
 
             answer += modCount[findCount];
             modCount[prefixCount%modulo]++;
