@@ -153,6 +153,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2207-sequentially-ordinal-rank-tracker](https://github.com/hareeshghk/leetcode_solutions/tree/master/2207-sequentially-ordinal-rank-tracker) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2681-put-marbles-in-bags](https://github.com/hareeshghk/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
 ## Matrix
@@ -172,6 +173,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2207-sequentially-ordinal-rank-tracker](https://github.com/hareeshghk/leetcode_solutions/tree/master/2207-sequentially-ordinal-rank-tracker) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -189,6 +191,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2207-sequentially-ordinal-rank-tracker](https://github.com/hareeshghk/leetcode_solutions/tree/master/2207-sequentially-ordinal-rank-tracker) |
 ## Stack
 |  |
 | ------- |
@@ -273,4 +276,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2249-count-the-hidden-sequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/2249-count-the-hidden-sequences) |
 | [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 | [2915-count-of-interesting-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2915-count-of-interesting-subarrays) |
+## Ordered Set
+|  |
+| ------- |
+| [2207-sequentially-ordinal-rank-tracker](https://github.com/hareeshghk/leetcode_solutions/tree/master/2207-sequentially-ordinal-rank-tracker) |
 <!---LeetCode Topics End-->
