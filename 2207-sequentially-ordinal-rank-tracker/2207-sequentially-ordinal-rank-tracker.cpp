@@ -1,83 +1,17 @@
-class PlaceWithScore {
-    string name;
-    int score;
-public:
-    PlaceWithScore(string n, int s) {
-        name = n;
-        score = s;
-    }
-
-    string getName() const {return name;}
-    int getScore() const {return score;}
-};
-
 class SORTracker {
+    set<pair<int, string>> sortedLocations;
+    set<pair<int, string>>::iterator it = end(sortedLocations);
 public:
-    inline static auto minheapFunc = [](const PlaceWithScore &a, const PlaceWithScore &b) {
-        if (a.getScore() > b.getScore()) {
-            return true;
-        } else if (a.getScore() < b.getScore()) {
-            return false;
-        } else {
-            return a.getName() < b.getName();
-        }
-    };
-
-    inline  static auto  maxheapFunc = [](const PlaceWithScore &a, const PlaceWithScore &b) {
-        if (a.getScore() < b.getScore()) {
-            return true;
-        } else if (a.getScore() > b.getScore()) {
-            return false;
-        } else {
-            return a.getName() > b.getName();
-        }
-    };
-
-    inline static auto isBetter = [](const PlaceWithScore &a, const PlaceWithScore &b) {
-        if (a.getScore() > b.getScore()) {
-            return true;
-        } else if (a.getScore() < b.getScore()) {
-            return false;
-        } else {
-            return a.getName() < b.getName();
-        }
-    };
-
-    SORTracker() : minheap(minheapFunc), maxheap(maxheapFunc) {
-        bestLocationFindCount = 0;
-    }
-    
     void add(string name, int score) {
-        auto pws = PlaceWithScore(name, score);
-        if (minheap.empty()) {
-            minheap.push(pws);
-        } else if (isBetter(pws, minheap.top())) {
-            minheap.push(pws);
-        } else {
-            maxheap.push(pws);
+        auto it1 = sortedLocations.insert({-score, name}).first;
+        if (it == end(sortedLocations) || *it1 < *it) {
+            --it;
         }
     }
     
     string get() {
-        bestLocationFindCount++;
-
-        while (minheap.size() > bestLocationFindCount) {
-            auto val = minheap.top();
-            minheap.pop();
-            maxheap.push(val);
-        }
-
-        while (minheap.size() < bestLocationFindCount) {
-            auto val = maxheap.top();
-            maxheap.pop();
-            minheap.push(val);
-        }
-        return minheap.top().getName();
+        return (it++)->second;
     }
-private:
-    int bestLocationFindCount;
-    priority_queue<PlaceWithScore, vector<PlaceWithScore>, decltype(minheapFunc)> minheap;
-    priority_queue<PlaceWithScore, vector<PlaceWithScore>, decltype(maxheapFunc)> maxheap;
 };
 
 /**
