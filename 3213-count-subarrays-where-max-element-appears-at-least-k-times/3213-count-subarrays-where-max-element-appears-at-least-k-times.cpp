@@ -15,6 +15,8 @@ public:
         for (int we = 0; we < n; ++we) {
             if (nums[we] == maxNum) maxNumCount++;
 
+            if (nums[ws] != maxNum) ws++; 
+
             while (ws <= we && (maxNumCount > k || (maxNumCount == k && nums[ws] != maxNum))) {
                 if (nums[ws] == maxNum) {
                     maxNumCount--;
