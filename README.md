@@ -143,6 +143,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
+| [1133-last-substring-in-lexicographical-order](https://github.com/hareeshghk/leetcode_solutions/tree/master/1133-last-substring-in-lexicographical-order) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/2699-count-the-number-of-fair-pairs) |
 ## Breadth-First Search
@@ -225,6 +226,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1119-robot-bounded-in-circle](https://github.com/hareeshghk/leetcode_solutions/tree/master/1119-robot-bounded-in-circle) |
+| [1133-last-substring-in-lexicographical-order](https://github.com/hareeshghk/leetcode_solutions/tree/master/1133-last-substring-in-lexicographical-order) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1532-reformat-the-string](https://github.com/hareeshghk/leetcode_solutions/tree/master/1532-reformat-the-string) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
