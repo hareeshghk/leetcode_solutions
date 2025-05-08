@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/hareeshghk/leetcode_solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
+| [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Topological Sort
 |  |
 | ------- |
@@ -32,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/hareeshghk/leetcode_solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
+| [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Math
 |  |
 | ------- |
@@ -104,6 +106,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3587-maximum-points-tourist-can-earn](https://github.com/hareeshghk/leetcode_solutions/tree/master/3587-maximum-points-tourist-can-earn) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
+| [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hareeshghk/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 ## Hash Table
@@ -173,6 +176,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2681-put-marbles-in-bags](https://github.com/hareeshghk/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
+| [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Matrix
 |  |
 | ------- |
@@ -181,6 +185,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3398-make-a-square-with-the-same-color](https://github.com/hareeshghk/leetcode_solutions/tree/master/3398-make-a-square-with-the-same-color) |
 | [3587-maximum-points-tourist-can-earn](https://github.com/hareeshghk/leetcode_solutions/tree/master/3587-maximum-points-tourist-can-earn) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
+| [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Tree
 |  |
 | ------- |
