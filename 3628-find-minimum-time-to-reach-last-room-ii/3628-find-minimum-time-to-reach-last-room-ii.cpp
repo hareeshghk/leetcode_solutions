@@ -38,7 +38,7 @@ public:
                 int neiy = y  + dir[1];
                 int pos = (neix * m) + neiy;
                 if (neix >= 0 && neix < n && neiy >=0 && neiy < m) {
-                    int newTime = max(topper.turn + topper.time, topper.turn + moveTime[neix][neiy]);
+                    int newTime = topper.turn + max(topper.time, moveTime[neix][neiy]);
                     
                     if (timeTaken[pos] == -1 || timeTaken[pos] > newTime) {
                         timeTaken[pos] = newTime;
