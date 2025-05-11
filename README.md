@@ -82,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1293-three-consecutive-odds](https://github.com/hareeshghk/leetcode_solutions/tree/master/1293-three-consecutive-odds) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/hareeshghk/leetcode_solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
+| [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1656-count-good-triplets](https://github.com/hareeshghk/leetcode_solutions/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2048-build-array-from-permutation](https://github.com/hareeshghk/leetcode_solutions/tree/master/2048-build-array-from-permutation) |
@@ -134,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
+| [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
@@ -161,6 +163,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1133-last-substring-in-lexicographical-order](https://github.com/hareeshghk/leetcode_solutions/tree/master/1133-last-substring-in-lexicographical-order) |
+| [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/2699-count-the-number-of-fair-pairs) |
 ## Breadth-First Search
@@ -206,6 +209,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
