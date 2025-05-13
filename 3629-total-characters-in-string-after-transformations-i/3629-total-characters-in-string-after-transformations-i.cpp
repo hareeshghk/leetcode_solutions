@@ -8,18 +8,18 @@ public:
         }
 
         int mod = 1000000007;
-        
+
         for (int i = 1; i <= t; ++i) {
             vector<int> c2 = vector<int>(26, 0);
 
-            for (int j = 0; j < 26; ++j) {
-                c2[j] = c1[(26 + j-1)%26];
-                if (j == 1) {
-                    c2[j] = (c2[j] + c1[25]) % mod;
-                }
+            c2[0] = c1[25];
+            c2[1] = (c1[0] + c1[25]) % mod;  
+
+            for (int j = 2; j < 26; ++j) {
+                c2[j] = c1[j-1];
             }
 
-            c1 = c2;
+            c1 = move(c2);
         }
 
         int answer = 0;
