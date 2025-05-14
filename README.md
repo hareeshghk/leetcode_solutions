@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3243-count-the-number-of-powerful-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3587-maximum-points-tourist-can-earn](https://github.com/hareeshghk/leetcode_solutions/tree/master/3587-maximum-points-tourist-can-earn) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/hareeshghk/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
 ## Graph
 |  |
@@ -54,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/hareeshghk/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
 ## Bit Manipulation
 |  |
@@ -134,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2915-count-of-interesting-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2915-count-of-interesting-subarrays) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hareeshghk/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 ## Sorting
 |  |
@@ -265,6 +268,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/hareeshghk/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
 ## Linked List
 |  |
@@ -309,6 +313,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 ## Sliding Window
 |  |
 | ------- |
