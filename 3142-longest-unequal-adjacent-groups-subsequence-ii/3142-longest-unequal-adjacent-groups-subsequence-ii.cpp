@@ -13,6 +13,8 @@ public:
             int wordlen = words[i].length();
             dp[i] = {1, n};
 
+            // instead of for loop we cna generate all strings in hamming distance one from ith string and serach
+            // for them in a unordered map created form seen string as per i for loop.
             for (int j = i+1; j < n; ++j) {
                 if (groups[i] != groups[j] && inhammingdistance(words[i], words[j])) {
                     if (dp[i][0] < dp[j][0] + 1) {
