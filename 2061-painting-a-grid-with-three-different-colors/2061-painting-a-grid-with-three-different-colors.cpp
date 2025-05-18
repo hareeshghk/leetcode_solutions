@@ -1,39 +1,47 @@
 class Solution {
     int mod = 1000000007;
-    int _m, _n;
-    vector<vector<int>> dp;
-    vector<int> states;
+    int _m;
 public:
     int colorTheGrid(int m, int n) {
-        // colour of each cell depends on previous painted adjacent blocks.
-        // If we need to avoid repetiotions we need to find a way to store partial solutions.
-        // given m is max 5 and n is 1000. lets store 'm' blocks as out previous state.
         _m = m;
-        _n = n;
-        int state = 0;
-        // lets use red, green blue as 1,2,3.
-        dp = vector<vector<int>>(1025, vector<int>(n, -1));
-        states = enumerateStates();
-        return getCount(state, 0);
-    }
-private:
-    int getCount(int state, int column) {
-        if (column == _n) {
-            return 1;
+        vector<int> states = enumerateStates();
+        unordered_map<int, vector<int>> neighbours;
+        for (int i = 0; i < states.size(); ++i) {
+            for (int j = i+1; j < states.size(); ++j) {
+                if (validState(states[i], states[j])) {
+                    neighbours[states[i]].push_back(states[j]);
+                    neighbours[states[j]].push_back(states[i]);
+                }
+            }
         }
 
-        if (dp[state][column] != -1) return dp[state][column];
+        unordered_map<int, int> count1;
+        for (auto state : states) {
+            count1[state] = 1;
+        }
+
+        for (int i = n-2; i >= 0; --i) {
+            unordered_map<int, int> count2;
+
+            for (auto state : states) {
+                int result = 0;
+                for (auto nei : neighbours[state]) {
+                    result = (result + count1[nei])%mod;
+                }
+                count2[state] = result;
+            }
+
+            count1 = count2;
+        }
 
         int answer = 0;
 
-        for (auto newState : states) {
-            if (validState(state, newState)) {
-                answer = (answer + getCount(newState, column + 1))%mod;
-            }
+        for (auto state : states) {
+            answer = (answer + count1[state]) % mod;
         }
-        return dp[state][column] = answer;
+        return answer;
     }
-
+private:
     bool validState(int os, int ns) {
         for (int i = 0; i < _m; ++i) {
             if (os % 4 == ns % 4) return false;
