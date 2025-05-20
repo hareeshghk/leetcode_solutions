@@ -12,18 +12,12 @@ impl Solution {
         }
 
         let mut offset = 0;
-
-        let mut i = 0;
-        let mut result = 0;
-        while i < n {
+        for i in 0..n {
             offset += pre_points[i];
-            result = nums[i];
-            result += offset;
 
-            if result > 0 {
+            if nums[i] + offset > 0 {
                 return false;
             }
-            i+=1;
         }
         return true;
     }
