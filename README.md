@@ -127,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3639-zero-array-transformation-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3639-zero-array-transformation-i) |
+| [3647-zero-array-transformation-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hareeshghk/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 ## Hash Table
@@ -166,6 +167,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/hareeshghk/leetcode_solutions/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3321-type-of-triangle](https://github.com/hareeshghk/leetcode_solutions/tree/master/3321-type-of-triangle) |
+| [3647-zero-array-transformation-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 ## Greedy
 |  |
 | ------- |
@@ -180,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/hareeshghk/leetcode_solutions/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 | [3231-minimum-number-of-coins-to-be-added](https://github.com/hareeshghk/leetcode_solutions/tree/master/3231-minimum-number-of-coins-to-be-added) |
 | [3264-maximum-points-after-enemy-battles](https://github.com/hareeshghk/leetcode_solutions/tree/master/3264-maximum-points-after-enemy-battles) |
+| [3647-zero-array-transformation-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 ## Two Pointers
 |  |
 | ------- |
@@ -209,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2681-put-marbles-in-bags](https://github.com/hareeshghk/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3647-zero-array-transformation-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 ## Matrix
 |  |
 | ------- |
@@ -353,6 +357,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2530-minimize-maximum-of-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2530-minimize-maximum-of-array) |
 | [2915-count-of-interesting-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2915-count-of-interesting-subarrays) |
 | [3639-zero-array-transformation-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3639-zero-array-transformation-i) |
+| [3647-zero-array-transformation-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 ## Ordered Set
 |  |
 | ------- |
