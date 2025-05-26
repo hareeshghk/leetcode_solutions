@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0730-count-different-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/0730-count-different-palindromic-subsequences) |
 | [0806-domino-and-tromino-tiling](https://github.com/hareeshghk/leetcode_solutions/tree/master/0806-domino-and-tromino-tiling) |
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/hareeshghk/leetcode_solutions/tree/master/2061-painting-a-grid-with-three-different-colors) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/hareeshghk/leetcode_solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2415-count-the-number-of-ideal-arrays) |
@@ -28,12 +29,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Graph
 |  |
 | ------- |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/hareeshghk/leetcode_solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Topological Sort
 |  |
 | ------- |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/hareeshghk/leetcode_solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Shortest Path
 |  |
@@ -72,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 ## Game Theory
 |  |
 | ------- |
@@ -145,6 +149,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1500-count-largest-group](https://github.com/hareeshghk/leetcode_solutions/tree/master/1500-count-largest-group) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2215-finding-3-digit-even-numbers) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/hareeshghk/leetcode_solutions/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
@@ -346,6 +351,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/hareeshghk/leetcode_solutions/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
