@@ -3,12 +3,16 @@ impl Solution {
         let mut answer: i32 = 0;
         
         for i in 1..=n {
-            if  i % m != 0 {
-                answer += i; 
-            } else {
-                answer -= i;
-            }
+            answer += i;
        } 
+
+       let mut x = m;
+
+       while x <= n {
+        answer -= 2*x;
+        x+= m;
+       }
+
        return answer;
     }
 }
