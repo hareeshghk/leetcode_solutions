@@ -20,6 +20,20 @@ public:
         return targets1;
     }
 private:
+    int dfs(int node, int parent, vector<vector<int>> &graph, int k) {
+        if (k < 0) {
+            return 0;
+        }
+
+        int result = 1;
+
+        for (auto nei : graph[node]) {
+            if (nei == parent) continue;
+            result += dfs(nei, node, graph, k-1);
+        }
+        return result;
+    }
+    
     vector<int> getTargets(vector<vector<int>> &edges, int k) {
         int n = edges.size() + 1;
 
@@ -32,26 +46,7 @@ private:
         }
 
         for (int i = 0; i < n; ++i) {
-            queue<pair<int, int>> bfs_queue;
-            bfs_queue.push({i, -1});
-
-            int turn = 0;
-            while (!bfs_queue.empty()) {
-                int s = bfs_queue.size();
-                if (turn > k) break;
-                for (int j = 0; j < s; ++j) {
-                    auto node = bfs_queue.front();
-                    bfs_queue.pop();
-                    targets[i]++;
-
-                    for (auto nei : graph[node.first]) {
-                        if (nei == node.second) continue;
-
-                        bfs_queue.push({nei, node.first});
-                    }
-                }
-                turn++;
-            }
+            targets[i] = dfs(i, -1, graph, k);
         }
         return targets;
     }
