@@ -63,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/hareeshghk/leetcode_solutions/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
+| [3279-alice-and-bob-playing-flower-game](https://github.com/hareeshghk/leetcode_solutions/tree/master/3279-alice-and-bob-playing-flower-game) |
 | [3321-type-of-triangle](https://github.com/hareeshghk/leetcode_solutions/tree/master/3321-type-of-triangle) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
