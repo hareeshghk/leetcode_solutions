@@ -2,20 +2,19 @@ class Solution {
     vector<vector<char>> _b;
 public:
     bool isValidSudoku(vector<vector<char>>& board) {
-        int boardSize = board.size();
         _b = board;
         // check rows
-        for (int i = 0; i < boardSize; ++i) {
+        for (int i = 0; i < 9; ++i) {
             if (!isValidRow(i)) return false;
         }
 
         // check columns
-        for (int i = 0; i < boardSize; ++i) {
+        for (int i = 0; i < 9; ++i) {
             if (!isValidColumn(i)) return false;
         }
 
         // check boxes
-        for (int i = 0; i < boardSize; ++i) {
+        for (int i = 0; i < 9; ++i) {
             if (!isValidBox(i)) return false;
         }
 
