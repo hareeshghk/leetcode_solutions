@@ -1,6 +1,7 @@
 #include <map>
 #include <unordered_map>
 #include <vector>
+using namespace std;
 
 /*
 at every index we calculate number of subarrays satisfyuing k condition

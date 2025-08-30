@@ -1,4 +1,5 @@
 #include <vector>
+using namespace std;
 
 class TicTacToe {
     vector<vector<int>> players_row_count;

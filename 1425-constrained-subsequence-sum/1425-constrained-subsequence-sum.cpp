@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <deque>
 #include <vector>
+using namespace std;
 
 class Solution {
 public:

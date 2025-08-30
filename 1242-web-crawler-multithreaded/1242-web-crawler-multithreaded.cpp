@@ -3,6 +3,7 @@
 #include <string>
 #include <unordered_set>
 #include <vector>
+using namespace std;
 
 /**
  * // This is the HtmlParser's API interface.

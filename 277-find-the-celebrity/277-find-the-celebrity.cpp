@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <map>
 #include <utility>
+using namespace std;
 
 /* The knows API is defined for you.
       bool knows(int a, int b); */

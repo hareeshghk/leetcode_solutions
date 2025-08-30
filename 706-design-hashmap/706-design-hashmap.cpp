@@ -1,5 +1,6 @@
 #include <utility>
 #include <vector>
+using namespace std;
 
 class MyHashMap {
     vector<vector<pair<int,int>>> hasher;

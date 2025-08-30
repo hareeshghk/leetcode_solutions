@@ -1,5 +1,6 @@
 #include <queue>
 #include <vector>
+using namespace std;
 
 class SeatManager {
     priority_queue<int, vector<int>, greater<int>> minheap;

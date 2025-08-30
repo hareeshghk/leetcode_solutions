@@ -1,6 +1,7 @@
 #include <set>
 #include <string>
 #include <utility>
+using namespace std;
 
 class SORTracker {
     set<pair<int, string>> sortedLocations;

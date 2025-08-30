@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <vector>
+using namespace std;
 
 class Solution {
     int modVal = 1000000007;

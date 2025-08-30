@@ -1,5 +1,6 @@
 #include <unordered_map>
 #include <vector>
+using namespace std;
 
 class Solution {
     vector<unordered_map<char, bool>> rowmap;

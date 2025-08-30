@@ -1,5 +1,6 @@
 #include <map>
 #include <vector>
+using namespace std;
 
 class Node {
 public:

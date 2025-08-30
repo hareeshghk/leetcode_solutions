@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <queue>
 #include <vector>
+using namespace std;
 
 class node {
 public:

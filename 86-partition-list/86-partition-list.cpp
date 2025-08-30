@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+using namespace std;
 
 /**
  * Definition for singly-linked list.

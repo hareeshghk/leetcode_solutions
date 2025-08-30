@@ -1,4 +1,5 @@
 #include <deque>
+using namespace std;
 
 class BoundedBlockingQueue {
     int capacity, current_size;

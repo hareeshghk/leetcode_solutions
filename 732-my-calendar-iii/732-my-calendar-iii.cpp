@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <map>
+using namespace std;
 
 class MyCalendarThree {
     map<int, int> bookings;

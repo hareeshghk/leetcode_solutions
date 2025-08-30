@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <unordered_map>
+using namespace std;
 
 class Node {
     shared_ptr<Node> left, right;

@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+using namespace std;
 
 bool operator > (string &a, string &b) {
     int n = a.length();

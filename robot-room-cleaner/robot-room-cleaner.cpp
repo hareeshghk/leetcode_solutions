@@ -1,6 +1,7 @@
 #include <set>
 #include <utility>
 #include <vector>
+using namespace std;
 
 /**
  * // This is the robot's control interface.

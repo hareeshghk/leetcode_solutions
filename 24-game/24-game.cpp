@@ -2,6 +2,7 @@
 #include <cmath>
 #include <numeric>
 #include <vector>
+using namespace std;
 
 class Solution {
 public:

@@ -1,4 +1,5 @@
 #include <vector>
+using namespace std;
 
 class ZigzagIterator {
     vector<int>::iterator s1,s2, e1,e2;

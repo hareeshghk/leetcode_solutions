@@ -3,7 +3,10 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/msys64/ucrt64/include/**",
+                "C:/msys64/ucrt64/include/c++/**",
+                "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/*/include/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -12,10 +15,10 @@
                 "_WIN32",
                 "_WINDOWS"
             ],
-            "compilerPath": "",
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4

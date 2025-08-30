@@ -1,4 +1,5 @@
 #include <vector>
+using namespace std;
 
 /*
  * Below is the interface for Iterator, which is already defined for you.

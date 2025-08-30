@@ -2,6 +2,7 @@
 #include <string>
 #include <unordered_map>
 #include <utility>
+using namespace std;
 
 class UndergroundSystem {
     unordered_map<string, pair<int,int>> timeTaken;

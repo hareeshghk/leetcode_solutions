@@ -3,6 +3,7 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+using namespace std;
 
 class WordDistance {
     unordered_map<string, vector<int>> word_map;

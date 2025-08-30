@@ -1,5 +1,6 @@
 #include <unordered_map>
 #include <vector>
+using namespace std;
 
 class Solution {
     int mod = 1000000007;

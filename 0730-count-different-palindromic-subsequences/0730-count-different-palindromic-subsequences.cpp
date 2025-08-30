@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+using namespace std;
 
 class Solution {
     int MOD = 1000000007;

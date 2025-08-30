@@ -1,4 +1,5 @@
 #include <queue>
+using namespace std;
 
 class MovingAverage {
 public:

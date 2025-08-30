@@ -1,4 +1,5 @@
 #include <vector>
+using namespace std;
 
 class NumMatrix {
     int rows, cols;

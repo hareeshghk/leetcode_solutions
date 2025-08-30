@@ -2,6 +2,7 @@
 #include <map>
 #include <stack>
 #include <unordered_map>
+using namespace std;
 
 class Node {
 public:

@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <vector>
+using namespace std;
 
 class ATM {
     vector<long long int> counts;
