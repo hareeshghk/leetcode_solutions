@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+
 class Solution {
 public:
     string minWindow(string s, string t) {

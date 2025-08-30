@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
     int totalSum;
     vector<int> prefixSums;

@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <map>
+#include <vector>
+
 class Solution {
 public:
     int oddEvenJumps(vector<int>& arr) {

@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <map>
+
 class MyCalendarThree {
     map<int, int> bookings;
 public:

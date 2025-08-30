@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {

@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
 public:
     int target_;

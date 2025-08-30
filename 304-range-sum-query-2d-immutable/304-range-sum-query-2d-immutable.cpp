@@ -1,3 +1,5 @@
+#include <vector>
+
 class NumMatrix {
     vector<vector<int>> dp;
 public:

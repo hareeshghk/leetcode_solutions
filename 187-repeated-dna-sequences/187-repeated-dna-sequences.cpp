@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
 public:
     vector<string> findRepeatedDnaSequences(string s) {

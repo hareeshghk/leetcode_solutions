@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <stack>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
 public:
     bool validateBinaryTreeNodes(int n, vector<int>& leftChild, vector<int>& rightChild) {

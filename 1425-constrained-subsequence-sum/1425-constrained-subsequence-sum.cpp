@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <deque>
+#include <vector>
+
 class Solution {
 public:
     int constrainedSubsetSum(vector<int>& nums, int k) {

@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <unordered_map>
+#include <vector>
+
 /*
 // Definition for a Node.
 class Node {

@@ -1,3 +1,5 @@
+#include <vector>
+
 class KthLargest {
     vector<int> vals;
     int k;

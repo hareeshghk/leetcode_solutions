@@ -1,3 +1,6 @@
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     unordered_map<int, vector<int>> graph;

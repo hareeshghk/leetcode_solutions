@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     int totalFruit(vector<int>& fruits) {

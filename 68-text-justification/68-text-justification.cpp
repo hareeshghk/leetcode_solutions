@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     vector<string> fullJustify(vector<string>& words, int maxWidth) {

@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <queue>
+#include <vector>
 
 template <typename T, class container = vector<T>, class comparator = less<T>>
 class mypriority_queue: public priority_queue<T, container, comparator> {

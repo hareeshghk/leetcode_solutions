@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <queue>
+#include <vector>
+
 class Solution {
 public:
     void wallsAndGates(vector<vector<int>>& rooms) {

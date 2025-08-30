@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <stack>
+#include <vector>
+
 class Solution {
 public:
     int mctFromLeafValues(vector<int>& arr) {

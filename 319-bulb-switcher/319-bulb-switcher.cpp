@@ -1,3 +1,5 @@
+#include <cmath>
+
 class Solution {
 public:
     int bulbSwitch(int n) {

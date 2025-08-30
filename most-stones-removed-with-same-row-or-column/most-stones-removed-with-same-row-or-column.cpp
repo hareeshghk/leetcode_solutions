@@ -1,3 +1,8 @@
+#include <set>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     unordered_map<int, vector<int>> rows, columns;

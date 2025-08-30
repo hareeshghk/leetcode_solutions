@@ -1,3 +1,6 @@
+#include <map>
+#include <vector>
+
 class Node {
 public:
     shared_ptr<Node> prev;

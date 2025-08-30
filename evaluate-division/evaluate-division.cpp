@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     vector<double> calcEquation(vector<vector<string>>& equations, vector<double>& values, vector<vector<string>>& queries) {

@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
     vector<vector<char>> _b;
 public:

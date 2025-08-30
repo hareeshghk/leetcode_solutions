@@ -1,3 +1,7 @@
+#include <map>
+#include <unordered_map>
+#include <vector>
+
 /*
 at every index we calculate number of subarrays satisfyuing k condition
 at every index create a map and counr k pairs by going back, at any index if pairs become k then remaing left indices can be added or not to become subarrrays.

@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     string longestPrefix(string s) {

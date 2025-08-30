@@ -1,3 +1,6 @@
+#include <unordered_map>
+#include <vector>
+
 class Solution {
     vector<unordered_map<char, bool>> rowmap;
     vector<unordered_map<char, bool>> colmap;

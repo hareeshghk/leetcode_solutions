@@ -1,3 +1,6 @@
+#include <queue>
+#include <vector>
+
 class KthLargest {
     priority_queue<int, vector<int>, greater<>> pq;
     int k;

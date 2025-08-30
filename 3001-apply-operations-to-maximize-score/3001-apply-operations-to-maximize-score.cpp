@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <stack>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     int maximumScore(vector<int>& nums, int k) {

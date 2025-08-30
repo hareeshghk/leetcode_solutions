@@ -1,3 +1,7 @@
+#include <string>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
 public:
     vector<string> result;

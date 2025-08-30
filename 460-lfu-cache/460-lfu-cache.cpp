@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <unordered_map>
+
 class Bucket;
 
 class Node {

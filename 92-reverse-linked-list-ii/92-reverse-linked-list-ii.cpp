@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <iostream>
+#include <list>
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {

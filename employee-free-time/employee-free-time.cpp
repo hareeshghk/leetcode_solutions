@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 /*
 // Definition for an Interval.
 class Interval {

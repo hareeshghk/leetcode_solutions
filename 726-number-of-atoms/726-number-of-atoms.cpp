@@ -1,3 +1,12 @@
+#include <algorithm>
+#include <cctype>
+#include <cmath>
+#include <stack>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     int idx;

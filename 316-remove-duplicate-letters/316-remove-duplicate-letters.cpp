@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <stack>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+
 class Solution {
 public:
     string result;

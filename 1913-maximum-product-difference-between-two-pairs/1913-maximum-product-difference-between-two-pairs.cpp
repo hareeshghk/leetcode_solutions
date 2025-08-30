@@ -1,3 +1,6 @@
+#include <queue>
+#include <vector>
+
 class Solution {
 public:
     int maxProductDifference(vector<int>& nums) {

@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
 public:
     int minimumOperations(vector<int>& nums) {

@@ -1,3 +1,6 @@
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     bool checkDistances(string s, vector<int>& distance) {

@@ -1,3 +1,5 @@
+#include <map>
+
 class MyCalendarTwo {
 public:
     map<int,int> bookings;

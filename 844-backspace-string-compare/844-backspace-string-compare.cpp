@@ -1,3 +1,6 @@
+#include <stack>
+#include <string>
+
 class Solution {
 public:
     bool backspaceCompare(string s, string t) {

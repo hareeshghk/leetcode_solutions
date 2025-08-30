@@ -1,3 +1,7 @@
+#include <cmath>
+#include <string>
+#include <unordered_set>
+
 class Solution {
 public:
     int total_combinations;

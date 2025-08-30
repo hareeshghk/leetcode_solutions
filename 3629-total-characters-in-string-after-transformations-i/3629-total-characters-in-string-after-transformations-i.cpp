@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     int lengthAfterTransformations(string s, int t) {

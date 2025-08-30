@@ -1,3 +1,7 @@
+#include <queue>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     int endWordIdx;

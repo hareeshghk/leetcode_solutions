@@ -1,3 +1,6 @@
+#include <string>
+#include <unordered_map>
+
 class Solution {
 public:
     int romanToInt(string s) {

@@ -1,3 +1,6 @@
+#include <cctype>
+#include <string>
+
 class Solution {
 public:
     bool isNumber(string s) {

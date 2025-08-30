@@ -1,3 +1,6 @@
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     string removeKdigits(string num, int k) {

@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <string>
+
 class Solution {
 public:
     int countBinarySubstrings(string s) {

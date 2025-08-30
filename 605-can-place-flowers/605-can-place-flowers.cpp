@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class Solution {
 public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n) {

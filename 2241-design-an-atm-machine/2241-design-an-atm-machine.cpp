@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class ATM {
     vector<long long int> counts;
     vector<int> denominations;

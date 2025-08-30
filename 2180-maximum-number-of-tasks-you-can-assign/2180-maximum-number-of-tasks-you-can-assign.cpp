@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class Solution {
     int s;
     vector<int> ts, ws;

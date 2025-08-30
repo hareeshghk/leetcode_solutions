@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <queue>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     int largestPathValue(string colours, vector<vector<int>>& edges) {

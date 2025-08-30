@@ -1,3 +1,5 @@
+#include <queue>
+
 class MovingAverage {
 public:
     queue<int> store;

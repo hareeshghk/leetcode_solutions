@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <map>
+#include <queue>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     vector<int> getOrder(vector<vector<int>>& tasks) {

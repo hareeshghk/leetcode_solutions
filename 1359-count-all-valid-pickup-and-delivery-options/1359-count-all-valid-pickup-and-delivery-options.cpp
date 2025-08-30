@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
 public:
     long long int mod = 1000000007;

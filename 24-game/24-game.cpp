@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <cmath>
+#include <numeric>
+#include <vector>
+
 class Solution {
 public:
     bool judgePoint24(vector<int>& cards) {

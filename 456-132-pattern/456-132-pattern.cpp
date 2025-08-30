@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <stack>
+#include <vector>
+
 class Solution {
 public:
     bool find132pattern(vector<int>& nums) {

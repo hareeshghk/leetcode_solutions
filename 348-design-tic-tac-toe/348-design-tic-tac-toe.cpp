@@ -1,3 +1,5 @@
+#include <vector>
+
 class TicTacToe {
     vector<vector<int>> players_row_count;
     vector<vector<int>> players_column_count;

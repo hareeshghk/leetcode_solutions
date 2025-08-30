@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <queue>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     string longestSubsequenceRepeatedK(string s, int k) {

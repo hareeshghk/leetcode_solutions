@@ -1,3 +1,5 @@
+#include <string>
+
 class Solution {
 public:
     bool validPalindrome(string s) {

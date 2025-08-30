@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class DSU {
     vector<int> parent;
     vector<int> jusparent;

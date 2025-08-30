@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <map>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     string sortVowels(string s) {

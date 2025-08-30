@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <map>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     vector<string> getWordsInLongestSubsequence(vector<string>& words, vector<int>& groups) {

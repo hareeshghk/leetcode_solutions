@@ -1,3 +1,6 @@
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     int countPairs(vector<int>& nums, int k) {

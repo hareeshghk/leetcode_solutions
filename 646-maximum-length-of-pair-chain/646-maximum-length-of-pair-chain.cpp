@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <queue>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     int findLongestChain(vector<vector<int>>& pairs) {

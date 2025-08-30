@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <map>
+#include <vector>
+
 class Solution {
 public:
     int carFleet(int target, vector<int>& position, vector<int>& speed) {

@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
     unordered_map<int,int> mapper;
     int w_len;

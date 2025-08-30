@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class Solution {
 public:
     long long maximumTripletValue(vector<int>& nums) {

@@ -1,3 +1,5 @@
+#include <deque>
+
 class BoundedBlockingQueue {
     int capacity, current_size;
     shared_mutex mt;

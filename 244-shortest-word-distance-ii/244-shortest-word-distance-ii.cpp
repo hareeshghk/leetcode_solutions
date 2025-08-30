@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 class WordDistance {
     unordered_map<string, vector<int>> word_map;
 public:

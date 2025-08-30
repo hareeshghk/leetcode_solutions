@@ -1,3 +1,6 @@
+#include <string>
+#include <vector>
+
 class Node {
 public:
     bool is_last;

@@ -1,3 +1,6 @@
+#include <utility>
+#include <vector>
+
 class MyHashMap {
     vector<vector<pair<int,int>>> hasher;
     int mods;

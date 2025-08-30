@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class Solution {
 public:
     static bool sorter(const vector<int> &a, const vector<int> &b) {

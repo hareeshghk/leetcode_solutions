@@ -1,3 +1,6 @@
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     long long countInterestingSubarrays(vector<int>& nums, int modulo, int k) {

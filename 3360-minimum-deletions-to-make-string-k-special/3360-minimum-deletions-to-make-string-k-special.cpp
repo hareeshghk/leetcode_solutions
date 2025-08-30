@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <vector>
+
 class Solution {
     vector<vector<int>> dp;
 public:

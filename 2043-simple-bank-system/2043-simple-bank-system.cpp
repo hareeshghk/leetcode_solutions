@@ -1,3 +1,5 @@
+#include <vector>
+
 class Bank {
     vector<long long int> accbalances;
     int numaccounts;

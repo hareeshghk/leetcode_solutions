@@ -1,3 +1,6 @@
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     vector<int> longestCommonSubsequence(vector<vector<int>>& arrays) {

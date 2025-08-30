@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <unordered_map>
+
 class Solution {
 public:
     string s, t;

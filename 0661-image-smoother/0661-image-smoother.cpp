@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
     vector<vector<int>> dirs {{-1,-1},{-1,0},{-1,1},{0,-1},{0,0},{0,1},{1,-1},{1,0},{1,1}};
     int rows, cols;

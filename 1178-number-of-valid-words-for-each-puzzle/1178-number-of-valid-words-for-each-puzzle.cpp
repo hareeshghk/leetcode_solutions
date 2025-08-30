@@ -1,3 +1,7 @@
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     vector<int> findNumOfValidWords(vector<string>& words, vector<string>& puzzles) {

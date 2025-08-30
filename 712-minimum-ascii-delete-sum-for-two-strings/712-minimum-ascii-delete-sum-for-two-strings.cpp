@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     int minimumDeleteSum(string s1, string s2) {

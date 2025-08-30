@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <cctype>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     vector<string> temp;

@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <map>
+#include <vector>
+
 class Node {
 public:
     int x, h;

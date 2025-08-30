@@ -1,3 +1,6 @@
+#include <string>
+#include <unordered_map>
+
 class Solution {
     unordered_map<string,string> mapper;
     int counter;

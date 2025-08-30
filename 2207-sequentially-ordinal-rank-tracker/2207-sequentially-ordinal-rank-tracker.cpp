@@ -1,3 +1,7 @@
+#include <set>
+#include <string>
+#include <utility>
+
 class SORTracker {
     set<pair<int, string>> sortedLocations;
     set<pair<int, string>>::iterator it = end(sortedLocations);

@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <stack>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     vector<int> exclusiveTime(int n, vector<string>& logs) {

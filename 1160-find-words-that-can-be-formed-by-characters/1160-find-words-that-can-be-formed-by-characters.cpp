@@ -1,3 +1,6 @@
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     int countCharacters(vector<string>& words, string chars) {

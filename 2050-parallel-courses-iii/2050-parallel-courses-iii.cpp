@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <queue>
+#include <vector>
+
 class Solution {
 public:
     int minimumTime(int n, vector<vector<int>>& relations, vector<int>& time) {

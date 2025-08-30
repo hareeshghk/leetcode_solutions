@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <string>
+
 class Solution {
 public:
     string getSmallestString(int n, int k) {

@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <queue>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     string alienOrder(vector<string>& words) {

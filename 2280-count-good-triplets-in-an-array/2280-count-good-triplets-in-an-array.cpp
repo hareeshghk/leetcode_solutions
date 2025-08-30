@@ -1,3 +1,5 @@
+#include <vector>
+
 class FenwickTree {
 private:
     vector<int> tree;

@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class node {
 public:
     bool is_end;

@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <map>
+#include <vector>
+
 class Solution {
 public:
     bool carPooling(vector<vector<int>>& trips, int capacity) {

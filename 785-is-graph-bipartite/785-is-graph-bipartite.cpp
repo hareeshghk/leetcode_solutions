@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
 public:
     bool isBipartite(vector<vector<int>>& graph) {

@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
 public:
     vector<bool> visited;

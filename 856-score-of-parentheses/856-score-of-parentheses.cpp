@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <stack>
+#include <string>
+
 class Solution {
 public:
     int scoreOfParentheses(string s) {

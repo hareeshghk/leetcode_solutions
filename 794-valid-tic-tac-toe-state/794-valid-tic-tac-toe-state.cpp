@@ -1,3 +1,6 @@
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     bool validTicTacToe(vector<string>& board) {

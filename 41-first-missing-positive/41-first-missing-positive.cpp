@@ -1,3 +1,5 @@
+#include <vector>
+
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {

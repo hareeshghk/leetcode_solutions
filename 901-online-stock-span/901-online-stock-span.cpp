@@ -1,3 +1,6 @@
+#include <stack>
+#include <utility>
+
 class StockSpanner {
     stack<pair<int,int>> st;
 public:

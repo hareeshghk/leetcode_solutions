@@ -1,3 +1,5 @@
+#include <vector>
+
 class ZigzagIterator {
     vector<int>::iterator s1,s2, e1,e2;
     bool turn;

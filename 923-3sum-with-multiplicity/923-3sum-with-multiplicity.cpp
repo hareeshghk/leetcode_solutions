@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     const int mod = 1000000007;

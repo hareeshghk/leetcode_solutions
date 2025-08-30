@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <queue>
+#include <vector>
+
 class node {
 public:
     int position;

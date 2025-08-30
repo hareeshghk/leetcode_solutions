@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <string>
+
 class Solution {
 public:
     string addBinary(string a, string b) {

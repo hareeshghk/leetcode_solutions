@@ -1,3 +1,6 @@
+#include <string>
+#include <vector>
+
 class TrieNode {
 public:
     string word;

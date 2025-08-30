@@ -1,3 +1,6 @@
+#include <string>
+#include <vector>
+
 class Solution {
     int MOD = 1000000007;
     vector<vector<vector<int>>> dp;

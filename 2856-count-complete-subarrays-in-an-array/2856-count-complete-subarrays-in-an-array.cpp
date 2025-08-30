@@ -1,3 +1,7 @@
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
 public:
     int countCompleteSubarrays(vector<int>& nums) {

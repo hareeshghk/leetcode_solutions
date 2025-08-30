@@ -1,3 +1,8 @@
+#include <queue>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     struct freqcompare {

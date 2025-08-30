@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <set>
+#include <stack>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     int evalRPN(vector<string>& tokens) {

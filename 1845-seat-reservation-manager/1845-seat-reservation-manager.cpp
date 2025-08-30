@@ -1,3 +1,6 @@
+#include <queue>
+#include <vector>
+
 class SeatManager {
     priority_queue<int, vector<int>, greater<int>> minheap;
     int marker;

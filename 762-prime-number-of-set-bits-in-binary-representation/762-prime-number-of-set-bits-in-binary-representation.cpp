@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <unordered_set>
+
 class Solution {
 public:
     int countPrimeSetBits(int left, int right) {

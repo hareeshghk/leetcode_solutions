@@ -1,3 +1,7 @@
+#include <stack>
+#include <unordered_map>
+#include <vector>
+
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums2, vector<int>& nums1) {

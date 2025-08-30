@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class Solution {
     int modVal = 1000000007;
     int maxp = 1;

@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
+
 class DSU {
     vector<int> parents;
     vector<int> rank;

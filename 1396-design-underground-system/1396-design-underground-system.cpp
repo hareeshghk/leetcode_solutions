@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+#include <utility>
+
 class UndergroundSystem {
     unordered_map<string, pair<int,int>> timeTaken;
     unordered_map<int, pair<string,int>> checkins;

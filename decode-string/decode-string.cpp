@@ -1,3 +1,7 @@
+#include <cctype>
+#include <stack>
+#include <string>
+
 class Solution {
 public:
     string decodeString(string s) {

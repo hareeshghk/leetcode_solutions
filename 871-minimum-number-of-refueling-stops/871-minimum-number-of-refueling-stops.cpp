@@ -1,3 +1,6 @@
+#include <queue>
+#include <vector>
+
 class Solution {
 public:
     int minRefuelStops(int target, int startFuel, vector<vector<int>>& stations) {

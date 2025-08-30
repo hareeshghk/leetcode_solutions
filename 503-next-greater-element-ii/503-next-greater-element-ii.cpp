@@ -1,3 +1,6 @@
+#include <stack>
+#include <vector>
+
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {

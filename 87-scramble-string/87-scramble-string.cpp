@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+
 class Solution {
 public:
     bool isScramble(string s1, string s2) {

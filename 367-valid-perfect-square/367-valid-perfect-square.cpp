@@ -1,3 +1,5 @@
+#include <algorithm>
+
 class Solution {
 public:
     bool isPerfectSquare(int num) {

@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <queue>
+#include <vector>
+
 class Solution {
 public:
     int minMeetingRooms(vector<vector<int>>& intervals) {

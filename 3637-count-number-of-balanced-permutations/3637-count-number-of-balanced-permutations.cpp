@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <cstring>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     constexpr static long long MOD = 1e9 + 7;

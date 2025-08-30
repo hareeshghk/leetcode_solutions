@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <vector>
+
 bool operator > (string &a, string &b) {
     int n = a.length();
     for (int i = 0; i < n; i++) {

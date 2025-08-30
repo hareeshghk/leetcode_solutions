@@ -1,3 +1,6 @@
+#include <cmath>
+#include <string>
+
 class Solution {
 public:
     string reformat(string s) {

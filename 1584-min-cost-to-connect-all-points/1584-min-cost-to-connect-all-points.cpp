@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <cmath>
+#include <vector>
+
 class DSU {
     vector<int> parents;
     vector<int> rank;

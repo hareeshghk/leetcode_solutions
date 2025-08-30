@@ -1,3 +1,5 @@
+#include <vector>
+
 class NumMatrix {
     int rows, cols;
     vector<vector<int>> store;

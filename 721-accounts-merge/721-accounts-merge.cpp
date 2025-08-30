@@ -1,3 +1,9 @@
+#include <algorithm>
+#include <set>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
 class DSU {
     vector<int> parent;
     int size;

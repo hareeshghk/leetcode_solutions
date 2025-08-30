@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     long long maxAlternatingSum(vector<int>& nums) {

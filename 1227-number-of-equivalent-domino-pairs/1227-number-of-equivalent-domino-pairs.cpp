@@ -1,3 +1,6 @@
+#include <algorithm>
+#include <vector>
+
 class Solution {
 public:
     int numEquivDominoPairs(vector<vector<int>>& d) {

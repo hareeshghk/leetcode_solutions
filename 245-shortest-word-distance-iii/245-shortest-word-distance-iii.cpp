@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <vector>
+
 class Solution {
 public:
     int shortestWordDistance(vector<string>& wordsDict, string word1, string word2) {

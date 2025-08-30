@@ -1,3 +1,5 @@
+#include <queue>
+
 class MyStack {
     queue<int> q1,q2;
     int turn;

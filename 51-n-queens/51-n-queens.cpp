@@ -1,3 +1,8 @@
+#include <algorithm>
+#include <string>
+#include <unordered_set>
+#include <vector>
+
 class Solution {
 public:
     unordered_set<int> cols, ddig, udig;

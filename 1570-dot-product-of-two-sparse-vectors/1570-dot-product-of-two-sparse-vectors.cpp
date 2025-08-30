@@ -1,3 +1,6 @@
+#include <utility>
+#include <vector>
+
 class SparseVector {
 public:
     vector<pair<int,int>> pos;

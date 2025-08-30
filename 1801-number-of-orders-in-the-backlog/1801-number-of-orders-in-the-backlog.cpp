@@ -1,3 +1,7 @@
+#include <queue>
+#include <utility>
+#include <vector>
+
 class Solution {
 public:
     struct mincost {

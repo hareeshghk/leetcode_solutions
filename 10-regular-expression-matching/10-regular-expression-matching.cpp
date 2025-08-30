@@ -1,3 +1,7 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+
 class Solution {
 public:
     unordered_map<string, bool> dp;
