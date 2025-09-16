@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2050-count-good-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2050-count-good-numbers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2998-count-symmetric-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2998-count-symmetric-integers) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
@@ -115,6 +116,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/hareeshghk/leetcode_solutions/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2249-count-the-hidden-sequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/2249-count-the-hidden-sequences) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2476-check-distances-between-same-letters](https://github.com/hareeshghk/leetcode_solutions/tree/master/2476-check-distances-between-same-letters) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/hareeshghk/leetcode_solutions/tree/master/2527-count-subarrays-with-fixed-bounds) |
@@ -297,6 +299,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1078-remove-outermost-parentheses](https://github.com/hareeshghk/leetcode_solutions/tree/master/1078-remove-outermost-parentheses) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 ## Monotonic Stack
 |  |
@@ -305,6 +308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Number Theory
 |  |
 | ------- |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 ## Depth-First Search
