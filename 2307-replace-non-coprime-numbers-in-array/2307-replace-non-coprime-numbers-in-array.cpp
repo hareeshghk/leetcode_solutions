@@ -6,40 +6,32 @@ public:
     vector<int> replaceNonCoprimes(vector<int>& nums) {
         int n = nums.size();
 
-        stack<int> st = stack<int>();
+        vector<int> st = vector<int>();
 
-        st.push(nums[0]);
+        st.push_back(nums[0]);
         
         int second = 1;
         while (second < n) {
-            int gcd = GCD(st.top(), nums[second]);
+            int gcd = GCD(st.back(), nums[second]);
 
             if (gcd == 1) {
-                st.push(nums[second]);
+                st.push_back(nums[second]);
             } else {
-                int lcm = LCM(st.top(), nums[second], gcd);
-                st.pop();
+                int lcm = LCM(st.back(), nums[second], gcd);
+                st.pop_back();
 
                 while (!st.empty()) {
-                    int gcd = GCD(st.top(), lcm);
+                    int gcd = GCD(st.back(), lcm);
 
                     if (gcd == 1) break;
-                    lcm = LCM(st.top(), lcm, gcd);
-                    st.pop();
+                    lcm = LCM(st.back(), lcm, gcd);
+                    st.pop_back();
                 }
-                st.push(lcm);
+                st.push_back(lcm);
             }
             second++;
         }
-
-        vector<int> answer = vector<int>();
-        while (!st.empty()) {
-            answer.push_back(st.top());
-            st.pop();
-        }
-
-        reverse(answer.begin(), answer.end());
-        return answer;
+        return st;
     }
 private:
     inline int LCM(int a, int b, int gcd) {
