@@ -17,14 +17,14 @@ public:
             if (gcd == 1) {
                 st.push(nums[second]);
             } else {
-                int lcm = LCM(st.top(), nums[second]);
+                int lcm = LCM(st.top(), nums[second], gcd);
                 st.pop();
 
                 while (!st.empty()) {
                     int gcd = GCD(st.top(), lcm);
 
                     if (gcd == 1) break;
-                    lcm = LCM(st.top(), lcm);
+                    lcm = LCM(st.top(), lcm, gcd);
                     st.pop();
                 }
                 st.push(lcm);
@@ -42,9 +42,7 @@ public:
         return answer;
     }
 private:
-    int LCM(int a, int b) {
-        int gcd = GCD(a, b);
-
+    inline int LCM(int a, int b, int gcd) {
         return ((a/gcd) * (b/gcd)) * gcd;
     }
 
