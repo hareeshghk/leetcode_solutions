@@ -4,12 +4,6 @@ class FoodRatings {
     unordered_map<string, int> currentRating;
 public:
     FoodRatings(vector<string>& foods, vector<string>& cuisines, vector<int>& ratings) {
-        store = unordered_map<string, set<pair<int, string>>>();
-
-        for (auto c : cuisines) {
-            if (store.find(c) == store.end()) store[c] = set<pair<int, string>>();
-        }
-
         for (int i = 0; i < foods.size(); ++i) {
             currentRating[foods[i]] = ratings[i];
             foodCuisineMap[foods[i]] = cuisines[i];
