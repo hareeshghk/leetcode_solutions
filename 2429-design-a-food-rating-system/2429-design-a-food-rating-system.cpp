@@ -1,27 +1,19 @@
-struct CustomCompare {
-    bool operator()(const pair<int, string>& a, const pair<int, string>& b) const {
-        if (a.first != b.first)
-            return a.first > b.first; // Descending order for int
-        return a.second < b.second;   // Lexicographical order for string
-    }
-};
-
 class FoodRatings {
-    unordered_map<string, set<pair<int, string>, CustomCompare>> store;
+    unordered_map<string, set<pair<int, string>>> store;
     unordered_map<string, string> foodCuisineMap;
     unordered_map<string, int> currentRating;
 public:
     FoodRatings(vector<string>& foods, vector<string>& cuisines, vector<int>& ratings) {
-        store = unordered_map<string, set<pair<int, string>, CustomCompare>>();
+        store = unordered_map<string, set<pair<int, string>>>();
 
         for (auto c : cuisines) {
-            if (store.find(c) == store.end()) store[c] = set<pair<int, string>, CustomCompare>();
+            if (store.find(c) == store.end()) store[c] = set<pair<int, string>>();
         }
 
         for (int i = 0; i < foods.size(); ++i) {
             currentRating[foods[i]] = ratings[i];
             foodCuisineMap[foods[i]] = cuisines[i];
-            store[cuisines[i]].insert(pair<int, string>(ratings[i], foods[i]));
+            store[cuisines[i]].insert(pair<int, string>(-1 * ratings[i], foods[i]));
         }
     }
     
@@ -29,8 +21,8 @@ public:
         int curr = currentRating[food];
         string cuisine = foodCuisineMap[food];
 
-        store[cuisine].erase(pair<int, string>(curr, food));
-        store[cuisine].insert(pair<int, string>(newRating, food));
+        store[cuisine].erase(pair<int, string>(-1 * curr, food));
+        store[cuisine].insert(pair<int, string>(-1 * newRating, food));
         currentRating[food] = newRating;
     }
     
