@@ -1,27 +1,32 @@
 class FoodRatings {
-    unordered_map<string, set<pair<int, string>>> store;
-    unordered_map<string, string> foodCuisineMap;
-    unordered_map<string, int> currentRating;
+    unordered_map<string, pair<string, int>> foodToCuisineRating;
+    unordered_map<string, map<int, set<string>>> cusineToRatingFoodSetMap;
 public:
     FoodRatings(vector<string>& foods, vector<string>& cuisines, vector<int>& ratings) {
         for (int i = 0; i < foods.size(); ++i) {
-            currentRating[foods[i]] = ratings[i];
-            foodCuisineMap[foods[i]] = cuisines[i];
-            store[cuisines[i]].insert(pair<int, string>(-1 * ratings[i], foods[i]));
+            foodToCuisineRating[foods[i]] = {cuisines[i], {ratings[i]}};
+            cusineToRatingFoodSetMap[cuisines[i]][ratings[i]].insert(foods[i]);
         }
     }
     
     void changeRating(string food, int newRating) {
-        int curr = currentRating[food];
-        string cuisine = foodCuisineMap[food];
+        auto foodInfo = foodToCuisineRating.find(food);
+        int currRating = foodInfo->second.second;
+        string cuisine = foodInfo->second.first;
 
-        store[cuisine].erase(pair<int, string>(-1 * curr, food));
-        store[cuisine].insert(pair<int, string>(-1 * newRating, food));
-        currentRating[food] = newRating;
+        foodInfo->second.second = newRating;
+
+        cusineToRatingFoodSetMap[cuisine][currRating].erase(food);
+
+        if (cusineToRatingFoodSetMap[cuisine][currRating].size() == 0) {
+            cusineToRatingFoodSetMap[cuisine].erase(currRating);
+        }
+
+        cusineToRatingFoodSetMap[cuisine][newRating].insert(food);
     }
     
     string highestRated(string cuisine) {
-        return store[cuisine].begin()->second;
+        return *(cusineToRatingFoodSetMap[cuisine].rbegin()->second.begin());
     }
 };
 
