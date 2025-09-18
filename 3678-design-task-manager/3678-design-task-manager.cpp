@@ -18,15 +18,9 @@ public:
     }
     
     void edit(int taskId, int newPriority) {
-        int currentPriority = taskPriorityMap[taskId];
-        priorityTaskSetMap[currentPriority].erase(taskId);
-
-        if (priorityTaskSetMap[currentPriority].size() == 0) {
-            priorityTaskSetMap.erase(currentPriority);
-        }
-
-        taskPriorityMap[taskId] = newPriority;
-        priorityTaskSetMap[newPriority].insert(taskId);
+        int userId = taskUserIDMap[taskId];
+        rmv(taskId);
+        add(userId, taskId, newPriority);
     }
     
     void rmv(int taskId) {
