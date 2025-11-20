@@ -3,7 +3,7 @@ public:
     int smallestRepunitDivByK(int k) {
         int num = 1;
         int ans = 1;
-
+        unordered_set<int> seen;
         while (num != 0) {
             while (num < k) {
                 num = (num * 10) + 1;
@@ -11,7 +11,8 @@ public:
             }
 
             num = num%k;
-            if (ans > 100000) return -1;
+            if (seen.find(num) != seen.end()) return -1;
+            seen.insert(num);
         }
         return ans;
     }
