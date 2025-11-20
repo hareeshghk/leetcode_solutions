@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0002-add-two-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/0002-add-two-numbers) |
 | [0009-palindrome-number](https://github.com/hareeshghk/leetcode_solutions/tree/master/0009-palindrome-number) |
+| [0263-ugly-number](https://github.com/hareeshghk/leetcode_solutions/tree/master/0263-ugly-number) |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
 | [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
