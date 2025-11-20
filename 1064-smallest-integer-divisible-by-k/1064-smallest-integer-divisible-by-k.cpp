@@ -4,14 +4,16 @@ public:
         if (k % 2 == 0 || k%5 == 0) return -1;
         int num = 1;
         int ans = 1;
-        while (num != 0) {
+        int t = k;
+        while (t--) {
             while (num < k) {
                 num = (num * 10) + 1;
                 ans++;
             }
 
             num = num%k;
+            if ( num == 0) return ans;
         }
-        return ans;
+        return -1;
     }
 };
