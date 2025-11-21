@@ -5,6 +5,12 @@ public:
         vector<int> counter = vector<int>(26, 0);
         vector<int> solCounter = vector<int>(26, 0);
 
+        vector<int> bits = vector<int>(26, 0);
+        bits[0]=1;
+        for (int i = 1; i < 26; ++i) {
+            bits[i] = bits[i-1]<<1;
+        }
+
         int n = s.length();
         for (int i = 0; i < n; ++i) {
             int idx = s[i]-'a';
@@ -15,7 +21,7 @@ public:
 
             for (int i = 0; i < 26; ++i) {
                 if (seen[i]) {
-                    counter[i] = (counter[i] | (1<<idx));
+                    counter[i] = (counter[i] | (bits[idx]));
                 }
             }
 
@@ -29,15 +35,12 @@ public:
         return ans;
     }
 private:
-    int GetUniqueCount(int idx) {
-        int ans = 0;
-        for (int i = 0; i < 26; ++i) {
-            if (idx & 1) ans++;
-            idx = idx>>1;
+    inline int GetUniqueCount(int n) {
+        int count = 0;
+        while (n > 0) {
+            n &= (n - 1); // This unsets the rightmost set bit
+            count++;
         }
-        return ans;
+        return count;
     }
 };
-
-// verey character see if it appeared already then unique chars between current occurence and old occurrence is the count
-// 
