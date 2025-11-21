@@ -30,8 +30,8 @@ public:
         return ans;
     }
 private:
-    int GetUniqueCount(vector<vector<int>> &c, int idx) {
-        auto x = c[idx];
+    int GetUniqueCount(const vector<vector<int>> &c, int idx) {
+        const auto& x = c[idx];
         int ans = 0;
         for (int i = 0; i < 26; ++i) {
             if (x[i] > 0) {
