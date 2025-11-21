@@ -2,21 +2,20 @@ class Solution {
 public:
     int countPalindromicSubsequence(string s) {
         vector<bool> seen = vector<bool>(26, false);
-        vector<vector<int>> counter = vector<vector<int>>(26, vector<int>(26, 0));
+        vector<int> counter = vector<int>(26, 0);
         vector<int> solCounter = vector<int>(26, 0);
 
         int n = s.length();
-
         for (int i = 0; i < n; ++i) {
             int idx = s[i]-'a';
 
             if (seen[idx]) {
-                solCounter[idx] = GetUniqueCount(counter, idx);
+                solCounter[idx] = GetUniqueCount(counter[idx]);
             }
 
             for (int i = 0; i < 26; ++i) {
                 if (seen[i]) {
-                    counter[i][idx]++;
+                    counter[i] = (counter[i] | (1<<idx));
                 }
             }
 
@@ -30,13 +29,11 @@ public:
         return ans;
     }
 private:
-    int GetUniqueCount(const vector<vector<int>> &c, int idx) {
-        const auto& x = c[idx];
+    int GetUniqueCount(int idx) {
         int ans = 0;
         for (int i = 0; i < 26; ++i) {
-            if (x[i] > 0) {
-                ans++;
-            }
+            if (idx & 1) ans++;
+            idx = idx>>1;
         }
         return ans;
     }
