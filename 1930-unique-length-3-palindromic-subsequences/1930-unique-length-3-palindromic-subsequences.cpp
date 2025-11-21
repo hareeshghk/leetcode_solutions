@@ -8,13 +8,10 @@ public:
         int n = s.length();
 
         for (int i = 0; i < n; ++i) {
-            char x = s[i];
-            int idx = x-'a';
+            int idx = s[i]-'a';
 
             if (seen[idx]) {
                 solCounter[idx] = GetUniqueCount(counter, idx);
-            } else {
-                seen[idx] = true;
             }
 
             for (int i = 0; i < 26; ++i) {
@@ -22,6 +19,8 @@ public:
                     counter[i][idx]++;
                 }
             }
+
+            seen[idx] = true;
         }
 
         int ans = 0;
@@ -36,11 +35,7 @@ private:
         int ans = 0;
         for (int i = 0; i < 26; ++i) {
             if (x[i] > 0) {
-                if (i == idx) {
-                    if (x[i] > 1) ans++;
-                } else {
-                    ans++;
-                }
+                ans++;
             }
         }
         return ans;
