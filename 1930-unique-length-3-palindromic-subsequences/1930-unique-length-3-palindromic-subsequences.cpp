@@ -37,6 +37,11 @@ public:
     }
 private:
     inline int GetUniqueCount(int n) {
-        return bitset<32>(n).count();
+        int count = 0;
+        while (n > 0) {
+            n &= (n - 1); // This unsets the rightmost set bit
+            count++;
+        }
+        return count;
     }
 };
