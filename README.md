@@ -396,6 +396,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 |  |
 | ------- |
+| [0077-combinations](https://github.com/hareeshghk/leetcode_solutions/tree/master/0077-combinations) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Combinatorics
 |  |
