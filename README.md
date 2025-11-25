@@ -56,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
 | [0728-self-dividing-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/0728-self-dividing-numbers) |
 | [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1064-smallest-integer-divisible-by-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/1064-smallest-integer-divisible-by-k) |
 | [1119-robot-bounded-in-circle](https://github.com/hareeshghk/leetcode_solutions/tree/master/1119-robot-bounded-in-circle) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/hareeshghk/leetcode_solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
@@ -171,6 +172,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0594-longest-harmonious-subsequence](https://github.com/hareeshghk/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
+| [1015-smallest-integer-divisible-by-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1064-smallest-integer-divisible-by-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/1064-smallest-integer-divisible-by-k) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
