@@ -27,8 +27,8 @@ private:
             vector<vector<int>> combined = vector<vector<int>>(budget+1, vector<int>(2, 0));
             for (int bud = 0; bud <= budget; ++bud) {
                 for (int x = 0; x <= bud; ++x) {
-                    combined[bud][0] = max(combined[bud][0], current[x][0] + dp[bud-x][0]);
-                    combined[bud][1] = max(combined[bud][1], current[x][1] + dp[bud-x][1]);
+                    combined[bud][0] = max(combined[bud][0], current[x][0] + dp[bud-x][0]); // root not bought
+                    combined[bud][1] = max(combined[bud][1], current[x][1] + dp[bud-x][1]); // root bought
                 }
             }
             dp = combined;
