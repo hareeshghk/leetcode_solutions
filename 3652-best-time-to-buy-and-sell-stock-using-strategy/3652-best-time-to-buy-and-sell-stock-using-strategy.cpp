@@ -2,49 +2,35 @@ class Solution {
 public:
     long long maxProfit(vector<int>& prices, vector<int>& strategy, int k) {
         int n = prices.size();
+        vector<vector<long long>> prefixSums = vector<vector<long long>>(n, vector<long long>(3, 0));
+
         vector<long long> minusone = vector<long long>(n, 0);
         vector<long long> zero = vector<long long>(n, 0);
         vector<long long> plusone = vector<long long>(n, 0);
         
         long long overallSum = prices[0]*strategy[0];
-
-        if (strategy[0] == -1) {
-            minusone[0] = prices[0];
-        } else if (strategy[0] == 0) {
-            zero[0] = prices[0];
-        } else {
-            plusone[0] = prices[0];
-        }
+        prefixSums[0][strategy[0]+1] = prices[0];
 
         for (int i = 1; i < n; ++i) {
-            minusone[i] = minusone[i-1];
-            zero[i] = zero[i-1];
-            plusone[i] = plusone[i-1];
-
-            if (strategy[i] == -1) {
-                minusone[i] += prices[i];
-            } else if (strategy[i] == 0) {
-                zero[i] += prices[i];
-            } else {
-                plusone[i] += prices[i];
+            for (int j = 0; j < 3; ++j) {
+                prefixSums[i][j] = prefixSums[i-1][j];
             }
-
+            prefixSums[i][strategy[i]+1] += prices[i];
             overallSum += (strategy[i]*prices[i]);
         }
 
         long long answer = overallSum, currentValue;
+        int mid, end;
         for (int i=0; i+k-1 < n; ++i) {
-            int start = i;
             int mid = i+(k/2)-1;
             int end = i+k-1;
 
             currentValue = overallSum;
+            currentValue += prefixSums[mid][0]-(i==0?0:prefixSums[i-1][0]);
+            currentValue -= prefixSums[mid][2]-(i==0?0:prefixSums[i-1][2]);
 
-            currentValue += minusone[mid]-(i==0?0:minusone[i-1]);
-            currentValue -= plusone[mid]-(i==0?0:plusone[i-1]);
-
-            currentValue += 2*(minusone[end]-minusone[mid]);
-            currentValue += zero[end] - zero[mid];
+            currentValue += 2*(prefixSums[end][0]-prefixSums[mid][0]);
+            currentValue += prefixSums[end][1] - prefixSums[mid][1];
 
             answer = max(answer, currentValue);
         }
