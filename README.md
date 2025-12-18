@@ -180,6 +180,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3639-zero-array-transformation-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3639-zero-array-transformation-i) |
 | [3647-zero-array-transformation-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
+| [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/hareeshghk/leetcode_solutions/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hareeshghk/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
 ## Hash Table
@@ -471,6 +472,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2626-count-the-number-of-good-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/hareeshghk/leetcode_solutions/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
+| [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/hareeshghk/leetcode_solutions/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 ## Simulation
 |  |
 | ------- |
@@ -490,6 +492,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3639-zero-array-transformation-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3639-zero-array-transformation-i) |
 | [3647-zero-array-transformation-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
+| [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/hareeshghk/leetcode_solutions/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 ## Ordered Set
 |  |
 | ------- |
