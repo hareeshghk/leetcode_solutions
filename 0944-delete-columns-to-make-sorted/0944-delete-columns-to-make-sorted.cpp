@@ -6,15 +6,11 @@ public:
         int toatalColumns = strs[0].length();
         int answer = 0;
 
-        vector<bool> stillConsidered = vector<bool>(toatalColumns, true);
-
-        for (int i = 1; i < n; ++i) {
-            for (int j = 0; j < toatalColumns; ++j) {
-                if (!stillConsidered[j]) continue;
-
-                if ((strs[i][j] -'a') < (strs[i-1][j] -'a')) {
+        for (int i = 0; i < toatalColumns; ++i) {
+            for (int j = 1; j < n; ++j) {
+                if ((strs[j][i] - 'a') < (strs[j-1][i] - 'a')) {
                     answer++;
-                    stillConsidered[j] = false;
+                    break;
                 }
             }
         }
