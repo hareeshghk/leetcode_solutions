@@ -3,36 +3,33 @@ public:
     int n;
     int minDeletionSize(vector<string>& strs) {
         n = strs.size();
-        vector<bool> indicesPresent = vector<bool>(n, true);
+        set<int> indicesPresent;
+        for (int i = 1; i < n; ++i) {
+            indicesPresent.insert(i);
+        }
         return getMinDeletionSize(strs, 0, indicesPresent);
     }
 private:
-    int getMinDeletionSize(vector<string> &strs, int index, vector<bool>& indicesPresent) {
+    int getMinDeletionSize(vector<string> &strs, int index, set<int> &indicesPresent) {
         if (index == strs[0].size()) {
             return 0;
         }
-
-        int answer = 0;
-        vector<bool> indices = vector<bool>(n, false);
-        int idx = 0;
-        for (idx = 1;idx < n; ++idx) {
-            if (indicesPresent[idx]) {
-                if (strs[idx][index] < strs[idx-1][index]) {
-                    answer++;
-                    break;
-                } else if (strs[idx][index] == strs[idx-1][index]) {
-                    indices[idx] = true;
-                }
+        
+        set<int> indices;
+        bool isBreak = false;
+        for (auto idx : indicesPresent) {
+            if (strs[idx][index] < strs[idx-1][index]) {
+                isBreak = true;
+                break;
+            } else if (strs[idx][index] == strs[idx-1][index]) {
+                indices.insert(idx);
             }
         }
 
-        int val = 0;
-        if (idx == n) {
-            val = getMinDeletionSize(strs, index+1, indices);
+        if (!isBreak) {
+            return getMinDeletionSize(strs, index+1, indices);
         } else {
-            val = getMinDeletionSize(strs, index+1, indicesPresent);
+            return 1 + getMinDeletionSize(strs, index+1, indicesPresent);
         }
-
-        return answer + val;
     }
 };
