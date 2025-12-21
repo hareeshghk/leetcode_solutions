@@ -11,10 +11,10 @@ public:
     }
 private:
     int getMinDeletionSize(vector<string> &strs, int index, set<int> &indicesPresent) {
-        if (index == strs[0].size()) {
+        if (index == strs[0].size() || indicesPresent.size() == 0) {
             return 0;
         }
-        
+
         set<int> indices;
         bool isBreak = false;
         for (auto idx : indicesPresent) {
