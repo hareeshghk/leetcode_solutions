@@ -5,6 +5,7 @@ public:
         int m = strs[0].length();
 
         vector<int> dp = vector<int>(m, 1);
+        int keepen = 1;
         for (int i = m-2; i >= 0; --i) {
             for (int j = i+1; j < m; ++j) {
                 bool isBroken = false;
@@ -18,12 +19,7 @@ public:
 
                 dp[i] = max(dp[i], 1+dp[j]);
             }
-        }
-
-        int keepen = 0;
-
-        for (auto x : dp) {
-            keepen = max(keepen, x);
+            keepen = max(keepen, dp[i]);
         }
 
         return m-keepen;
