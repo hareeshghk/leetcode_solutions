@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0730-count-different-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/0730-count-different-palindromic-subsequences) |
 | [0806-domino-and-tromino-tiling](https://github.com/hareeshghk/leetcode_solutions/tree/master/0806-domino-and-tromino-tiling) |
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/hareeshghk/leetcode_solutions/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/hareeshghk/leetcode_solutions/tree/master/2061-painting-a-grid-with-three-different-colors) |
@@ -123,6 +124,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [0944-delete-columns-to-make-sorted](https://github.com/hareeshghk/leetcode_solutions/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0955-delete-columns-to-make-sorted-ii) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/hareeshghk/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/hareeshghk/leetcode_solutions/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -400,6 +402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [0944-delete-columns-to-make-sorted](https://github.com/hareeshghk/leetcode_solutions/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0955-delete-columns-to-make-sorted-ii) |
+| [0960-delete-columns-to-make-sorted-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1078-remove-outermost-parentheses](https://github.com/hareeshghk/leetcode_solutions/tree/master/1078-remove-outermost-parentheses) |
 | [1119-robot-bounded-in-circle](https://github.com/hareeshghk/leetcode_solutions/tree/master/1119-robot-bounded-in-circle) |
 | [1133-last-substring-in-lexicographical-order](https://github.com/hareeshghk/leetcode_solutions/tree/master/1133-last-substring-in-lexicographical-order) |
