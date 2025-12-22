@@ -9,7 +9,7 @@ public:
         for (int i = m-2; i >= 0; --i) {
             for (int j = i+1; j < m; ++j) {
                 bool isBroken = false;
-                for (auto& str : strs) {
+                for (const auto& str : strs) {
                     if (str[i] > str[j]) {
                         isBroken = true;
                         break;
