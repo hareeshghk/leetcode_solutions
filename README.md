@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/hareeshghk/leetcode_solutions/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
+| [2054-two-best-non-overlapping-events](https://github.com/hareeshghk/leetcode_solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/hareeshghk/leetcode_solutions/tree/master/2061-painting-a-grid-with-three-different-colors) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/hareeshghk/leetcode_solutions/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hareeshghk/leetcode_solutions/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
@@ -139,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1834-minimum-number-of-people-to-teach](https://github.com/hareeshghk/leetcode_solutions/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2048-build-array-from-permutation](https://github.com/hareeshghk/leetcode_solutions/tree/master/2048-build-array-from-permutation) |
+| [2054-two-best-non-overlapping-events](https://github.com/hareeshghk/leetcode_solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hareeshghk/leetcode_solutions/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -235,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1626-can-make-arithmetic-progression-from-sequence](https://github.com/hareeshghk/leetcode_solutions/tree/master/1626-can-make-arithmetic-progression-from-sequence) |
+| [2054-two-best-non-overlapping-events](https://github.com/hareeshghk/leetcode_solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2092-find-all-people-with-secret](https://github.com/hareeshghk/leetcode_solutions/tree/master/2092-find-all-people-with-secret) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -303,6 +306,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2054-two-best-non-overlapping-events](https://github.com/hareeshghk/leetcode_solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2207-sequentially-ordinal-rank-tracker](https://github.com/hareeshghk/leetcode_solutions/tree/master/2207-sequentially-ordinal-rank-tracker) |
 | [2429-design-a-food-rating-system](https://github.com/hareeshghk/leetcode_solutions/tree/master/2429-design-a-food-rating-system) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
@@ -348,6 +352,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [2054-two-best-non-overlapping-events](https://github.com/hareeshghk/leetcode_solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2141-maximum-running-time-of-n-computers) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/hareeshghk/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/2394-count-subarrays-with-score-less-than-k) |
