@@ -26,18 +26,12 @@ private:
             }
         }
 
-        cout << "iteration done" << minNumber << " " << maxNumber << " " << s.size() << endl;
-
         if (minNumber != 1 || maxNumber != 9 || s.size() != 9) return false;
-
-        cout << "iteration check done" << endl;
 
         int firstRowSum = grid[startx][starty] + grid[startx][starty+1] + grid[startx][starty+2];
         int firstColumnSum = grid[startx][starty] + grid[startx+1][starty] + grid[startx+2][starty];
 
         if (firstRowSum != firstColumnSum) return false;
-
-        cout << "first row column done" << endl;
 
         for (int i = 1; i < 3; ++i) {
             if (grid[startx+i][starty] + grid[startx+i][starty+1] + grid[startx+i][starty+2] != firstRowSum) return false;
@@ -45,15 +39,9 @@ private:
             if (grid[startx][starty+i] + grid[startx+1][starty+i] + grid[startx+2][starty+i] != firstColumnSum) return false;
         }
 
-        cout << "all row column done" << endl;
-
         if (grid[startx][starty] + grid[startx+1][starty+1] + grid[startx+2][starty+2] != firstRowSum) return false;
 
-        cout << "straight diagonal done" << endl;
-
         if (grid[startx][starty+2] + grid[startx+1][starty+1] + grid[startx+2][starty] != firstRowSum) return false;
-
-        cout << "reverse diagonal done" << endl;
 
         return true;
     }
