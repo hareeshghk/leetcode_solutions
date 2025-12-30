@@ -14,14 +14,14 @@ public:
     }
 private:
     inline bool isMagical(vector<vector<int>>& grid, int startx, int starty) {
-        set<int> s;
+        vector<bool> seen = vector<bool>(10, false);
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 3; ++j) {
-                s.insert(grid[startx+i][starty+j]);
+                if (grid[startx+i][starty+j] < 1 || grid[startx+i][starty+j] > 9) return false;
+                if (seen[grid[startx+i][starty+j]]) return false;
+                seen[grid[startx+i][starty+j]] = true;
             }
         }
-
-        if (*s.begin() != 1 || *s.rbegin() != 9 || s.size() != 9) return false;
 
         int firstRowSum = grid[startx][starty] + grid[startx][starty+1] + grid[startx][starty+2];
         int firstColumnSum = grid[startx][starty] + grid[startx+1][starty] + grid[startx+2][starty];
