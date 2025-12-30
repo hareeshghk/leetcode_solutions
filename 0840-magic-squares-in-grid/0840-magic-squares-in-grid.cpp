@@ -14,19 +14,14 @@ public:
     }
 private:
     inline bool isMagical(vector<vector<int>>& grid, int startx, int starty) {
-        cout << startx << " " << starty << endl;
-
-        int maxNumber = -1, minNumber = 16;
         set<int> s;
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 3; ++j) {
-                maxNumber = max(maxNumber, grid[startx+i][starty+j]);
-                minNumber = min(minNumber, grid[startx+i][starty+j]);
                 s.insert(grid[startx+i][starty+j]);
             }
         }
 
-        if (minNumber != 1 || maxNumber != 9 || s.size() != 9) return false;
+        if (*s.begin() != 1 || *s.rbegin() != 9 || s.size() != 9) return false;
 
         int firstRowSum = grid[startx][starty] + grid[startx][starty+1] + grid[startx][starty+2];
         int firstColumnSum = grid[startx][starty] + grid[startx+1][starty] + grid[startx+2][starty];
