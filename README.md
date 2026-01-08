@@ -95,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
+| [0756-pyramid-transition-matrix](https://github.com/hareeshghk/leetcode_solutions/tree/master/0756-pyramid-transition-matrix) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/hareeshghk/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -202,6 +203,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0073-set-matrix-zeroes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
 | [0202-happy-number](https://github.com/hareeshghk/leetcode_solutions/tree/master/0202-happy-number) |
 | [0594-longest-harmonious-subsequence](https://github.com/hareeshghk/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
+| [0756-pyramid-transition-matrix](https://github.com/hareeshghk/leetcode_solutions/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [0840-magic-squares-in-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
@@ -419,6 +421,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0038-count-and-say](https://github.com/hareeshghk/leetcode_solutions/tree/master/0038-count-and-say) |
 | [0730-count-different-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/0730-count-different-palindromic-subsequences) |
+| [0756-pyramid-transition-matrix](https://github.com/hareeshghk/leetcode_solutions/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [0944-delete-columns-to-make-sorted](https://github.com/hareeshghk/leetcode_solutions/tree/master/0944-delete-columns-to-make-sorted) |
@@ -478,6 +481,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0077-combinations](https://github.com/hareeshghk/leetcode_solutions/tree/master/0077-combinations) |
 | [0494-target-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0494-target-sum) |
+| [0756-pyramid-transition-matrix](https://github.com/hareeshghk/leetcode_solutions/tree/master/0756-pyramid-transition-matrix) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 ## Combinatorics
 |  |
