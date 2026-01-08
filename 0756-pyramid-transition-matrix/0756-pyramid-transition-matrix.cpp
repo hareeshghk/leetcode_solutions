@@ -1,63 +1,52 @@
-class Trie {
-    vector<Trie*> children;
-    bool isEnd;
-public:
-    Trie() {
-        isEnd = false;
-        children = vector<Trie*>(6, nullptr);
-    }
-
-    void insert(string str) {
-        auto root = this;
-
-        for (int i = 0; i < str.size(); ++i) {
-            if (root->children[str[i]-'A'] == nullptr) {
-                root->children[str[i]-'A'] = new Trie();
-            }
-            root = root->children[str[i]-'A'];
-        }
-        root->isEnd = true;
-    }
-
-    bool hasPrefix(string str) {
-        auto root = this;
-
-        for (int i = 0; i < str.size(); ++i) {
-            if (root->children[str[i]-'A'] == nullptr) {
-                return false;
-            }
-            root = root->children[str[i]-'A'];
-        }
-        return true;
-    }
-};
-
 class Solution {
-    unordered_map<string, vector<string>> allowedMap;
+    unordered_map<int, vector<int>> allowedMap;
+    unordered_set<int> seen;
 public:
     bool pyramidTransition(string bottom, vector<string>& allowed) {
         for (auto str : allowed) {
-            allowedMap[str.substr(0, 2)].push_back(str.substr(2));
+            allowedMap[((str[0]-'A') << 3) + (str[1]-'A')].push_back(str[2] - 'A');
         }
 
-        return solve(bottom);
+        vector<int> bottomVec = vector<int>(bottom.length());
+
+        for (int i = 0; i < bottomVec.size(); ++i) {
+            bottomVec[i] = bottom[i]-'A';
+        }
+
+        return solve(bottomVec);
     }
 private:
-    bool solve(string base) {
-        if (base.length() == 1) return true;
+    int convert(vector<int> &base) {
+        int val = 0;
 
-        return IterateString(base, 0, "");
+        for (auto x : base) {
+            val = (val<<3) + (x+1);
+        }
+        return val;
     }
 
-    bool IterateString(string base, int index, string current) {
-        if (index == base.length()-1) {
+    bool solve(vector<int> &base) {
+        if (base.size() == 1) return true;
+        int converted = convert(base);
+        if (seen.find(converted) != seen.end()) return false;
+
+        vector<int> current = vector<int>(base.size()-1);
+
+        if(IterateString(base, 0, current)) return true;
+
+        seen.insert(converted);
+        return false;
+    };
+
+    bool IterateString(vector<int> &base, int index, vector<int> &current) {
+        if (index == base.size()-1) {
             return solve(current);
         }
 
-        bool result = false;
-        for (auto str : allowedMap[base.substr(index, 2)]) {
-            result = result || IterateString(base, index+1, current+str);
+        for (auto str : allowedMap[(base[index]<<3) + base[index+1]]) {
+            current[index] = str;
+            if(IterateString(base, index+1, current)) return true;
         }
-        return result;
+        return false;
     }
 };
