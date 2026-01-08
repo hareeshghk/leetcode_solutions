@@ -1,12 +1,16 @@
 class Solution {
 public:
     bool isStrictlyPalindromic(int n) {
+        return false;
+    }
+
+private:
+    bool isMyStrictlyPalindromic(int n) {
         for (int base = 2; base <= n-2; ++base) {
             if (!isPolindrome(n, base)) return false;
         }
         return true;
     }
-private:
     bool isPolindrome(int n, int b) {
         vector<int> representation;
         while (n!=0) {
