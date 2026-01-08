@@ -4,7 +4,7 @@ class Solution {
 public:
     bool pyramidTransition(string bottom, vector<string>& allowed) {
         for (auto str : allowed) {
-            allowedMap[((str[0]-'A') << 3) + (str[1]-'A')].push_back(str[2] - 'A');
+            allowedMap[getEncoded(str[0], str[1])].push_back(str[2] - 'A');
         }
 
         vector<int> bottomVec = vector<int>(bottom.length());
@@ -16,6 +16,15 @@ public:
         return solve(bottomVec);
     }
 private:
+    inline int getEncoded(char a, char b) {
+        return ((a-'A')<<3) + (b-'A');
+    }
+
+    inline int getEncoded(int a, int b) {
+        return (a<<3) + b;
+    }
+
+    // each number is maximum 3 bits so moving each number by 3 bits.
     int convert(vector<int> &base) {
         int val = 0;
 
@@ -43,8 +52,8 @@ private:
             return solve(current);
         }
 
-        for (auto str : allowedMap[(base[index]<<3) + base[index+1]]) {
-            current[index] = str;
+        for (auto nextVal : allowedMap[getEncoded(base[index], base[index+1])]) {
+            current[index] = nextVal;
             if(IterateString(base, index+1, current)) return true;
         }
         return false;
