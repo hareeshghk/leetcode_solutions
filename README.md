@@ -76,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/hareeshghk/leetcode_solutions/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
+| [2396-strictly-palindromic-number](https://github.com/hareeshghk/leetcode_solutions/tree/master/2396-strictly-palindromic-number) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2571-find-the-pivot-integer](https://github.com/hareeshghk/leetcode_solutions/tree/master/2571-find-the-pivot-integer) |
 | [2998-count-symmetric-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2998-count-symmetric-integers) |
@@ -294,6 +295,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0868-push-dominoes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1133-last-substring-in-lexicographical-order](https://github.com/hareeshghk/leetcode_solutions/tree/master/1133-last-substring-in-lexicographical-order) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [2396-strictly-palindromic-number](https://github.com/hareeshghk/leetcode_solutions/tree/master/2396-strictly-palindromic-number) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/hareeshghk/leetcode_solutions/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/2699-count-the-number-of-fair-pairs) |
 ## Breadth-First Search
@@ -542,4 +544,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3623-count-number-of-trapezoids-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3623-count-number-of-trapezoids-i) |
+## Brainteaser
+|  |
+| ------- |
+| [2396-strictly-palindromic-number](https://github.com/hareeshghk/leetcode_solutions/tree/master/2396-strictly-palindromic-number) |
 <!---LeetCode Topics End-->
