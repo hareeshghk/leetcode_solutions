@@ -212,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1064-smallest-integer-divisible-by-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/1064-smallest-integer-divisible-by-k) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
+| [1244-design-a-leaderboard](https://github.com/hareeshghk/leetcode_solutions/tree/master/1244-design-a-leaderboard) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hareeshghk/leetcode_solutions/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1500-count-largest-group](https://github.com/hareeshghk/leetcode_solutions/tree/master/1500-count-largest-group) |
@@ -242,6 +243,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/hareeshghk/leetcode_solutions/tree/master/0075-sort-colors) |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0594-longest-harmonious-subsequence](https://github.com/hareeshghk/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
+| [1244-design-a-leaderboard](https://github.com/hareeshghk/leetcode_solutions/tree/master/1244-design-a-leaderboard) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/hareeshghk/leetcode_solutions/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
@@ -360,6 +362,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/hareeshghk/leetcode_solutions/tree/master/0232-implement-queue-using-stacks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1244-design-a-leaderboard](https://github.com/hareeshghk/leetcode_solutions/tree/master/1244-design-a-leaderboard) |
 | [2207-sequentially-ordinal-rank-tracker](https://github.com/hareeshghk/leetcode_solutions/tree/master/2207-sequentially-ordinal-rank-tracker) |
 | [2429-design-a-food-rating-system](https://github.com/hareeshghk/leetcode_solutions/tree/master/2429-design-a-food-rating-system) |
 | [3678-design-task-manager](https://github.com/hareeshghk/leetcode_solutions/tree/master/3678-design-task-manager) |
