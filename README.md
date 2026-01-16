@@ -174,6 +174,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2915-count-of-interesting-subarrays) |
 | [2943-maximize-area-of-square-hole-in-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2943-maximize-area-of-square-hole-in-grid) |
+| [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/hareeshghk/leetcode_solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 | [3142-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3142-longest-unequal-adjacent-groups-subsequence-ii) |
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
@@ -233,6 +234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2856-count-complete-subarrays-in-an-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/hareeshghk/leetcode_solutions/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/hareeshghk/leetcode_solutions/tree/master/2915-count-of-interesting-subarrays) |
+| [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/hareeshghk/leetcode_solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/hareeshghk/leetcode_solutions/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
@@ -487,6 +489,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1656-count-good-triplets](https://github.com/hareeshghk/leetcode_solutions/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2215-finding-3-digit-even-numbers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2215-finding-3-digit-even-numbers) |
+| [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/hareeshghk/leetcode_solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [2998-count-symmetric-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2998-count-symmetric-integers) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3398-make-a-square-with-the-same-color](https://github.com/hareeshghk/leetcode_solutions/tree/master/3398-make-a-square-with-the-same-color) |
