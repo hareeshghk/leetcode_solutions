@@ -1,15 +1,15 @@
 class Solution {
 public:
-    int largestMagicSquare(vector<vector<int>>& gr) {
+    int largestMagicSquare(vector<vector<int>>& grid) {
         // lets assume n is smaller so max square can be n
         // fix the size the go into loop. O(M * N^3)
-        int m = gr.size();
-        int n = gr[0].size();
+        int m = grid.size();
+        int n = grid[0].size();
 
-        vector<vector<int>> grid = vector<vector<int>>(m, vector<int>(n, 0));
+        vector<vector<int>> prefixSum = vector<vector<int>>(m, vector<int>(n, 0));
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
-                grid[i][j] = gr[i][j] + ((j!=0?grid[i][j-1]:0) + (i!=0?grid[i-1][j]:0)) - ((i!=0 && j !=0)?grid[i-1][j-1]:0);
+                prefixSum[i][j] = grid[i][j] + ((j!=0?prefixSum[i][j-1]:0) + (i!=0?prefixSum[i-1][j]:0)) - ((i!=0 && j !=0)?prefixSum[i-1][j-1]:0);
             }
         }
 
@@ -20,21 +20,12 @@ public:
                 for (int j = currentSize-1; j < n; ++j) {
                     int row = i;
                     int column = j;
-                    int sumItShouldbe = grid[row][column] - (row!=0?grid[row-1][column]:0);
-                    if (column-currentSize >= 0) {
-                        sumItShouldbe -= grid[row][column-currentSize];
-                        sumItShouldbe += (row!=0?grid[row-1][column-currentSize]:0);
-                    }
+                    int sumItShouldbe = getRectangleSum(row, column+1-currentSize, row, column, prefixSum);
 
                     bool notPossible = false;
 
                     for (int currentRow = row-1; currentRow >= max(row+1-currentSize, 0); currentRow--) {
-                        int currentSum = grid[currentRow][column] - (currentRow!=0?grid[currentRow-1][column]:0);
-                        if (column-currentSize >= 0) {
-                            currentSum -= grid[currentRow][column-currentSize];
-                            currentSum += (currentRow!=0?grid[currentRow-1][column-currentSize]:0);
-                        }
-
+                        int currentSum = getRectangleSum(currentRow, column+1-currentSize, currentRow, column, prefixSum);
                         if (currentSum != sumItShouldbe) {
                             notPossible = true;
                             break;
@@ -44,12 +35,7 @@ public:
                     if (notPossible) continue;
 
                     for (int currentColumn = column; currentColumn >= max(column+1-currentSize, 0); currentColumn--) {
-                        int currentSum = grid[row][currentColumn] - (currentColumn!=0?grid[row][currentColumn-1]:0);
-                        if (row-currentSize >= 0) {
-                            currentSum -= grid[row-currentSize][currentColumn];
-                            currentSum += (currentColumn!=0?grid[row-currentSize][currentColumn-1]:0);
-                        }
-
+                        int currentSum = getRectangleSum(row+1-currentSize, currentColumn, row, currentColumn, prefixSum);
                         if (currentSum != sumItShouldbe) {
                             notPossible = true;
                             break;
@@ -61,14 +47,14 @@ public:
                     // right diagonal sum
                     int rightDiagonalSum = 0;
                     for (int k = 0; k < currentSize; ++k) {
-                        rightDiagonalSum += gr[row-k][column-k];
+                        rightDiagonalSum += grid[row-k][column-k];
                     }
                     if (rightDiagonalSum != sumItShouldbe) continue;
 
                     // left diagonal sum
                     int leftDiagonalSum = 0;
                     for (int k = 0; k < currentSize; ++k) {
-                        leftDiagonalSum += gr[(row+1-currentSize) + k][column-k];
+                        leftDiagonalSum += grid[(row+1-currentSize) + k][column-k];
                     }
                     if (leftDiagonalSum != sumItShouldbe) continue;
 
@@ -81,5 +67,23 @@ public:
             currentSize--;
         }
         return currentSize;
+    }
+private:
+    inline int getRectangleSum(int startx, int starty, int endx, int endy, vector<vector<int>> &prefixSum) {
+        int currentSum = prefixSum[endx][endy];
+
+        if (startx-1 >= 0) {
+            currentSum -= prefixSum[startx-1][endy];
+        }
+
+        if (starty-1 >= 0) {
+            currentSum -= prefixSum[endx][starty-1];
+        }
+        
+        if (starty-1 >= 0 && startx-1 >= 0) {
+            currentSum += prefixSum[startx-1][starty-1];
+        }
+
+        return currentSum;
     }
 };
