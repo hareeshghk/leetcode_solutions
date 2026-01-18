@@ -136,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/hareeshghk/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
+| [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/hareeshghk/leetcode_solutions/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/hareeshghk/leetcode_solutions/tree/master/1262-greatest-sum-divisible-by-three) |
@@ -318,6 +319,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0637-average-of-levels-in-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0733-flood-fill](https://github.com/hareeshghk/leetcode_solutions/tree/master/0733-flood-fill) |
+| [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2092-find-all-people-with-secret](https://github.com/hareeshghk/leetcode_solutions/tree/master/2092-find-all-people-with-secret) |
@@ -349,6 +351,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0073-set-matrix-zeroes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
 | [0733-flood-fill](https://github.com/hareeshghk/leetcode_solutions/tree/master/0733-flood-fill) |
 | [0840-magic-squares-in-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
+| [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
 | [1895-largest-magic-square](https://github.com/hareeshghk/leetcode_solutions/tree/master/1895-largest-magic-square) |
 | [1975-maximum-matrix-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/1975-maximum-matrix-sum) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -427,6 +430,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0637-average-of-levels-in-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0733-flood-fill](https://github.com/hareeshghk/leetcode_solutions/tree/master/0733-flood-fill) |
+| [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
