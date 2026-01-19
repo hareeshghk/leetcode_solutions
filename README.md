@@ -140,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/hareeshghk/leetcode_solutions/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/hareeshghk/leetcode_solutions/tree/master/1262-greatest-sum-divisible-by-three) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/hareeshghk/leetcode_solutions/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1293-three-consecutive-odds](https://github.com/hareeshghk/leetcode_solutions/tree/master/1293-three-consecutive-odds) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/hareeshghk/leetcode_solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/1458-max-dot-product-of-two-subsequences) |
@@ -352,6 +353,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0733-flood-fill](https://github.com/hareeshghk/leetcode_solutions/tree/master/0733-flood-fill) |
 | [0840-magic-squares-in-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
 | [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/hareeshghk/leetcode_solutions/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1895-largest-magic-square](https://github.com/hareeshghk/leetcode_solutions/tree/master/1895-largest-magic-square) |
 | [1975-maximum-matrix-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/1975-maximum-matrix-sum) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -388,6 +390,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hareeshghk/leetcode_solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/hareeshghk/leetcode_solutions/tree/master/0789-kth-largest-element-in-a-stream) |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/hareeshghk/leetcode_solutions/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2054-two-best-non-overlapping-events](https://github.com/hareeshghk/leetcode_solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2141-maximum-running-time-of-n-computers) |
@@ -545,6 +548,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 |  |
 | ------- |
+| [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/hareeshghk/leetcode_solutions/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1590-make-sum-divisible-by-p](https://github.com/hareeshghk/leetcode_solutions/tree/master/1590-make-sum-divisible-by-p) |
 | [1895-largest-magic-square](https://github.com/hareeshghk/leetcode_solutions/tree/master/1895-largest-magic-square) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/1930-unique-length-3-palindromic-subsequences) |
