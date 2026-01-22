@@ -5,10 +5,10 @@ public:
 
         while (nums.size() > 1) {
             bool isAscending = true;
-            int minSum = std::numeric_limits<int>::max();
+            int minSum = INT_MAX;
             int targetIndex = -1;
 
-            for (size_t i = 0; i < nums.size() - 1; ++i) {
+            for (int i = 0; i < nums.size() - 1; ++i) {
                 int sum = nums[i] + nums[i + 1];
 
                 if (nums[i] > nums[i + 1]) {
@@ -17,7 +17,7 @@ public:
 
                 if (sum < minSum) {
                     minSum = sum;
-                    targetIndex = static_cast<int>(i);
+                    targetIndex = i;
                 }
             }
 
