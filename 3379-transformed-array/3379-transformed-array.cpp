@@ -4,9 +4,8 @@ public:
         int n = nums.size();
 
         vector<int> result = vector<int>(n);
-        int val = getVal(n);
         for (int i = 0; i < n; ++i) {
-            result[i] = nums[(i+nums[i]+val) %n];
+            result[i] = nums[(((i+nums[i])%n) + n) %n];
         }
         return result;
     }
