@@ -9,12 +9,4 @@ public:
         }
         return result;
     }
-private:
-    int getVal(int n) {
-        int ans = n;
-        while (ans <= 100) {
-            ans += n;
-        }
-        return ans;
-    }
 };
