@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/hareeshghk/leetcode_solutions/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1458-max-dot-product-of-two-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/1458-max-dot-product-of-two-subsequences) |
+| [1653-minimum-deletions-to-make-string-balanced](https://github.com/hareeshghk/leetcode_solutions/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2054-two-best-non-overlapping-events](https://github.com/hareeshghk/leetcode_solutions/tree/master/2054-two-best-non-overlapping-events) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/hareeshghk/leetcode_solutions/tree/master/2061-painting-a-grid-with-three-different-colors) |
@@ -437,6 +438,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/hareeshghk/leetcode_solutions/tree/master/0232-implement-queue-using-stacks) |
 | [1078-remove-outermost-parentheses](https://github.com/hareeshghk/leetcode_solutions/tree/master/1078-remove-outermost-parentheses) |
+| [1653-minimum-deletions-to-make-string-balanced](https://github.com/hareeshghk/leetcode_solutions/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/hareeshghk/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [3001-apply-operations-to-maximize-score](https://github.com/hareeshghk/leetcode_solutions/tree/master/3001-apply-operations-to-maximize-score) |
 ## Monotonic Stack
@@ -482,6 +484,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hareeshghk/leetcode_solutions/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1532-reformat-the-string](https://github.com/hareeshghk/leetcode_solutions/tree/master/1532-reformat-the-string) |
+| [1653-minimum-deletions-to-make-string-balanced](https://github.com/hareeshghk/leetcode_solutions/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/hareeshghk/leetcode_solutions/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/2260-divide-a-string-into-groups-of-size-k) |
