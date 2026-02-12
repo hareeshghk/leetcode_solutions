@@ -260,6 +260,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hareeshghk/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3678-design-task-manager](https://github.com/hareeshghk/leetcode_solutions/tree/master/3678-design-task-manager) |
+| [3713-longest-balanced-substring-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hareeshghk/leetcode_solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Sorting
 |  |
@@ -501,6 +502,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/hareeshghk/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
+| [3713-longest-balanced-substring-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hareeshghk/leetcode_solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Linked List
 |  |
@@ -533,6 +535,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2998-count-symmetric-integers](https://github.com/hareeshghk/leetcode_solutions/tree/master/2998-count-symmetric-integers) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3398-make-a-square-with-the-same-color](https://github.com/hareeshghk/leetcode_solutions/tree/master/3398-make-a-square-with-the-same-color) |
+| [3713-longest-balanced-substring-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 ## Backtracking
 |  |
 | ------- |
@@ -557,6 +560,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/hareeshghk/leetcode_solutions/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
+| [3713-longest-balanced-substring-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/hareeshghk/leetcode_solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Sliding Window
 |  |
