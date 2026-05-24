@@ -1,13 +1,13 @@
 class Solution {
 public:
     int maxJumps(vector<int>& arr, int d) {
-        // n*d for directed graoh
         int n = arr.size();
         vector<vector<int>> graph = vector<vector<int>>(n, vector<int>());
         vector<int> inorder = vector<int>(n, 0);
         vector<int> maxreachcount = vector<int>(n, 1);
         int answer = 1;
 
+        // O(n*d) for directed graph creation.
         for (int i = 0; i < n; ++i) {
             // to left
             for (int j = 1; j <= d && i-j >= 0; ++j) {
@@ -24,22 +24,15 @@ public:
             }
         }
 
-        // for (int i = 0; i < n; ++i) {
-        //     cout << i << " -> ";
-        //     for (auto nei : graph[i]) {
-        //         cout << nei << ", ";
-        //     }
-        //     cout << endl;
-        // }
-
         // inorder 0 push to a queue and maintain a vector for max count
         // topological graph traversal and get max count
         queue<int> qu;
-
+        // O(n)
         for (int i = 0; i < n; ++i) {
             if (inorder[i] == 0) qu.push(i);
         }
 
+        // O(n)
         while (!qu.empty()) {
             int root = qu.front();
             qu.pop();
