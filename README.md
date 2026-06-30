@@ -241,6 +241,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1227-number-of-equivalent-domino-pairs](https://github.com/hareeshghk/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1244-design-a-leaderboard](https://github.com/hareeshghk/leetcode_solutions/tree/master/1244-design-a-leaderboard) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hareeshghk/leetcode_solutions/tree/master/1264-maximum-number-of-words-you-can-type) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/hareeshghk/leetcode_solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1500-count-largest-group](https://github.com/hareeshghk/leetcode_solutions/tree/master/1500-count-largest-group) |
 | [1590-make-sum-divisible-by-p](https://github.com/hareeshghk/leetcode_solutions/tree/master/1590-make-sum-divisible-by-p) |
@@ -496,6 +497,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1119-robot-bounded-in-circle](https://github.com/hareeshghk/leetcode_solutions/tree/master/1119-robot-bounded-in-circle) |
 | [1133-last-substring-in-lexicographical-order](https://github.com/hareeshghk/leetcode_solutions/tree/master/1133-last-substring-in-lexicographical-order) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/hareeshghk/leetcode_solutions/tree/master/1264-maximum-number-of-words-you-can-type) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/hareeshghk/leetcode_solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1483-rank-teams-by-votes](https://github.com/hareeshghk/leetcode_solutions/tree/master/1483-rank-teams-by-votes) |
 | [1532-reformat-the-string](https://github.com/hareeshghk/leetcode_solutions/tree/master/1532-reformat-the-string) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/hareeshghk/leetcode_solutions/tree/master/1653-minimum-deletions-to-make-string-balanced) |
@@ -576,6 +578,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0594-longest-harmonious-subsequence](https://github.com/hareeshghk/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
+| [1358-number-of-substrings-containing-all-three-characters](https://github.com/hareeshghk/leetcode_solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/hareeshghk/leetcode_solutions/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/hareeshghk/leetcode_solutions/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/hareeshghk/leetcode_solutions/tree/master/2527-count-subarrays-with-fixed-bounds) |
