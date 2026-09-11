@@ -19,7 +19,7 @@ public:
 
     pair<int, int> dfs(TreeNode *root) {
         if (root == nullptr) {
-            return pair<int,int>(0, 0);
+            return {0, 0};
         }
 
         auto currLeft = dfs(root->left);
@@ -30,6 +30,6 @@ public:
 
         if (newSum/newCount == root->val) answer++;
 
-        return pair<int, int>(newSum, newCount);
+        return {newSum, newCount};
     }
 };
