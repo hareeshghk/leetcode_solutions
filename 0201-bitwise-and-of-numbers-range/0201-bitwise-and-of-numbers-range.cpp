@@ -9,9 +9,6 @@ public:
             count++;
         }
 
-        while (count--) {
-            left<<=1;
-        }
-        return left;
+        return (left<<count);
     }
 };
