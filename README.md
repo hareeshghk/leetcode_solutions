@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/hareeshghk/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
 | [3640-trionic-array-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3640-trionic-array-ii) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Graph
 |  |
 | ------- |
@@ -109,6 +110,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/hareeshghk/leetcode_solutions/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/hareeshghk/leetcode_solutions/tree/master/3307-find-the-maximum-sum-of-node-values) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Memoization
 |  |
 | ------- |
@@ -224,6 +226,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/hareeshghk/leetcode_solutions/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/hareeshghk/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/hareeshghk/leetcode_solutions/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Hash Table
 |  |
 | ------- |
@@ -395,6 +398,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3587-maximum-points-tourist-can-earn](https://github.com/hareeshghk/leetcode_solutions/tree/master/3587-maximum-points-tourist-can-earn) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3882-minimum-xor-path-in-a-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Tree
 |  |
 | ------- |
