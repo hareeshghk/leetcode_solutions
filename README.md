@@ -104,6 +104,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0201-bitwise-and-of-numbers-range](https://github.com/hareeshghk/leetcode_solutions/tree/master/0201-bitwise-and-of-numbers-range) |
 | [0464-can-i-win](https://github.com/hareeshghk/leetcode_solutions/tree/master/0464-can-i-win) |
 | [0756-pyramid-transition-matrix](https://github.com/hareeshghk/leetcode_solutions/tree/master/0756-pyramid-transition-matrix) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/hareeshghk/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
