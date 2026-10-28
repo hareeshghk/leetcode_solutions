@@ -4,28 +4,32 @@ public:
         int m = grid.size();
         int n = grid[0].size();
 
-        auto dp = vector<vector<vector<bool>>>(m, vector<vector<bool>>(n, vector<bool>(1024, false)));
+        auto dp = vector<vector<unordered_set<int>>>(m, vector<unordered_set<int>>(n));
 
-        dp[0][0][grid[0][0]] = true;
+        dp[0][0].insert(grid[0][0]);
 
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
-                for (int k = 0; k < 1024; ++k) {
-                    if (j > 0 && dp[i][j-1][k]) {
-                        dp[i][j][grid[i][j] ^ k] = true;
-                    }
 
-                    if (i > 0 && dp[i-1][j][k]) {
-                        dp[i][j][grid[i][j] ^ k] = true;
+                if (j > 0) {
+                    for (auto val : dp[i][j-1]) {
+                        dp[i][j].insert(val^grid[i][j]);
+                    }
+                }
+
+                if (i > 0) {
+                    for (auto val : dp[i-1][j]) {
+                        dp[i][j].insert(val^grid[i][j]);
                     }
                 }
             }
         }
 
-        for (int i = 0; i < 1024; ++i) {
-            if (dp[m-1][n-1][i]) return i;
+        int minxor = 1024;
+        for (auto val : dp[m-1][n-1]) {
+            minxor = min(minxor, val);
         }
 
-        return -1;
+        return minxor;
     }
 };
