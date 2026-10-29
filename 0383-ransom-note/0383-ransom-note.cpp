@@ -1,15 +1,15 @@
 class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
-        unordered_map<char, int> counter;
+        int counter[26] = {0};
 
         for (auto ch : magazine) {
-            counter[ch]++;
+            counter[ch-'a']++;
         }
 
         for (auto ch : ransomNote) {
-            if (counter.find(ch) == counter.end() || counter[ch] == 0) return false;
-            counter[ch]--;
+            if (counter[ch-'a'] == 0) return false;
+            counter[ch-'a']--;
         }
 
         return true;
