@@ -3,43 +3,46 @@ public:
     string longestPalindrome(string s) {
         int n = s.length();
 
-        int ansleft=-1, ansright=-1;
+        // create dp[i][j] which saus whether string from i to j is polindrome or now
+        // dp[i][j] is true if s[i]==s[j] and dp[i+1][j-1] is true
 
-        int ans = 0;
-        // O(N^2) time, O(1) space
+        vector<vector<bool>> dp = vector<vector<bool>>(n, vector<bool>(n, false));
+
+        // length 1 polindromes.
         for (int i = 0; i < n; ++i) {
-            // s[i] being centre of polindrome
-            int left = i-1, right = i+1;
+            dp[i][i] = true;
+        }
+        int maxlen = 1;
 
-            while (left >= 0 && right < n && s[left] == s[right]) {
-                left--;
-                right++;
+        // length 2 polindromes.
+        for (int i = 0; i < n-1; ++i) {
+            if (s[i] == s[i+1]) {
+                dp[i][i+1] = true;
+                maxlen = 2;
             }
-            if (right-left-1 > ans) {
-                ansleft = left+1;
-                ansright = right-1;
-                ans = right-left-1;
-            }
+        }
 
-            // S[i] being one of centre of polindrome only if s[i] == s[i+1]
+        int len = 3;
+        for (len = 3; len <= n; ++len) {
+            if (len > maxlen + 2) break;
+            for (int i = 0; i+len-1 <= n-1; ++i) {
+                int j = i+len-1;
 
-            if (i!=n-1 && s[i] == s[i+1]) {
-                left = i-1;
-                right = i+2;
-
-                while (left >= 0 && right < n && s[left] == s[right]) {
-                    left--;
-                    right++;
-                }
-
-                if (right-left-1 > ans) {
-                    ansleft = left+1;
-                    ansright = right-1;
-                    ans = right-left-1;
+                if (s[i] == s[j] && dp[i+1][j-1]) {
+                    dp[i][j] = true;
+                    maxlen = len;
+                } else {
+                    dp[i][j] = false;
                 }
             }
         }
 
-        return s.substr(ansleft, ans);
+        for (int i = 0; i < n; ++i) {
+            int j = i+maxlen-1;
+
+            if (dp[i][j]) return s.substr(i, maxlen);
+        }
+
+        return "";
     }
 };
