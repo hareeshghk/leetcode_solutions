@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/hareeshghk/leetcode_solutions/tree/master/0005-longest-palindromic-substring) |
 | [0119-pascals-triangle-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0119-pascals-triangle-ii) |
 | [0368-largest-divisible-subset](https://github.com/hareeshghk/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0416-partition-equal-subset-sum) |
@@ -342,6 +343,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/hareeshghk/leetcode_solutions/tree/master/0005-longest-palindromic-substring) |
 | [0015-3sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/hareeshghk/leetcode_solutions/tree/master/0075-sort-colors) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hareeshghk/leetcode_solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -506,6 +508,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/hareeshghk/leetcode_solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/hareeshghk/leetcode_solutions/tree/master/0005-longest-palindromic-substring) |
 | [0038-count-and-say](https://github.com/hareeshghk/leetcode_solutions/tree/master/0038-count-and-say) |
 | [0730-count-different-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/0730-count-different-palindromic-subsequences) |
 | [0756-pyramid-transition-matrix](https://github.com/hareeshghk/leetcode_solutions/tree/master/0756-pyramid-transition-matrix) |
@@ -660,4 +663,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/hareeshghk/leetcode_solutions/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
+## Manacher
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/hareeshghk/leetcode_solutions/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
