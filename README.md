@@ -131,6 +131,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0001-two-sum) |
+| [0011-container-with-most-water](https://github.com/hareeshghk/leetcode_solutions/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/hareeshghk/leetcode_solutions/tree/master/0036-valid-sudoku) |
 | [0073-set-matrix-zeroes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
@@ -321,6 +322,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/hareeshghk/leetcode_solutions/tree/master/0011-container-with-most-water) |
 | [0768-partition-labels](https://github.com/hareeshghk/leetcode_solutions/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/hareeshghk/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0955-delete-columns-to-make-sorted-ii) |
@@ -347,6 +349,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/hareeshghk/leetcode_solutions/tree/master/0005-longest-palindromic-substring) |
+| [0011-container-with-most-water](https://github.com/hareeshghk/leetcode_solutions/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/hareeshghk/leetcode_solutions/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/hareeshghk/leetcode_solutions/tree/master/0075-sort-colors) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/hareeshghk/leetcode_solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
