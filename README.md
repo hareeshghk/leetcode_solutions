@@ -515,6 +515,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/hareeshghk/leetcode_solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/hareeshghk/leetcode_solutions/tree/master/0005-longest-palindromic-substring) |
+| [0008-string-to-integer-atoi](https://github.com/hareeshghk/leetcode_solutions/tree/master/0008-string-to-integer-atoi) |
 | [0038-count-and-say](https://github.com/hareeshghk/leetcode_solutions/tree/master/0038-count-and-say) |
 | [0383-ransom-note](https://github.com/hareeshghk/leetcode_solutions/tree/master/0383-ransom-note) |
 | [0730-count-different-palindromic-subsequences](https://github.com/hareeshghk/leetcode_solutions/tree/master/0730-count-different-palindromic-subsequences) |
