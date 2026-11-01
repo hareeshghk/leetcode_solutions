@@ -149,6 +149,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0944-delete-columns-to-make-sorted](https://github.com/hareeshghk/leetcode_solutions/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/hareeshghk/leetcode_solutions/tree/master/0960-delete-columns-to-make-sorted-iii) |
+| [0994-rotting-oranges](https://github.com/hareeshghk/leetcode_solutions/tree/master/0994-rotting-oranges) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/hareeshghk/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/hareeshghk/leetcode_solutions/tree/master/1049-minimum-domino-rotations-for-equal-row) |
@@ -371,6 +372,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/hareeshghk/leetcode_solutions/tree/master/0133-clone-graph) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0733-flood-fill](https://github.com/hareeshghk/leetcode_solutions/tree/master/0733-flood-fill) |
+| [0994-rotting-oranges](https://github.com/hareeshghk/leetcode_solutions/tree/master/0994-rotting-oranges) |
 | [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/hareeshghk/leetcode_solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/hareeshghk/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
@@ -406,6 +408,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0073-set-matrix-zeroes](https://github.com/hareeshghk/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
 | [0733-flood-fill](https://github.com/hareeshghk/leetcode_solutions/tree/master/0733-flood-fill) |
 | [0840-magic-squares-in-grid](https://github.com/hareeshghk/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
+| [0994-rotting-oranges](https://github.com/hareeshghk/leetcode_solutions/tree/master/0994-rotting-oranges) |
 | [1034-coloring-a-border](https://github.com/hareeshghk/leetcode_solutions/tree/master/1034-coloring-a-border) |
 | [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/hareeshghk/leetcode_solutions/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/hareeshghk/leetcode_solutions/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
