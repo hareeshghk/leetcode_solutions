@@ -12,20 +12,22 @@ public:
         mapping['7'] = {'p', 'q', 'r', 's'};
         mapping['8'] = {'t', 'u', 'v'};
         mapping['9'] = {'w', 'x', 'y', 'z'};
-        traverse(digits, 0, "", answer);
+
+        string current(digits.length(), 'a');
+        
+        traverse(digits, 0, current, answer);
         return answer;
     }
 private:
-    void traverse(string digits, int index, string current, vector<string> &answer) {
+    void traverse(string digits, int index, string &current, vector<string> &answer) {
         if (index == digits.length()) {
             answer.push_back(current);
             return;
         }
 
         for (auto ch : mapping[digits[index]]) {
-            current.push_back(ch);
+            current[index] = ch;
             traverse(digits, index+1, current, answer);
-            current.pop_back();
         }
     }
 };
