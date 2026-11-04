@@ -4,7 +4,7 @@ public:
         // Take 0's and do a bfs from them. convert 1's to zeroes and then add them to queue
         // if neighbour is already 0 don't do anything and maintain current distance so next would +1.
 
-        queue<tuple<int /*i*/, int /*j*/, int /*d*/>> q;
+        queue<pair<int /*i*/, int /*j*/>> q;
 
         int m = mat.size();
         int n = mat[0].size();
@@ -15,7 +15,7 @@ public:
             for (int j=0; j < n; ++j) {
                 if (mat[i][j] == 0) {
                     ans[i][j] = 0;
-                    q.push({i, j, 0});
+                    q.push({i, j});
                 }
             }
         }
@@ -23,7 +23,7 @@ public:
         auto dirs = vector<vector<int>>{{0, -1}, {0, 1}, {-1, 0}, {1, 0}};
 
         while (!q.empty()) {
-            auto [x, y, d] = q.front();
+            auto [x, y] = q.front();
             q.pop();
 
             for (auto dir : dirs) {
@@ -33,8 +33,8 @@ public:
                 if (nx >=0 && nx < m && ny>=0 && ny< n) {
                     if (mat[nx][ny] == 1) {
                         mat[nx][ny] = 0;
-                        ans[nx][ny] = d + 1;
-                        q.push({nx, ny, d + 1});
+                        ans[nx][ny] = ans[x][y] + 1;
+                        q.push({nx, ny});
                     }
                 }
             }
